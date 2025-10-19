@@ -40,7 +40,7 @@
 
 分析：$x = 0,2$均为第一类间断点
 
-$x\to 1^+,f(x) = (x-1)^{\frac{1}{x(x-2)} } = e^{\frac{\ln(x-1)}{x(x-2)} }\to+\infty $
+$f(x) = e^{\frac{\ln|x-1|}{x(x-2)} },x\to1,f(x)\to+\infty $
 
 $x = 1$是第二类间断点
 
