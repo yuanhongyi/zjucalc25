@@ -128,7 +128,8 @@ nav:
   - Preface: 
     - Preface: index.md
   - Slides:
-    - 数列极限与函数极限: slides/limit_slide.md
+    - 数列极限: slides/seq.md
+    - 函数: slides/func.md
   - Quiz:
     - 24微甲小测1: quiz/calc_quiz1.md
     - 24微甲小测2: quiz/calc_quiz2_1.md
