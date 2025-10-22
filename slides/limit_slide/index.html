@@ -35,6 +35,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#_1">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -227,12 +230,108 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    数列极限与函数极限
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     数列极限与函数极限
     
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      基础回顾
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      课本例题、习题选讲
+    </span>
+</a>
+<nav aria-label="课本例题、习题选讲" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      幂平均极限
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      幂平均
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      习题选讲：欧拉常数
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#p">
+<span class="md-ellipsis">
+      p级数
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      压缩映射原理
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stolz">
+<span class="md-ellipsis">
+      Stolz公式与柯西命题
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      杂题: 卷积型极限
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      杂题: 加权平均极限
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      估阶
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -359,19 +458,368 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      基础回顾
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      课本例题、习题选讲
+    </span>
+</a>
+<nav aria-label="课本例题、习题选讲" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      幂平均极限
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      幂平均
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      习题选讲：欧拉常数
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#p">
+<span class="md-ellipsis">
+      p级数
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      压缩映射原理
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stolz">
+<span class="md-ellipsis">
+      Stolz公式与柯西命题
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      杂题: 卷积型极限
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      杂题: 加权平均极限
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      估阶
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>数列极限与函数极限</h1>
+<h1 id="_1">数列极限梳理与拓展<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<h2 id="_2">基础回顾<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<ul>
+<li><strong>数列极限定义</strong><span>: <span class="arithmatex">\(\epsilon-N\)</span><span class="heti-spacing"> </span></span>语言<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>无穷大数列</li>
+</ul>
+<p><strong>定义<span class="heti-skip"><span class="heti-spacing"> </span>1.1.2 (<span class="heti-spacing"> </span></span>收敛数列<span><span class="heti-spacing"> </span>)</span></strong></p>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>是一个数列<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>如果存在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a\in\mathbb{R}\)</span>,<span class="heti-spacing"> </span></span>使得<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\forall\epsilon&gt;0\)</span>, <span class="arithmatex">\(\exists N\in\mathbb{N}_{+}\)</span><span class="heti-spacing"> </span></span>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\ge N\)</span><span class="heti-spacing"> </span></span>时<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>都有</p>
+<div class="arithmatex">\[|a_{n}-a|&lt;\epsilon,\]</div>
+<p>就称数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>是<strong>收敛的</strong>并且收敛于<span class="heti-skip"><span class="heti-spacing"> </span>a,<span class="heti-spacing"> </span></span>记为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}a_{n}=a\)</span><span class="heti-spacing"> </span></span>或者<span><span class="heti-spacing"> </span><span class="arithmatex">\(a_{n}\rightarrow a\)</span></span>。</p>
+<p>若不成立<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>就称<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>是<strong>发散的</strong>。</p>
+<p><strong>定义<span class="heti-skip"><span class="heti-spacing"> </span>1.1.19 (<span class="heti-spacing"> </span></span>无穷大数列<span><span class="heti-spacing"> </span>)</span></strong></p>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>是一个数列<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>如果<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\forall M&gt;0\)</span>, <span class="arithmatex">\(\exists N\in\mathbb{N}_{+}\)</span><span class="heti-spacing"> </span></span>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\ge N\)</span><span class="heti-spacing"> </span></span>时<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>都有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(|a_{n}|&gt;M\)</span>,<span class="heti-spacing"> </span></span>那么称<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>为无穷大数列<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>记为<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}a_{n}=\infty\)</span></span>。</p>
+<p>特别地<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>如果<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a_n &gt; M\)</span> (<span class="heti-spacing"> </span></span>或<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a_n &lt; -M\)</span>),<span class="heti-spacing"> </span></span>则称<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>趋于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(+\infty\)</span> (<span class="heti-spacing"> </span></span>或<span><span class="heti-spacing"> </span><span class="arithmatex">\(-\infty\)</span>)</span>。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>上述定义的否定也要掌握。</p>
+<p>数列极限的几何意义是什么？</p>
+</div>
+<ul>
+<li><strong>数列极限性质</strong><span>:<span class="heti-spacing"> </span></span>唯一性、有界性、保号性、四则运算<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>注意极限要存在才能用<span><span class="heti-spacing"> </span>)</span></li>
+</ul>
+<p><strong>定理<span class="heti-skip"><span class="heti-spacing"> </span>1.1.9 (<span class="heti-spacing"> </span></span>有界性<span><span class="heti-spacing"> </span>)</span></strong></p>
+<p>如果数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>收敛<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>那么<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>有界。</p>
+<p><strong>定理<span class="heti-skip"><span class="heti-spacing"> </span>1.1.10 (<span class="heti-spacing"> </span></span>保号性<span><span class="heti-spacing"> </span>)</span></strong></p>
+<p>如果<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}a_{n}=a&gt;0\)</span>,<span class="heti-spacing"> </span></span>那么<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\forall p\in(0,a)\)</span>, <span class="arithmatex">\(\exists N&gt;0,\)</span><span class="heti-spacing"> </span></span>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\ge N\)</span><span class="heti-spacing"> </span></span>时<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>有<span><span class="heti-spacing"> </span><span class="arithmatex">\(a_{n}&gt;p&gt;0\)</span></span></p>
+<p><strong>推论<span><span class="heti-spacing"> </span>1.1.11</span></strong></p>
+<p>若数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>满足<span class="heti-skip"><span class="heti-spacing"> </span>:<span class="heti-spacing"> </span></span>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\ge N\)</span><span class="heti-spacing"> </span></span>时<span class="heti-skip"><span class="heti-spacing"> </span>, <span class="arithmatex">\(a_{n}\ge0\)</span><span class="heti-spacing"> </span></span>且<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>收敛于<span class="heti-skip"><span class="heti-spacing"> </span>a,<span class="heti-spacing"> </span></span>则<span><span class="heti-spacing"> </span><span class="arithmatex">\(a\ge0\)</span></span>。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>即使对所有的<span><span class="heti-spacing"> </span><span class="arithmatex">\(n\)</span></span>，都有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a_{n}&gt;0\)</span>,<span class="heti-spacing"> </span></span>也不能得出<span><span class="heti-spacing"> </span><span class="arithmatex">\(a&gt;0\)</span></span>。例如<span class="heti-skip"><span class="heti-spacing"> </span>:<span class="heti-spacing"> </span></span>数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{\frac{1}{n}\}\)</span><span class="heti-spacing"> </span></span>满足<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\frac{1}{n}&gt;0\)</span>,<span class="heti-spacing"> </span></span>但其极限为零。</p>
+</div>
+<ul>
+<li><strong>证明数列收敛或求极限</strong><span>:<span class="heti-spacing"> </span></span>单调有界原理<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>夹逼准则<span class="heti-skip"><span class="heti-spacing"> </span>, Cauchy<span class="heti-spacing"> </span></span>收敛原理</li>
+</ul>
+<p><strong>定理<span class="heti-skip"><span class="heti-spacing"> </span>1.2.6 (<span class="heti-spacing"> </span></span>单调收敛准则<span><span class="heti-spacing"> </span>)</span></strong></p>
+<p>若单调数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>有界<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>必收敛。</p>
+<p><strong>定理<span class="heti-skip"><span class="heti-spacing"> </span>1.1.15 (<span class="heti-spacing"> </span></span>夹逼定理<span><span class="heti-spacing"> </span>)</span></strong></p>
+<p>设数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\},\{b_{n}\},\{c_{n}\}\)</span><span class="heti-spacing"> </span></span>满足当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\ge N_{0}\)</span><span class="heti-spacing"> </span></span>时<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(b_{n}\le a_{n}\le c_{n},\)</span><span class="heti-spacing"> </span></span>并且<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}b_{n}=\lim\limits_{n\rightarrow\infty}c_{n}=a\)</span>,<span class="heti-spacing"> </span></span>则数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>也是收敛的<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>且极限为<span><span class="heti-spacing"> </span>a</span>。</p>
+<p><strong>定理<span class="heti-skip"><span class="heti-spacing"> </span>1.3.5 (<span class="heti-spacing"> </span></span>柯西准则<span><span class="heti-spacing"> </span>)</span></strong></p>
+<p>数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>收敛当且仅当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>是柯西数列。</p>
+<p><span>(<span class="heti-spacing"> </span></span>柯西数列<span class="heti-skip"><span class="heti-spacing"> </span>: <span class="arithmatex">\(\forall\epsilon&gt;0\)</span>, <span class="arithmatex">\(\exists N\)</span>,<span class="heti-spacing"> </span></span>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(m,n\ge N\)</span><span class="heti-spacing"> </span></span>时<span><span class="heti-spacing"> </span>, <span class="arithmatex">\(|a_{m}-a_{n}|&lt;\epsilon\)</span>)</span></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>单调递增无上界的数列一定是正无穷大，为什么？</p>
+<p>柯西收敛原理的否定形式也要掌握</p>
+</div>
+<hr/>
+<h2 id="_3">课本例题、习题选讲<a class="headerlink" href="#_3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<h3 id="_4">幂平均极限<a class="headerlink" href="#_4" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><strong><span>(4)<span class="heti-spacing"> </span></span>求极限<span><span class="heti-spacing"> </span>: <span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\sqrt[n]{1^{n}+2^{n}+\cdot\cdot\cdot+9^{n}}\)</span></span></strong></p>
+<p><strong>解</strong>:</p>
+<p>利用夹逼定理。</p>
+<p>一方面，显然有：</p>
+<div class="arithmatex">\[9=\sqrt[n]{9^{n}}&lt;\sqrt[n]{1^{n}+2^{n}+3^{n}+\cdot\cdot\cdot+9^{n}}\]</div>
+<p>另一方面：</p>
+<div class="arithmatex">\[\sqrt[n]{1^{n}+2^{n}+\cdot\cdot\cdot+9^{n}}&lt;\sqrt[n]{9\cdot9^{n}}=9\sqrt[n]{9}\]</div>
+<p>综上：</p>
+<div class="arithmatex">\[9 &lt; \sqrt[n]{1^{n}+2^{n}+\cdot\cdot\cdot+9^{n}} &lt; 9\sqrt[n]{9}\]</div>
+<p>由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}9\sqrt[n]{9} = 9 \cdot 1 = 9\)</span></span>。</p>
+<p>由夹逼定理可知<span><span class="heti-spacing"> </span>:</span></p>
+<div class="arithmatex">\[\lim\limits_{n\rightarrow\infty}\sqrt[n]{1^{n}+2^{n}+3^{n}+\cdot\cdot\cdot+9^{n}}=9.\]</div>
+<hr/>
+<h3 id="_5">幂平均<a class="headerlink" href="#_5" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><strong>定义</strong><span>:<span class="heti-spacing"> </span></span>对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a_i \ge 0, p \in R\)</span>, <span class="arithmatex">\(a_i\)</span><span class="heti-spacing"> </span></span>的<span class="heti-skip"><span class="heti-spacing"> </span>p<span class="heti-spacing"> </span></span>次幂平均定义为<span><span class="heti-spacing"> </span>:</span></p>
+<div class="arithmatex">\[ 
+M_{p}(a_{i})=\left(\frac{\sum\limits_{i=1}^{n}a_{i}^{p}}{n}\right)^{\frac{1}{p}}=\left(\frac{a_{1}^{p}+a_{2}^{p}+\cdot\cdot\cdot+a_{n}^{p}}{n}\right)^{\frac{1}{p}} 
+\]</div>
+<ul>
+<li><span><span class="arithmatex">\(p=1\)</span>: <span class="arithmatex">\(M_{1}(a_{i})=\frac{a_{1}+a_{2}+\cdot\cdot\cdot+a_{n}}{n}\)</span> (<span class="heti-spacing"> </span></span>算术平均值<span><span class="heti-spacing"> </span>)</span></li>
+<li><span><span class="arithmatex">\(p=-1\)</span>: <span class="arithmatex">\(M_{-1}(a_{i})=\frac{n}{\frac{1}{a_{1}}+\frac{1}{a_{2}}+\cdot\cdot\cdot+\frac{1}{a_{n}}}\)</span> (<span class="heti-spacing"> </span></span>调和平均值<span><span class="heti-spacing"> </span>)</span></li>
+<li><span><span class="arithmatex">\(p\rightarrow0\)</span>: <span class="arithmatex">\(\lim\limits_{p\rightarrow0}M_{p}(a_{i})=\sqrt[n]{a_{1}a_{2}\cdot\cdot\cdot a_{n}}\)</span> (<span class="heti-spacing"> </span></span>几何平均值<span><span class="heti-spacing"> </span>)</span></li>
+<li><span><span class="arithmatex">\(p\rightarrow+\infty\)</span>: <span class="arithmatex">\(\lim\limits_{p\rightarrow+\infty}M_{p}(a_{i})=\max\limits\{a_{1},a_{2},\cdot\cdot\cdot,a_{n}\}\)</span> (<span class="heti-spacing"> </span></span>最大值<span><span class="heti-spacing"> </span>)</span></li>
+<li><span><span class="arithmatex">\(p\rightarrow-\infty\)</span>: <span class="arithmatex">\(\lim\limits_{p\rightarrow-\infty}M_{p}(a_{i})=\min\limits\{a_{1},a_{2},\cdot\cdot\cdot,a_{n}\}\)</span> (<span class="heti-spacing"> </span></span>最小值<span><span class="heti-spacing"> </span>)</span></li>
+</ul>
+<hr/>
+<p><strong><span>16.<span class="heti-spacing"> </span></span>求极限<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}(1+\frac{1}{n^{2}})(1+\frac{2}{n^{2}})\cdot\cdot\cdot(1+\frac{n}{n^{2}})\)</span></span></strong></p>
+<p><strong>提示</strong><span>:<span class="heti-spacing"> </span></span>利用不等式</p>
+<div class="arithmatex">\[\frac{x}{x+1}\le \ln(1+x)\le x\]</div>
+<p><strong>答案</strong>: <span class="arithmatex">\(\sqrt{e}\)</span></p>
+<h3 id="_6">习题选讲：欧拉常数<a class="headerlink" href="#_6" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><strong><span>(5)<span class="heti-spacing"> </span></span>利用单调有界准则证明下面极限存在<span><span class="heti-spacing"> </span>: <span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}(1+\frac{1}{2}+\frac{1}{3}+\cdot\cdot\cdot+\frac{1}{n}-\ln n)\)</span></span></strong></p>
+<p><strong>证明</strong>:</p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(u_{n}=1+\frac{1}{2}+\frac{1}{3}+\cdot\cdot\cdot+\frac{1}{n}-\ln n\)</span>.</span></p>
+<ol>
+<li>
+<p><strong>单调性</strong>:</p>
+<p><span class="arithmatex">\(u_{n+1}-u_{n} = (\frac{1}{n+1}) - (\ln(n+1) - \ln n) = \frac{1}{n+1}-\ln(1+\frac{1}{n})\)</span></p>
+<p>因为当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x&gt;0\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(\ln(1+x) &gt; \frac{x}{x+1}\)</span>，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x=\frac{1}{n}\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(\ln(1+\frac{1}{n}) &gt; \frac{1/n}{1/n+1} = \frac{1}{n+1}\)</span></span>。</p>
+<p>所以<span><span class="heti-spacing"> </span><span class="arithmatex">\(u_{n+1}-u_{n} &lt; 0\)</span></span>，数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{u_n\}\)</span><span class="heti-spacing"> </span></span>单调递减。</p>
+</li>
+<li>
+<p><strong>有界性</strong>:</p>
+<p><span class="arithmatex">\(u_{n} = \sum\limits_{k=1}^{n} \frac{1}{k} - \ln n &gt; \sum\limits_{k=1}^{n} \ln(1+\frac{1}{k}) - \ln n = \sum\limits_{k=1}^{n} (\ln(k+1) - \ln k) - \ln n\)</span></p>
+<p><span class="arithmatex">\(= (\ln 2 - \ln 1) + (\ln 3 - \ln 2) + \cdot\cdot\cdot + (\ln(n+1) - \ln n) - \ln n\)</span></p>
+<p><span class="arithmatex">\(= \ln(n+1) - \ln n &gt; 0\)</span></p>
+<p>所以<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{u_n\}\)</span><span class="heti-spacing"> </span></span>有下界。</p>
+</li>
+</ol>
+<p><strong>结论</strong><span>:<span class="heti-spacing"> </span></span>数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{u_n\}\)</span><span class="heti-spacing"> </span></span>单调递减有下界，故极限存在。 <span>(<span class="heti-spacing"> </span></span>该极限即欧拉常数<span><span class="heti-spacing"> </span><span class="arithmatex">\(\gamma \approx 0.5772\)</span>)</span></p>
+<hr/>
+<h3 id="p"><span>p<span class="heti-spacing"> </span></span>级数<a class="headerlink" href="#p" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><strong>例<span class="heti-skip"><span class="heti-spacing"> </span>1.3.7<span class="heti-spacing"> </span></span>证明数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{1+\frac{1}{2}+\cdot\cdot\cdot+\frac{1}{n}\}\)</span><span class="heti-spacing"> </span></span>发散<span><span class="heti-spacing"> </span>.</span></strong></p>
+<p><strong>证明<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>柯西准则<span><span class="heti-spacing"> </span>)</span></strong>:</p>
+<p>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(a_{n}=1+\frac{1}{2}+\cdot\cdot\cdot+\frac{1}{n}\)</span></span>。 </p>
+<p>取<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(m=2n\)</span>,<span class="heti-spacing"> </span></span>则</p>
+<p><span class="arithmatex">\(|a_{2n}-a_{n}|=\frac{1}{n+1}+\frac{1}{n+2}+\cdot\cdot\cdot+\frac{1}{2n}\)</span></p>
+<p><span class="arithmatex">\(\ge \frac{1}{2n}+\frac{1}{2n}+\cdot\cdot\cdot+\frac{1}{2n} = n \cdot \frac{1}{2n} = \frac{1}{2}.\)</span></p>
+<p>由于不满足柯西收敛原理，故数列发散。</p>
+<p><strong><span>31.<span class="heti-spacing"> </span></span>证明数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{\frac{1}{1^{\alpha}}+\frac{1}{2^{\alpha}}+\frac{1}{3^{\alpha}}+\cdot\cdot\cdot+\frac{1}{n^{\alpha}}\}\)</span> (<span class="arithmatex">\(\alpha&gt;1\)</span>)<span class="heti-spacing"> </span></span>收敛<span><span class="heti-spacing"> </span>.</span></strong></p>
+<p><strong>证明<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>单调有界准则<span><span class="heti-spacing"> </span>)</span></strong>:</p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(a_{n}=\sum\limits_{k=1}^{n} \frac{1}{k^\alpha}\)</span></span>。</p>
+<ol>
+<li>
+<p><strong>单调性</strong><span>: <span class="arithmatex">\(a_{n+1} - a_n = \frac{1}{(n+1)^\alpha} &gt; 0\)</span>,<span class="heti-spacing"> </span></span>显然<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a_{n}\)</span><span class="heti-spacing"> </span></span>单调增加。</p>
+</li>
+<li>
+<p><strong>有界性<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>柯西凝聚法<span><span class="heti-spacing"> </span>)</span></strong>:</p>
+<p><span class="arithmatex">\(a_n = \frac{1}{1^{\alpha}}+(\frac{1}{2^{\alpha}}+\frac{1}{3^{\alpha}})+(\frac{1}{4^{\alpha}}+\dots+\frac{1}{7^{\alpha}})+\cdot\cdot\cdot\)</span></p>
+<p><span class="arithmatex">\(&lt; 1+(\frac{1}{2^{\alpha}}+\frac{1}{2^{\alpha}})+(\frac{1}{4^{\alpha}}+\dots+\frac{1}{4^{\alpha}})+\cdot\cdot\cdot\)</span></p>
+<p><span class="arithmatex">\(= 1+\frac{2}{2^{\alpha}}+\frac{4}{4^{\alpha}}+\frac{8}{8^{\alpha}}+\cdot\cdot\cdot = 1+\frac{1}{2^{\alpha-1}}+\frac{1}{4^{\alpha-1}}+\frac{1}{8^{\alpha-1}}+\cdot\cdot\cdot\)</span></p>
+<p><span class="arithmatex">\(= \sum\limits_{k=0}^{\infty} (\frac{1}{2^{\alpha-1}})^k\)</span></p>
+<p>由于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\alpha &gt; 1\)</span>,<span class="heti-spacing"> </span></span>公比<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\frac{1}{2^{\alpha-1}} \in (0, 1)\)</span>,<span class="heti-spacing"> </span></span>该等比级数收敛。</p>
+<p>其和为<span><span class="heti-spacing"> </span><span class="arithmatex">\(\frac{1}{1-\frac{1}{2^{\alpha-1}}}\)</span></span>。</p>
+<p>所以<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_n\}\)</span><span class="heti-spacing"> </span></span>有上界。</p>
+</li>
+</ol>
+<p><strong>结论</strong><span>:<span class="heti-spacing"> </span></span>数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_n\}\)</span><span class="heti-spacing"> </span></span>单调递增有上界，故收敛。</p>
+<hr/>
+<h3 id="_7">压缩映射原理<a class="headerlink" href="#_7" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>对于递推数列<span><span class="heti-spacing"> </span><span class="arithmatex">\(x_{n+1}=f(x_{n})\)</span>:</span></p>
+<p><strong>方法一<span class="heti-skip"><span class="heti-spacing"> </span>:<span class="heti-spacing"> </span></span>证明与不动点的距离收缩</strong></p>
+<p>若能证明极限为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(A\)</span>,<span class="heti-spacing"> </span></span>且存在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(k \in (0, 1)\)</span><span class="heti-spacing"> </span></span>使得<span><span class="heti-spacing"> </span>:</span></p>
+<div class="arithmatex">\[|x_{n+1}-A|\le k|x_{n}-A|\]</div>
+<p>则可推出<span><span class="heti-spacing"> </span>:</span></p>
+<div class="arithmatex">\[0\le|x_{n+1}-A|\le k^{n}|x_{1}-A|\]</div>
+<p>由于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(k^n \to 0\)</span>,<span class="heti-spacing"> </span></span>根据夹逼定理<span><span class="heti-spacing"> </span>, <span class="arithmatex">\(x_{n}\rightarrow A\)</span></span>。</p>
+<p><strong>方法二<span class="heti-skip"><span class="heti-spacing"> </span>:<span class="heti-spacing"> </span></span>证明相邻项的距离收缩</strong></p>
+<p>若能证明存在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(k \in (0, 1)\)</span><span class="heti-spacing"> </span></span>使得<span><span class="heti-spacing"> </span>:</span></p>
+<div class="arithmatex">\[|x_{n+1}-x_{n}|\le k|x_{n}-x_{n-1}|\]</div>
+<p>则可推出<span><span class="heti-spacing"> </span>:</span></p>
+<div class="arithmatex">\[|x_{n+1}-x_{n}|\le k^{n-1}|x_{2}-x_{1}|\]</div>
+<p>由此可证明<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{x_n\}\)</span><span class="heti-spacing"> </span></span>是柯西数列，因此收敛。</p>
+<p>求出极限<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(A\)</span><span class="heti-spacing"> </span></span>后<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>解方程<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(A=f(A)\)</span><span class="heti-spacing"> </span></span>即可。</p>
+<hr/>
+<p><strong><span>36.<span class="heti-spacing"> </span></span>设数列<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>满足<span class="heti-skip"><span class="heti-spacing"> </span>:<span class="heti-spacing"> </span></span>对任意<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\ge1\)</span>,<span class="heti-spacing"> </span></span>有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(|a_{n+2}-a_{n+1}|\le\frac{1}{2}|a_{n+1}-a_{n}|,\)</span><span class="heti-spacing"> </span></span>证明<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_{n}\}\)</span><span class="heti-spacing"> </span></span>收敛<span><span class="heti-spacing"> </span>.</span></strong></p>
+<p><strong>证明<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>柯西准则<span><span class="heti-spacing"> </span>)</span></strong>:</p>
+<p>由题意递推可得<span><span class="heti-spacing"> </span>:</span></p>
+<div class="arithmatex">\[
+|a_{n+1}-a_{n}|\le\frac{1}{2}|a_{n}-a_{n-1}|\le\cdot\cdot\cdot\le(\frac{1}{2})^{n-1}|a_{2}-a_{1}|
+\]</div>
+<p>对任意<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(m&gt;n\)</span>,<span class="heti-spacing"> </span></span>有<span><span class="heti-spacing"> </span>:</span></p>
+<p><span class="arithmatex">\(|a_{m}-a_{n}|=|(a_{m}-a_{m-1})+(a_{m-1}-a_{m-2})+\cdot\cdot\cdot+(a_{n+1}-a_{n})|\)</span></p>
+<p><span class="arithmatex">\(\le |a_{m}-a_{m-1}|+|a_{m-1}-a_{m-2}|+\cdot\cdot\cdot+|a_{n+1}-a_{n}|\)</span></p>
+<p><span class="arithmatex">\(\le |a_{2}-a_{1}| \left( (\frac{1}{2})^{m-2} + \cdot\cdot\cdot + (\frac{1}{2})^{n-1} \right)\)</span></p>
+<p><span class="arithmatex">\(= |a_{2}-a_{1}| \cdot \frac{(\frac{1}{2})^{n-1}(1-(\frac{1}{2})^{m-n})}{1-\frac{1}{2}} &lt; |a_{2}-a_{1}| \cdot (\frac{1}{2})^{n-2}\)</span></p>
+<p>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\rightarrow\infty\)</span><span class="heti-spacing"> </span></span>时<span><span class="heti-spacing"> </span>, <span class="arithmatex">\((\frac{1}{2})^{n-2} \rightarrow 0\)</span></span>。</p>
+<p>因此<span class="heti-skip"><span class="heti-spacing"> </span>, <span class="arithmatex">\(\forall \epsilon &gt; 0\)</span>,<span class="heti-spacing"> </span></span>可取足够大的<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(N\)</span>,<span class="heti-spacing"> </span></span>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(m&gt;n\ge N\)</span><span class="heti-spacing"> </span></span>时<span><span class="heti-spacing"> </span>, <span class="arithmatex">\(|a_m - a_n| &lt; \epsilon\)</span></span>。</p>
+<p>故<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_n\}\)</span><span class="heti-spacing"> </span></span>是柯西列<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>从而收敛。</p>
+<hr/>
+<p><strong>例<span><span class="heti-spacing"> </span>1.2.13</span></strong> 已知<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(u_{1}&gt;0, u_{n+1}=3+\frac{4}{u_{n}}\)</span>,<span class="heti-spacing"> </span></span>证明<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{u_{n}\}\)</span><span class="heti-spacing"> </span></span>收敛并求极限。</p>
+<p><strong>解<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>压缩映射<span><span class="heti-spacing"> </span>)</span></strong>:</p>
+<blockquote>
+<p>不动点<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(A = 3 + 4/A \Rightarrow A^2-3A-4=0 \Rightarrow A=4\)</span><span class="heti-spacing"> </span></span>或<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(A=-1\)</span>(<span class="heti-spacing"> </span></span>舍<span><span class="heti-spacing"> </span>)</span>。</p>
+</blockquote>
+<p><span class="arithmatex">\(|u_{n+1}-4| = |3+\frac{4}{u_{n}} - 4| = |\frac{4-u_n}{u_n}| = \frac{|u_n-4|}{u_n}\)</span></p>
+<p>因为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(u_n &gt; 3\)</span>,<span class="heti-spacing"> </span></span>所以<span><span class="heti-spacing"> </span><span class="arithmatex">\(\frac{1}{u_n} &lt; \frac{1}{3}\)</span></span>。</p>
+<p><span class="arithmatex">\(|u_{n+1}-4| &lt; \frac{1}{3}|u_{n}-4| &lt; \cdot\cdot\cdot &lt; (\frac{1}{3})^n |u_1 - 4|\)</span></p>
+<p>由夹逼定理<span class="heti-skip"><span class="heti-spacing"> </span>, <span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}|u_{n+1}-4|=0\)</span>,<span class="heti-spacing"> </span></span>故<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}u_{n}=4\)</span></span></p>
+<hr/>
+<p><strong>26.</strong> 设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(u_{1}=2, u_{n+1}=\frac{u_{n}(u_{n}^{2}+3)}{3u_{n}^{2}+1}\)</span>,<span class="heti-spacing"> </span></span>证明<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{u_{n}\}\)</span><span class="heti-spacing"> </span></span>收敛并求极限。</p>
+<p><strong>解<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>单调有界<span><span class="heti-spacing"> </span>)</span></strong>:</p>
+<blockquote>
+<p>不动点<span><span class="heti-spacing"> </span><span class="arithmatex">\(a = \frac{a(a^2+3)}{3a^2+1} \Rightarrow a=0, 1, -1\)</span></span>。</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>有界性</strong><span>:<span class="heti-spacing"> </span></span>证明<span><span class="heti-spacing"> </span><span class="arithmatex">\(u_n &gt; 1\)</span></span>。</p>
+<p><span class="arithmatex">\(u_{n+1}-1=\frac{u_{n}^{3}+3u_{k}-3u_{n}^{2}-1}{3u_{n}^{2}+1}=\frac{(u_{n}-1)^{3}}{3u_{n}^{2}+1}\)</span></p>
+<p><span><span class="arithmatex">\(u_1=2&gt;1\)</span>,<span class="heti-spacing"> </span></span>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(u_n&gt;1\)</span>,<span class="heti-spacing"> </span></span>则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(u_{n+1}-1 &gt; 0\)</span>,<span class="heti-spacing"> </span></span>故<span><span class="heti-spacing"> </span><span class="arithmatex">\(u_{n+1}&gt;1\)</span></span>。</p>
+<p>由归纳法得<span><span class="heti-spacing"> </span><span class="arithmatex">\(u_n &gt; 1\)</span></span>。</p>
+</li>
+<li>
+<p><strong>单调性</strong>:</p>
+<p><span class="arithmatex">\(\frac{u_{n+1}}{u_{n}}=\frac{u_{n}^{2}+3}{3u_{n}^{2}+1} = \frac{3u_n^2+1 - 2u_n^2+2}{3u_n^2+1} = 1-\frac{2(u_n^2-1)}{3u_n^2+1}\)</span></p>
+<p>因为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(u_n&gt;1\)</span>,<span class="heti-spacing"> </span></span>所以<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(u_n^2-1&gt;0\)</span>,<span class="heti-spacing"> </span></span>故<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\frac{u_{n+1}}{u_{n}} &lt; 1\)</span>,<span class="heti-spacing"> </span></span>即<span><span class="heti-spacing"> </span><span class="arithmatex">\(u_{n+1} &lt; u_n\)</span></span>。</p>
+</li>
+</ol>
+<p><span><span class="arithmatex">\(\{u_n\}\)</span><span class="heti-spacing"> </span></span>单调递减有下界<span class="heti-skip"><span class="heti-spacing"> </span>1,<span class="heti-spacing"> </span></span>故收敛。设极限为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(b\)</span>,<span class="heti-spacing"> </span></span>解得<span><span class="heti-spacing"> </span><span class="arithmatex">\(b=1\)</span></span>。</p>
+<hr/>
+<h3 id="stolz"><span>Stolz<span class="heti-spacing"> </span></span>公式与柯西命题<a class="headerlink" href="#stolz" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><strong><span>Stolz<span class="heti-spacing"> </span></span>公式<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="arithmatex">\(\frac{\infty}{\infty}\)</span><span class="heti-spacing"> </span></span>型<span><span class="heti-spacing"> </span>)</span></strong></p>
+<p>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{y_{n}\}\)</span><span class="heti-spacing"> </span></span>严格单调趋于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(+\infty\)</span>,<span class="heti-spacing"> </span></span>且<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{x_{n}-x_{n-1}}{y_{n}-y_{n-1}}=A\)</span>,</span></p>
+<p>则<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{x_{n}}{y_{n}}=A\)</span></span>。</p>
+<p><strong><span>Stolz<span class="heti-spacing"> </span></span>公式的推论<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>柯西命题<span><span class="heti-spacing"> </span>)</span></strong></p>
+<ul>
+<li>
+<p><strong>算术平均形式</strong><span>:<span class="heti-spacing"> </span></span>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}x_{n} = A\)</span>,<span class="heti-spacing"> </span></span>则<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{\sum\limits_{k=1}^n x_k}{n}=A\)</span></span>。</p>
+</li>
+<li>
+<p><strong>几何平均形式</strong><span>:<span class="heti-spacing"> </span></span>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_n &gt; 0\)</span><span class="heti-spacing"> </span></span>且<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}x_{n} = A\)</span>,<span class="heti-spacing"> </span></span>则<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\sqrt[n]{x_{1}x_{2}\cdot\cdot\cdot x_{n}}=A\)</span></span>。</p>
+</li>
+</ul>
+<hr/>
+<p><strong>求极限<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{1+\frac{1}{2}+\cdot\cdot\cdot+\frac{1}{n}}{\ln n}\)</span></span></strong></p>
+<p><strong>解</strong>:</p>
+<p><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{\sum\limits_{k=1}^n \frac{1}{k}}{\ln n} \xlongequal{Stolz} \lim\limits_{n\rightarrow\infty}\frac{\frac{1}{n}}{\ln n-\ln(n-1)}\)</span></p>
+<p><span class="arithmatex">\(=\lim\limits_{n\rightarrow\infty}\frac{\frac{1}{n}}{-\ln(1-\frac{1}{n})} = \lim\limits_{n\rightarrow\infty}\frac{\frac{1}{n}}{\frac{1}{n}} = 1\)</span></p>
+<hr/>
+<p><strong>求<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{n}{\sqrt[n]{n!}}\)</span></span></strong></p>
+<p><strong>解</strong>:</p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x_n = \frac{n^n}{n!}\)</span></span>。考虑<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty} \frac{x_{n+1}}{x_n}\)</span></span>。</p>
+<p><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{(n+1)^{n+1}/(n+1)!}{n^n/n!} = \lim\limits_{n\rightarrow\infty}\frac{(n+1)^{n+1}}{n^n(n+1)} = \lim\limits_{n\rightarrow\infty}(\frac{n+1}{n})^n = e\)</span><br/></p>
+<p>由柯西命题的几何平均形式的推论<span><span class="heti-spacing"> </span>:</span><br/></p>
+<p><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\sqrt[n]{\frac{n^n}{n!}} = \lim\limits_{n\rightarrow\infty}\frac{n}{\sqrt[n]{n!}} = e\)</span></p>
+<hr/>
+<p><strong>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_{1}\in(0,1),x_{n+1}=x_{n}(1-x_{n})\)</span>,<span class="heti-spacing"> </span></span>证明<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}nx_{n}=1\)</span></span></strong></p>
+<p>首先证明<span><span class="heti-spacing"> </span><span class="arithmatex">\(x_n \to 0\)</span></span>。 <span><span class="arithmatex">\(x_{n+1}-x_n = -x_n^2 &lt; 0\)</span>,<span class="heti-spacing"> </span></span>数列单调递减。<span><span class="arithmatex">\(x_n \in (0,1)\)</span><span class="heti-spacing"> </span></span>有下界<span class="heti-skip"><span class="heti-spacing"> </span>0,<span class="heti-spacing"> </span></span>故收敛。设极限为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a\)</span>,<span class="heti-spacing"> </span></span>则<span><span class="heti-spacing"> </span><span class="arithmatex">\(a=a(1-a) \Rightarrow a=0\)</span></span>。</p>
+<p>考虑<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}nx_{n} = \lim\limits_{n\rightarrow\infty}\frac{n}{\frac{1}{x_{n}}}\)</span></span>。应用<span class="heti-skip"><span class="heti-spacing"> </span>Stolz<span class="heti-spacing"> </span></span>公式。<br/></p>
+<p><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{n+1-n}{\frac{1}{x_{n+1}}-\frac{1}{x_{n}}} = \lim\limits_{n\rightarrow\infty}\frac{x_{n+1}x_n}{x_{n}-x_{n+1}}\)</span></p>
+<p><span class="arithmatex">\(=\lim\limits_{n\rightarrow\infty}\frac{x_{n+1}x_n}{x_{n}^2}\)</span></p>
+<p><span class="arithmatex">\(=\lim\limits_{n\rightarrow\infty}\frac{x_{n+1}}{x_{n}} = \lim\limits_{n\rightarrow\infty}\frac{x_n(1-x_n)}{x_{n}}\)</span></p>
+<p><span class="arithmatex">\(=\lim\limits_{n\rightarrow\infty}(1-x_{n})\)</span><br/></p>
+<p>因为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_{n} \to 0\)</span>,<span class="heti-spacing"> </span></span>所以极限为<span><span class="heti-spacing"> </span>1</span>。</p>
+<hr/>
+<h3 id="_8">杂题<span class="heti-skip"><span class="heti-spacing"> </span>:<span class="heti-spacing"> </span></span>卷积型极限<a class="headerlink" href="#_8" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><strong>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}a_{n}=a, \lim\limits_{n\rightarrow\infty}b_{n}=b,\)</span><span class="heti-spacing"> </span></span>求证<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{a_{1}b_{n}+a_{2}b_{n-1}+\cdot\cdot\cdot+a_{n}b_{1}}{n}=ab\)</span></span></strong></p>
+<p><strong>证明<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>松弛变量法<span><span class="heti-spacing"> </span>)</span></strong>:</p>
+<p>令<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(b_n = b + c_n\)</span>,<span class="heti-spacing"> </span></span>则<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty} c_n = 0\)</span></span>。</p>
+<p>原式<span><span class="heti-spacing"> </span><span class="arithmatex">\(= \lim\limits_{n\rightarrow\infty}\frac{\sum\limits_{k=1}^n a_k b_{n-k+1}}{n} = \lim\limits_{n\rightarrow\infty}\frac{\sum\limits_{k=1}^n a_k (b+c_{n-k+1})}{n}\)</span></span></p>
+<p><span class="arithmatex">\(= \lim\limits_{n\rightarrow\infty} \left( \frac{\sum\limits_{k=1}^n a_k b}{n} + \frac{\sum\limits_{k=1}^n a_k c_{n-k+1}}{n} \right)\)</span><br/></p>
+<p>第一部分<span class="heti-skip"><span class="heti-spacing"> </span>: <span class="arithmatex">\(\lim\limits_{n\rightarrow\infty} b \cdot \frac{\sum\limits_{k=1}^n a_k}{n} = b \cdot a = ab\)</span> (<span class="heti-spacing"> </span></span>由柯西命题<span><span class="heti-spacing"> </span>)</span>。<br/></p>
+<p>第二部分<span class="heti-skip"><span class="heti-spacing"> </span>:<span class="heti-spacing"> </span></span>需证<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty} \frac{\sum\limits_{k=1}^n a_k c_{n-k+1}}{n} = 0\)</span></span>。</p>
+<p>因为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_n\}\)</span><span class="heti-spacing"> </span></span>收敛<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>所以有界<span><span class="heti-spacing"> </span>, <span class="arithmatex">\(\exists M&gt;0, |a_n| \le M\)</span></span>。因为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(c_n \to 0\)</span>, <span class="arithmatex">\(\forall \epsilon &gt; 0\)</span>, <span class="arithmatex">\(\exists N\)</span>,<span class="heti-spacing"> </span></span>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(k &gt; N\)</span><span class="heti-spacing"> </span></span>时<span><span class="heti-spacing"> </span>, <span class="arithmatex">\(|c_k| &lt; \epsilon\)</span></span>。</p>
+<p>可以证明第二部分极限为<span><span class="heti-spacing"> </span>0</span>。</p>
+<p>所以原极限为<span><span class="heti-spacing"> </span><span class="arithmatex">\(ab\)</span></span>。</p>
+<hr/>
+<h3 id="_9">杂题<span class="heti-skip"><span class="heti-spacing"> </span>:<span class="heti-spacing"> </span></span>加权平均极限<a class="headerlink" href="#_9" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><strong>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}x_{n}=a\)</span>,<span class="heti-spacing"> </span></span>求证<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{x_{1}+2x_{2}+\cdot\cdot\cdot+nx_{n}}{n^{2}}=\frac{a}{2}\)</span></span></strong></p>
+<p><strong>证明<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>拆分数列法<span><span class="heti-spacing"> </span>)</span></strong>:</p>
+<p>令<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_n = a + \alpha_n\)</span>,<span class="heti-spacing"> </span></span>则<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty} \alpha_n = 0\)</span></span>。</p>
+<p>原式<span><span class="heti-spacing"> </span><span class="arithmatex">\(= \lim\limits_{n\rightarrow\infty} \frac{\sum\limits_{k=1}^n k x_k}{n^2} = \lim\limits_{n\rightarrow\infty} \frac{\sum\limits_{k=1}^n k(a+\alpha_k)}{n^2}\)</span></span></p>
+<p><span class="arithmatex">\(= \lim\limits_{n\rightarrow\infty} \left( \frac{\sum\limits_{k=1}^n ka}{n^2} + \frac{\sum\limits_{k=1}^n k\alpha_k}{n^2} \right)\)</span><br/></p>
+<p>第一部分<span><span class="heti-spacing"> </span>: <span class="arithmatex">\(\lim\limits_{n\rightarrow\infty} \frac{a \cdot \frac{n(n+1)}{2}}{n^2} = \lim\limits_{n\rightarrow\infty} a \cdot \frac{n+1}{2n} = \frac{a}{2}\)</span></span>。<br/></p>
+<p>第二部分<span><span class="heti-spacing"> </span>: <span class="arithmatex">\(\lim\limits_{n\rightarrow\infty} \frac{\sum\limits_{k=1}^n k\alpha_k}{n^2}\)</span></span>。应用<span class="heti-skip"><span class="heti-spacing"> </span>Stolz<span class="heti-spacing"> </span></span>公式。</p>
+<p><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty} \frac{n \alpha_n}{n^2 - (n-1)^2} = \lim\limits_{n\rightarrow\infty} \frac{n \alpha_n}{2n-1} = \lim\limits_{n\rightarrow\infty} \frac{n}{2n-1} \cdot \alpha_n = \frac{1}{2} \cdot 0 = 0\)</span>。</p>
+<p>所以原极限为<span><span class="heti-spacing"> </span><span class="arithmatex">\(\frac{a}{2} + 0 = \frac{a}{2}\)</span></span>。</p>
+<hr/>
+<h3 id="_10">估阶<a class="headerlink" href="#_10" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><strong>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(a_{1}=1\)</span>, <span class="arithmatex">\(a_{n+1}=a_{n}+\frac{1}{a_{n}}\)</span>.</span></strong></p>
+<p><strong><span>(1)<span class="heti-spacing"> </span></span>求证<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{a_{n}}{\sqrt{n}}=\sqrt{2}\)</span></span></strong>   </p>
+<p><strong><span>(2)<span class="heti-spacing"> </span></span>求<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{\sqrt{n}(a_{n}-\sqrt{2n})}{\ln n}\)</span></span></strong></p>
+<p>(1)</p>
+<p><span><span class="arithmatex">\(a_{n+1}-a_n = \frac{1}{a_n} &gt; 0\)</span>,<span class="heti-spacing"> </span></span>故<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\{a_n\}\)</span><span class="heti-spacing"> </span></span>单调递增。<br/></p>
+<p>若有上界则必收敛，设极限为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(C\)</span>,<span class="heti-spacing"> </span></span>则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(C = C+\frac{1}{C}\)</span>,<span class="heti-spacing"> </span></span>矛盾。故<span><span class="heti-spacing"> </span><span class="arithmatex">\(a_n \to +\infty\)</span></span>。</p>
+<p>考虑<span><span class="heti-spacing"> </span><span class="arithmatex">\(a_{n+1}^{2}-a_{n}^{2} = (a_n+\frac{1}{a_n})^2 - a_n^2 = 2+\frac{1}{a_{n}^{2}}\)</span></span>。</p>
+<p><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty} (a_{n+1}^{2}-a_{n}^{2}) = 2 + 0 = 2\)</span>。<br/></p>
+<p><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{a_{n}^{2}}{n} \xlongequal{Stolz} \lim\limits_{n\rightarrow\infty}\frac{a_{n}^{2}-a_{n-1}^{2}}{n-(n-1)} = \lim\limits_{n\rightarrow\infty}(2+\frac{1}{a_{n-1}^{2}}) = 2\)</span> </p>
+<p>所以<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\rightarrow\infty}\frac{a_{n}}{\sqrt{n}}=\sqrt{2}\)</span></span>。</p>
+<p>(2)</p>
+<p><span class="arithmatex">\(a_n^2 - 2n = (a_n^2 - a_{n-1}^2-2) + \cdot\cdot\cdot + (a_2^2-a_1^2-2) + (a_1^2-2) = \sum\limits_{k=1}^{n-1} \frac{1}{a_k^2} - 1\)</span>.<br/></p>
+<p>原极限<span><span class="heti-spacing"> </span><span class="arithmatex">\(\xlongequal{分子有理化} \lim\limits_{n\rightarrow\infty}\frac{\sqrt{n}(a_{n}^2-2n)}{(a_{n}+\sqrt{2n})\ln n} = \lim\limits_{n\rightarrow\infty}\frac{\sqrt{n}(\sum\limits_{k=1}^{n-1}\frac{1}{a_k^2}-1)}{(a_{n}+\sqrt{2n})\ln n}\)</span></span></p>
+<p>由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(a_n \sim \sqrt{2n}\)</span>, <span class="arithmatex">\(a_n+\sqrt{2n} \sim 2\sqrt{2n}\)</span></span>。<br/></p>
+<p>原极限<span><span class="heti-spacing"> </span><span class="arithmatex">\(=  \lim\limits_{n\rightarrow\infty}\frac{\sum\limits_{k=1}^{n-1}\frac{1}{a_k^2}-1}{2\sqrt{2} \ln n} \xlongequal{Stolz} \lim\limits_{n\rightarrow\infty} \frac{1}{2\sqrt{2}}\frac{\frac{1}{a_{n}^2}}{\ln(n+1)-\ln n} = \frac{1}{4\sqrt{2}}\)</span></span>。</p>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 18, 2025 05:49:01 UTC">October 18, 2025</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 22, 2025 16:35:12 UTC">October 22, 2025</span>
 </span>
 </aside>
 </article>
@@ -440,9 +888,8 @@
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "navigation.expand", "navigation.footer", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "header.autohide", "content.code.copy", "content.code.annotate", "content.action.edit", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
 <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
-<script src="../../javascripts/mathjax.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://jsd.onmicrosoft.cn/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(()=>{ lightbox.reload(); });
 </script></body></html>
