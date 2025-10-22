@@ -14,14 +14,14 @@
 
 |课次|内容|
 |---|---|
-|1| 数列、函数极限|   
-|2| 连续函数与导数|
-|3| 微分中值定理 I Rolle、辅助多项式|
-|4| 微分中值定理 II Taylor展开式证明题|
-|5| 不定积分 I 有理函数和三角有理函数|
-|6| 不定积分 II 换元法和分部积分法|
-|7| 定积分综合 |
-|8| 积分不等式、反常积分、期末复习|
+|1| [数列、函数极限 & 第一次小测复习](https://yuanhongyi.github.io/lecture/l01)|   
+|2| [连续函数与导数 & 期中复习](https://yuanhongyi.github.io/lecture/l02)|
+|3| [微分中值定理 I Rolle、辅助多项式](https://yuanhongyi.github.io/lecture/l03)|   
+|4| [微分中值定理 II Taylor展开式证明题](https://yuanhongyi.github.io/lecture/l04)|   
+|5| [不定积分 I 有理函数和三角有理函数](https://yuanhongyi.github.io/lecture/l05)|   
+|6| [不定积分 II 换元法和分部积分法](https://yuanhongyi.github.io/lecture/l06)|   
+|7| [定积分综合](https://yuanhongyi.github.io/lecture/l07)|   
+|8| [积分不等式、反常积分 & 期末复习](https://yuanhongyi.github.io/lecture/l08)|   
 
 ## 友链
 
