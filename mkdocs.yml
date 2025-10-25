@@ -138,6 +138,6 @@ nav:
     - 考试: exam/index.md
     - 期中样卷: exam/sin.md
   - PDF: 
-    - PDF: pdf/pdf.md
+    - 22、23微积分(H/甲)I第一次小测: pdf/quiz1/1.md
   - Misc:
     - Index: misc/index.md
