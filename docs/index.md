@@ -18,7 +18,7 @@
 |2| 2025.10.31| 秋7 |[连续函数与导数 & 期中复习](https://yuanhongyi.github.io/lecture/l02)|
 |*| 2025.11.07| 秋8 |[期中考试复习做题]()|
 |3| 2025.11.14| 冬1 |[微分中值定理 I Rolle、辅助多项式](https://yuanhongyi.github.io/lecture/l03)|   
-|4*| 2025.11.15/16/17| 调/代/网课 |[微分中值定理 II Taylor展开式证明题](https://yuanhongyi.github.io/lecture/l04)|   
+|4| 2025.11.* |  *  |[微分中值定理 II Taylor展开式证明题](https://yuanhongyi.github.io/lecture/l04)|   
 |5| 2025.11.28| 冬3 |[不定积分 I 有理函数和三角有理函数](https://yuanhongyi.github.io/lecture/l05)|   
 |6| 2025.12.12| 冬5 |[不定积分 II 换元法和分部积分法](https://yuanhongyi.github.io/lecture/l06)|   
 |7| 2025.12.19| 冬6 |[定积分综合](https://yuanhongyi.github.io/lecture/l07)|   
