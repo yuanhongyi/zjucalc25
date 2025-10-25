@@ -2,46 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://zjucalc25.github.io/</loc>
-         <lastmod>2025-10-24</lastmod>
+         <lastmod>2025-10-25</lastmod>
     </url>
     <url>
          <loc>https://zjucalc25.github.io/exam/</loc>
-         <lastmod>2025-10-24</lastmod>
+         <lastmod>2025-10-25</lastmod>
     </url>
     <url>
          <loc>https://zjucalc25.github.io/exam/mid/</loc>
-         <lastmod>2025-10-24</lastmod>
+         <lastmod>2025-10-25</lastmod>
+    </url>
+    <url>
+         <loc>https://zjucalc25.github.io/exam/sin/</loc>
+         <lastmod>2025-10-25</lastmod>
     </url>
     <url>
          <loc>https://zjucalc25.github.io/misc/</loc>
-         <lastmod>2025-10-24</lastmod>
+         <lastmod>2025-10-25</lastmod>
     </url>
     <url>
          <loc>https://zjucalc25.github.io/pdf/pdf/</loc>
-         <lastmod>2025-10-24</lastmod>
+         <lastmod>2025-10-25</lastmod>
     </url>
     <url>
          <loc>https://zjucalc25.github.io/quiz/anal_quiz2/</loc>
-         <lastmod>2025-10-24</lastmod>
+         <lastmod>2025-10-25</lastmod>
     </url>
     <url>
          <loc>https://zjucalc25.github.io/quiz/calc_quiz1/</loc>
-         <lastmod>2025-10-24</lastmod>
+         <lastmod>2025-10-25</lastmod>
     </url>
     <url>
          <loc>https://zjucalc25.github.io/quiz/calc_quiz2_1/</loc>
-         <lastmod>2025-10-24</lastmod>
+         <lastmod>2025-10-25</lastmod>
     </url>
     <url>
          <loc>https://zjucalc25.github.io/slides/diff_mean/</loc>
-         <lastmod>2025-10-24</lastmod>
+         <lastmod>2025-10-25</lastmod>
     </url>
     <url>
          <loc>https://zjucalc25.github.io/slides/func/</loc>
-         <lastmod>2025-10-24</lastmod>
+         <lastmod>2025-10-25</lastmod>
     </url>
     <url>
          <loc>https://zjucalc25.github.io/slides/seq/</loc>
-         <lastmod>2025-10-24</lastmod>
+         <lastmod>2025-10-25</lastmod>
     </url>
 </urlset>
