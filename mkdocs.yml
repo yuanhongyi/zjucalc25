@@ -135,9 +135,11 @@ nav:
     - 24微甲小测2: quiz/calc_quiz2_1.md
     - 24数分H小测2: quiz/anal_quiz2.md
   - Exam:
-    - 考试: exam/index.md
-    - 期中样卷: exam/sin.md
+    - 期考: exam/index.md
+    - 25期中样卷: exam/mid/sim.md
+    - 期中分类整理: exam/mid/categoried.md
   - PDF: 
+    - index: pdf/index.md
     - 22、23微积分(H/甲)I第一次小测: pdf/quiz1/1.md
   - Misc:
     - Index: misc/index.md
