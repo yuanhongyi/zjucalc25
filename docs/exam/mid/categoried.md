@@ -387,7 +387,7 @@ $$
 
 ---
 
-**21.2. 已知 $\lim\limits_{x\to\infty} (\sqrt{x^2-x+1}-ax-b)=0$, 求常数 a, b.**
+**21.2. 已知 $\lim\limits_{x\to-\infty} (\sqrt{x^2-x+1}-ax-b)=0$, 求常数 a, b.**
 
 由题可知
 
@@ -400,7 +400,7 @@ $$ \begin{aligned} b &= \lim_{t\to 0^-} (\sqrt{\frac{1}{t^2}-\frac{1}{t}+1} - \f
 因为极限存在，所以分母趋于 0 时，分子也必须趋于 0。
 
 
-则应有 $\lim_{t\to 0^-} (-\sqrt{1-t+t^2}-a) = 0$ 成立。
+则应有 $\lim\limits_{t\to 0^-} (-\sqrt{1-t+t^2}-a) = 0$ 成立。
 
 $$ a = \lim_{t\to 0^-} (-\sqrt{1-t+t^2}) = -1 $$
 
