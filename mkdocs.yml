@@ -139,6 +139,8 @@ nav:
     - 期考: exam/index.md
     - 25期中样卷: exam/mid/sim.md
     - 期中分类整理: exam/mid/categoried.md
+    - 期中模拟试题解析: exam/mid/test_with_ans.md
+    - 期中模拟试题: exam/mid/test.md
   - PDF: 
     - index: pdf/index.md
     - 22、23微积分(H/甲)I第一次小测: pdf/quiz1/1.md
