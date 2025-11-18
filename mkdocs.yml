@@ -128,9 +128,16 @@ nav:
   - Preface: 
     - Preface: index.md
   - Slides:
-    - 数列极限: slides/seq.md
-    - 函数: slides/func.md
-    - 中值定理概述: slides/diff_mean.md
+    - 数列与函数:
+      - 数列极限: slides/seq.md
+      - 函数: slides/func.md
+    - 微分中值定理:
+      - 定理证明、构造函数、双中值问题(期中): slides/diff_mean.md
+      - 罗尔定理、导数介值定理: slides/rolle.md
+      - 辅助多项式: slides/poly.md
+      - 泰勒公式: slides/taylor.md
+      - K值法: slides/constK.md
+
   - Quiz:
     - 24微甲小测1: quiz/calc_quiz1.md
     - 24微甲小测2: quiz/calc_quiz2_1.md
