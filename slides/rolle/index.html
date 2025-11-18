@@ -3,12 +3,12 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="yuanhongyi2004" name="author"/>
-<link href="https://zjucalc25.github.io/quiz/calc_quiz2_1/" rel="canonical"/>
-<link href="../calc_quiz1/" rel="prev"/>
-<link href="../anal_quiz2/" rel="next"/>
+<link href="https://zjucalc25.github.io/slides/rolle/" rel="canonical"/>
+<link href="../diff_mean/" rel="prev"/>
+<link href="../poly/" rel="next"/>
 <link href="../../graph/ZJU-logo.svg" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.0" name="generator"/>
-<title>24微甲小测2 - 浙江大学2025-2026学年秋冬学期微积分（甲）I辅学</title>
+<title>罗尔定理、导数介值定理 - 浙江大学2025-2026学年秋冬学期微积分（甲）I辅学</title>
 <link href="../../assets/stylesheets/main.618322db.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M1%207.775V2.75C1%201.784%201.784%201%202.75%201h5.025c.464%200%20.91.184%201.238.513l6.25%206.25a1.75%201.75%200%200%201%200%202.474l-5.026%205.026a1.75%201.75%200%200%201-2.474%200l-6.25-6.25A1.75%201.75%200%200%201%201%207.775m1.5%200c0%20.066.026.13.073.177l6.25%206.25a.25.25%200%200%200%20.354%200l5.025-5.025a.25.25%200%200%200%200-.354l-6.25-6.25a.25.25%200%200%200-.177-.073H2.75a.25.25%200%200%200-.25.25ZM6%205a1%201%200%201%201%200%202%201%201%200%200%201%200-2%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2.5%201.75v11.5c0%20.138.112.25.25.25h3.17a.75.75%200%200%201%200%201.5H2.75A1.75%201.75%200%200%201%201%2013.25V1.75C1%20.784%201.784%200%202.75%200h8.5C12.216%200%2013%20.784%2013%201.75v7.736a.75.75%200%200%201-1.5%200V1.75a.25.25%200%200%200-.25-.25h-8.5a.25.25%200%200%200-.25.25m13.274%209.537zl-4.557%204.45a.75.75%200%200%201-1.055-.008l-1.943-1.95a.75.75%200%200%201%201.062-1.058l1.419%201.425%204.026-3.932a.75.75%200%201%201%201.048%201.074M4.75%204h4.5a.75.75%200%200%201%200%201.5h-4.5a.75.75%200%200%201%200-1.5M4%207.75A.75.75%200%200%201%204.75%207h2a.75.75%200%200%201%200%201.5h-2A.75.75%200%200%201%204%207.75%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%208a8%208%200%201%201%2016%200A8%208%200%200%201%200%208m8-6.5a6.5%206.5%200%201%200%200%2013%206.5%206.5%200%200%200%200-13M6.5%207.75A.75.75%200%200%201%207.25%207h1a.75.75%200%200%201%20.75.75v2.75h.25a.75.75%200%200%201%200%201.5h-2a.75.75%200%200%201%200-1.5h.25v-2h-.25a.75.75%200%200%201-.75-.75M8%206a1%201%200%201%201%200-2%201%201%200%200%201%200%202%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M3.499.75a.75.75%200%200%201%201.5%200v.996C5.9%202.903%206.793%203.65%207.662%204.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873%2010.794-.045%2012.622.26%2014.408.558%2016%201.94%2016%204.25c0%201.278-.954%202.575-2.44%202.734l.146.508.065.22c.203.701.412%201.455.476%202.226.142%201.707-.4%203.03-1.487%203.898C11.714%2014.671%2010.27%2015%208.75%2015h-6a.75.75%200%200%201%200-1.5h1.376a4.5%204.5%200%200%201-.563-1.191%203.84%203.84%200%200%201-.05-2.063%204.65%204.65%200%200%201-2.025-.293.75.75%200%200%201%20.525-1.406c1.357.507%202.376-.006%202.698-.318l.009-.01a.747.747%200%200%201%201.06%200%20.75.75%200%200%201-.012%201.074c-.912.92-.992%201.835-.768%202.586.221.74.745%201.337%201.196%201.621H8.75c1.343%200%202.398-.296%203.074-.836.635-.507%201.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.4%202.4%200%200%201-.507-.441%203.1%203.1%200%200%201-.633-1.248.75.75%200%200%201%201.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738%200%201.25-.615%201.25-1.25%200-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706%201.345-.46.92-.27%201.774.019%203.062l.042.19.01.05c.348.443.666.949.94%201.553a.75.75%200%201%201-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7%205.527c-.814-.68-1.75-1.462-2.692-2.619a3.7%203.7%200%200%200-1.023.88c-.406.495-.663%201.036-.722%201.508.116.122.306.21.591.239.388.038.797-.06%201.032-.19a.75.75%200%200%201%20.728%201.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75%205.677V5.5c0-.984.48-1.94%201.077-2.664.46-.559%201.05-1.055%201.673-1.353z%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M13.78%204.22a.75.75%200%200%201%200%201.06l-7.25%207.25a.75.75%200%200%201-1.06%200L2.22%209.28a.75.75%200%200%201%20.018-1.042.75.75%200%200%201%201.042-.018L6%2010.94l6.72-6.72a.75.75%200%200%201%201.06%200%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%208a8%208%200%201%201%2016%200A8%208%200%200%201%200%208m8-6.5a6.5%206.5%200%201%200%200%2013%206.5%206.5%200%200%200%200-13M6.92%206.085h.001a.749.749%200%201%201-1.342-.67c.169-.339.436-.701.849-.977C6.845%204.16%207.369%204%208%204a2.76%202.76%200%200%201%201.637.525c.503.377.863.965.863%201.725%200%20.448-.115.83-.329%201.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6%206%200%200%200-.26.16%201%201%200%200%200-.276.245.75.75%200%200%201-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1%201%200%200%200%20.277-.245C8.96%206.514%209%206.427%209%206.25a.61.61%200%200%200-.262-.525A1.27%201.27%200%200%200%208%205.5c-.369%200-.595.09-.74.187a1%201%200%200%200-.34.398M9%2011a1%201%200%201%201-2%200%201%201%200%200%201%202%200%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M6.457%201.047c.659-1.234%202.427-1.234%203.086%200l6.082%2011.378A1.75%201.75%200%200%201%2014.082%2015H1.918a1.75%201.75%200%200%201-1.543-2.575Zm1.763.707a.25.25%200%200%200-.44%200L1.698%2013.132a.25.25%200%200%200%20.22.368h12.164a.25.25%200%200%200%20.22-.368Zm.53%203.996v2.5a.75.75%200%200%201-1.5%200v-2.5a.75.75%200%200%201%201.5%200M9%2011a1%201%200%201%201-2%200%201%201%200%200%201%202%200%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2.344%202.343za8%208%200%200%201%2011.314%2011.314A8.002%208.002%200%200%201%20.234%2010.089a8%208%200%200%201%202.11-7.746m1.06%2010.253a6.5%206.5%200%201%200%209.108-9.275%206.5%206.5%200%200%200-9.108%209.275M6.03%204.97%208%206.94l1.97-1.97a.749.749%200%200%201%201.275.326.75.75%200%200%201-.215.734L9.06%208l1.97%201.97a.749.749%200%200%201-.326%201.275.75.75%200%200%201-.734-.215L8%209.06l-1.97%201.97a.749.749%200%200%201-1.275-.326.75.75%200%200%201%20.215-.734L6.94%208%204.97%206.03a.75.75%200%200%201%20.018-1.042.75.75%200%200%201%201.042-.018%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M9.504.43a1.516%201.516%200%200%201%202.437%201.713L10.415%205.5h2.123c1.57%200%202.346%201.909%201.22%203.004l-7.34%207.142a1.25%201.25%200%200%201-.871.354h-.302a1.25%201.25%200%200%201-1.157-1.723L5.633%2010.5H3.462c-1.57%200-2.346-1.909-1.22-3.004zm1.047%201.074L3.286%208.571A.25.25%200%200%200%203.462%209H6.75a.75.75%200%200%201%20.694%201.034l-1.713%204.188%206.982-6.793A.25.25%200%200%200%2012.538%207H9.25a.75.75%200%200%201-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005%200-.009.004%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M4.72.22a.75.75%200%200%201%201.06%200l1%20.999a3.5%203.5%200%200%201%202.441%200l.999-1a.748.748%200%200%201%201.265.332.75.75%200%200%201-.205.729l-.775.776c.616.63.995%201.493.995%202.444v.327q0%20.15-.025.292c.408.14.764.392%201.029.722l1.968-.787a.75.75%200%200%201%20.556%201.392L13%207.258V9h2.25a.75.75%200%200%201%200%201.5H13v.5q-.002.615-.141%201.186l2.17.868a.75.75%200%200%201-.557%201.392l-2.184-.873A5%205%200%200%201%208%2016a5%205%200%200%201-4.288-2.427l-2.183.873a.75.75%200%200%201-.558-1.392l2.17-.868A5%205%200%200%201%203%2011v-.5H.75a.75.75%200%200%201%200-1.5H3V7.258L.971%206.446a.75.75%200%200%201%20.558-1.392l1.967.787c.265-.33.62-.583%201.03-.722a1.7%201.7%200%200%201-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72%201.28a.75.75%200%200%201%200-1.06m.53%206.28a.75.75%200%200%200-.75.75V11a3.5%203.5%200%201%200%207%200V7.25a.75.75%200%200%200-.75-.75ZM6.173%205h3.654A.17.17%200%200%200%2010%204.827V4.5a2%202%200%201%200-4%200v.327c0%20.096.077.173.173.173%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M5%205.782V2.5h-.25a.75.75%200%200%201%200-1.5h6.5a.75.75%200%200%201%200%201.5H11v3.282l3.666%205.76C15.619%2013.04%2014.543%2015%2012.767%2015H3.233c-1.776%200-2.852-1.96-1.899-3.458Zm-2.4%206.565a.75.75%200%200%200%20.633%201.153h9.534a.75.75%200%200%200%20.633-1.153L12.225%2010.5h-8.45ZM9.5%202.5h-3V6c0%20.143-.04.283-.117.403L4.73%209h6.54L9.617%206.403A.75.75%200%200%201%209.5%206Z%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M1.75%202.5h10.5a.75.75%200%200%201%200%201.5H1.75a.75.75%200%200%201%200-1.5m4%205h8.5a.75.75%200%200%201%200%201.5h-8.5a.75.75%200%200%201%200-1.5m0%205h8.5a.75.75%200%200%201%200%201.5h-8.5a.75.75%200%200%201%200-1.5M2.5%207.75v6a.75.75%200%200%201-1.5%200v-6a.75.75%200%200%201%201.5%200%22/%3E%3C/svg%3E');}</style>
@@ -59,7 +59,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              24微甲小测2
+              罗尔定理、导数介值定理
             
           </span>
 </div>
@@ -123,8 +123,8 @@
 
         </a>
 </li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../slides/seq/">
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../seq/">
           
   
   
@@ -134,8 +134,8 @@
 
         </a>
 </li>
-<li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="../calc_quiz1/">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../quiz/calc_quiz1/">
           
   
   
@@ -221,9 +221,9 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
 <span class="md-ellipsis">
     
   
@@ -234,7 +234,7 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_2">
 <span class="md-nav__icon md-icon"></span>
             
@@ -244,9 +244,9 @@
 
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
 <input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+<label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
 <span class="md-ellipsis">
     
   
@@ -268,7 +268,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../slides/seq/">
+<a class="md-nav__link" href="../seq/">
 <span class="md-ellipsis">
     
   
@@ -280,7 +280,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../slides/func/">
+<a class="md-nav__link" href="../func/">
 <span class="md-ellipsis">
     
   
@@ -294,9 +294,9 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
 <span class="md-ellipsis">
     
   
@@ -307,7 +307,7 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_2">
 <span class="md-nav__icon md-icon"></span>
             
@@ -318,7 +318,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../slides/diff_mean/">
+<a class="md-nav__link" href="../diff_mean/">
 <span class="md-ellipsis">
     
   
@@ -329,8 +329,20 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../slides/rolle/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    罗尔定理、导数介值定理
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     
   
@@ -340,9 +352,26 @@
     
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        罗尔定理
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../slides/poly/">
+<a class="md-nav__link" href="../poly/">
 <span class="md-ellipsis">
     
   
@@ -354,7 +383,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../slides/taylor/">
+<a class="md-nav__link" href="../taylor/">
 <span class="md-ellipsis">
     
   
@@ -366,7 +395,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../slides/constK/">
+<a class="md-nav__link" href="../constK/">
 <span class="md-ellipsis">
     
   
@@ -383,9 +412,9 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -396,7 +425,7 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
             
@@ -407,7 +436,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../calc_quiz1/">
+<a class="md-nav__link" href="../../quiz/calc_quiz1/">
 <span class="md-ellipsis">
     
   
@@ -418,9 +447,8 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../quiz/calc_quiz2_1/">
 <span class="md-ellipsis">
     
   
@@ -432,7 +460,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../anal_quiz2/">
+<a class="md-nav__link" href="../../quiz/anal_quiz2/">
 <span class="md-ellipsis">
     
   
@@ -602,193 +630,154 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        罗尔定理
+      
+    </span>
+</a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">微甲小测<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>周三班<span><span class="heti-spacing"> </span>)</span><a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<h1 id="_1">中值定理证明题解题方法<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<h2 id="_2">罗尔定理<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>若要证明“<span class="arithmatex">\(\exists \xi \in (a, b)\)</span>, s.t. <span class="arithmatex">\(f'(\xi) = 0\)</span>”，一般直接对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>使用罗尔定理即可，无需构造新的辅助函数；</p>
+<p>若要证明“<span class="arithmatex">\(\exists \xi \in (a, b)\)</span>, s.t. <span class="arithmatex">\(f'(\xi) = k\)</span>”，则只需令<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(x) = f(x) - kx\)</span></span>，然后对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)\)</span><span class="heti-spacing"> </span></span>使用罗尔定理即可；</p>
+<p>若要证明“<span><span class="arithmatex">\(\exists \xi \in (a, b)\)</span>, s.t. <span class="arithmatex">\(f''(\xi) = 0\)</span><span class="heti-spacing"> </span></span>或<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'''(\xi) = 0\)</span></span>”之类的，只需对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>多次使用罗尔定理即可。</p>
+<p>总之，这是中值定理中最简单的题型。</p>
+</div>
+<p><strong>示例<span><span class="heti-spacing"> </span>1</span></strong> 设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>三阶可导<span class="heti-skip"><span class="heti-spacing"> </span>, <span class="arithmatex">\(\lim\limits_{x \to 0} \dfrac{f(x) - 1}{x} = 0\)</span>, <span class="arithmatex">\(\lim\limits_{x \to 1} \dfrac{f(x) - 1}{x - 1} = 0\)</span>,<span class="heti-spacing"> </span></span>证<span><span class="heti-spacing"> </span>: <span class="arithmatex">\(\exists \xi \in (0, 1)\)</span>, s.t. <span class="arithmatex">\(f'''(\xi) = 0\)</span></span></p>
+<div class="admonition proof">
+<p class="admonition-title">Proof</p>
+<p>由<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to 0} \dfrac{f(x)-1}{x} = 0\)</span><span class="heti-spacing"> </span></span>得<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(0)=1, f'(0) = 0\)</span></span>。</p>
+<p>由<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to 1} \dfrac{f(x)-1}{x-1} = 0\)</span><span class="heti-spacing"> </span></span>得<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(1)=1, f'(1) = 0\)</span></span>。</p>
+<p>因为<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(0) = f(1)\)</span></span>，根据罗尔定理，存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\mu \in (0, 1)\)</span></span>，使得<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'(\mu) = 0\)</span></span>。</p>
+<p>现在我们有<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'(0) = f'(\mu) = f'(1) = 0\)</span></span>。</p>
+<p>对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(x)\)</span><span class="heti-spacing"> </span></span>在区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0, \mu]\)</span><span class="heti-spacing"> </span></span>上使用罗尔定理，存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\xi_1 \in (0, \mu)\)</span></span>，使得<span><span class="heti-spacing"> </span><span class="arithmatex">\(f''(\xi_1) = 0\)</span></span>。</p>
+<p>对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(x)\)</span><span class="heti-spacing"> </span></span>在区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([\mu, 1]\)</span><span class="heti-spacing"> </span></span>上使用罗尔定理，存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\xi_2 \in (\mu, 1)\)</span></span>，使得<span><span class="heti-spacing"> </span><span class="arithmatex">\(f''(\xi_2) = 0\)</span></span>。</p>
+<p>最后，对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f''(x)\)</span><span class="heti-spacing"> </span></span>在区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([\xi_1, \xi_2]\)</span><span class="heti-spacing"> </span></span>上使用罗尔定理，存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\xi \in (\xi_1, \xi_2) \subset (0, 1)\)</span></span>，使得<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'''(\xi) = 0\)</span></span>。
+证毕。</p>
+</div>
 <blockquote>
-<p>其实有两套题，但是另一套差不多等于只改了数字，就不放了</p>
+<p>注：对于连续函数而言，只要满足<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to a} \dfrac{f(x) - b}{x - a} = c\)</span></span>，即可推出<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(a) = b\)</span><span class="heti-spacing"> </span></span>且<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'(a) = c\)</span></span>。</p>
 </blockquote>
-<ol>
-<li>多选题<span class="heti-skip"><span class="heti-spacing"> </span>(10<span class="heti-spacing"> </span></span>分<span><span class="heti-spacing"> </span>)</span>
-   曲线<span class="arithmatex">\(y = \dfrac{x^{2}-1}{x + 2}+ \sqrt{x^{2}+2x + 4}\)</span>的渐近线共有___条。</li>
-</ol>
-<ul>
-<li>A. 1;</li>
-<li>B. 3;</li>
-<li>C. 2;</li>
-<li>D. 4;</li>
-</ul>
-<p>考虑铅直渐近线和水平渐近线、斜渐近线。<strong>B</strong></p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../image.png"><img alt="alt text" src="../image.png"/></a></p>
-<hr/>
-<ol start="2">
-<li>多选题<span class="heti-skip"><span class="heti-spacing"> </span>(10<span class="heti-spacing"> </span></span>分<span><span class="heti-spacing"> </span>)</span>
-   下列函数中，在<span class="arithmatex">\(x = 0\)</span>处不可导的是</li>
-</ol>
-<ul>
-<li>A. <span class="arithmatex">\(f(x)=x\cos|x|\)</span>；</li>
-<li>B. <span class="arithmatex">\(f(x)=\cos|x|\)</span>；</li>
-<li>C. <span class="arithmatex">\(f(x)=|x|\sin x\)</span>；</li>
-<li>D. <span class="arithmatex">\(f(x)=(1 - x)\sin|x|\)</span>。</li>
-</ul>
-<p><strong>D</strong></p>
-<hr/>
-<ol start="3">
-<li>多选题<span class="heti-skip"><span class="heti-spacing"> </span>(10<span class="heti-spacing"> </span></span>分<span><span class="heti-spacing"> </span>)</span>
-   设<span class="arithmatex">\(f(x)=\dfrac{1}{x^{2}-3x + 2}\)</span>，则：<span class="arithmatex">\(f^{(2024)}(0)=\)</span>___。</li>
-</ol>
-<ul>
-<li>A. <span class="arithmatex">\((1-\dfrac{1}{2^{2025}})2025!\)</span>；</li>
-<li>B. <span class="arithmatex">\((1-\dfrac{1}{2^{2024}})2024!\)</span>；</li>
-<li>C. <span class="arithmatex">\((1-\dfrac{1}{2^{2025}})2024!\)</span>；</li>
-<li>D. <span class="arithmatex">\((1-\dfrac{1}{2^{2024}})2025!\)</span>。</li>
-</ul>
-<p><strong>C</strong></p>
-<hr/>
-<ol start="4">
-<li>多选题<span class="heti-skip"><span class="heti-spacing"> </span>(10<span class="heti-spacing"> </span></span>分<span><span class="heti-spacing"> </span>)</span>
-   极限<span class="arithmatex">\(\lim\limits_{x\to+\infty}x(\pi - 2\arctan x)=\)</span>___。</li>
-</ol>
-<ul>
-<li>A. 2.</li>
-<li>B. <span class="arithmatex">\(-\pi\)</span>；</li>
-<li>C. <span class="arithmatex">\(-2\)</span>；</li>
-<li>D. <span class="arithmatex">\(\pi\)</span>；</li>
-</ul>
-<p><span class="arithmatex">\(x(\pi-2\arctan x)\sim x\tan(\pi-2\arctan x) = -x\dfrac{2x}{1-x^2}\to2(x\to+\infty)\)</span></p>
-<p>这是逆用<span><span class="heti-spacing"> </span><span class="arithmatex">\(\tan x\sim x(x\to 0)\)</span></span> </p>
-<p><strong>A</strong></p>
-<hr/>
-<ol start="5">
-<li>多选题<span class="heti-skip"><span class="heti-spacing"> </span>(10<span class="heti-spacing"> </span></span>分<span><span class="heti-spacing"> </span>)</span>
-   设<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\(x = 0\)</span>处二阶可导，则：</li>
-</ol>
-<p><span>(1)<span class="heti-spacing"> </span></span>若<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x\to0}\dfrac{f(x)}{x^{2}}=1\)</span></span>，则：<span class="arithmatex">\(\lim_{x\to0}\dfrac{f'(x)}{x}=2\)</span>；</p>
-<p><span>(2)<span class="heti-spacing"> </span></span>若<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x\to0}\dfrac{f(x)}{x^{3}}=\dfrac{1}{3}\)</span></span>，则：<span class="arithmatex">\(\lim_{x\to0}\dfrac{f'(x)}{x^{2}}=1\)</span>；</p>
-<p><span>(3)<span class="heti-spacing"> </span></span>若<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x\to0}f''(x)=0\)</span></span>，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'''(0)=1\)</span></span>，则：<span class="arithmatex">\(\lim\limits_{x\to0}\dfrac{f''(x)}{\sqrt[3]{x}}=0\)</span>；</p>
-<p><span>(4)<span class="heti-spacing"> </span></span>若<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x\to0}\dfrac{f''(x)}{x}=1\)</span></span>，则：<span class="arithmatex">\(f'''(0)=1\)</span>。</p>
-<p>上述陈述中，正确结论的个数为【 】</p>
-<ul>
-<li>A. 4；</li>
-<li>B. 1；</li>
-<li>C. 2；</li>
-<li>D. 3；</li>
-</ul>
-<p><strong>注意：只知道在一点可导，不能使用洛必达法则</strong></p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../84a5ce0b341322e6015ae0cf4ab6ebb.jpg"><img alt="alt text" src="../84a5ce0b341322e6015ae0cf4ab6ebb.jpg"/></a></p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../663086f023591ab9f8d9bd5ee6003f2.jpg"><img alt="alt text" src="../663086f023591ab9f8d9bd5ee6003f2.jpg"/></a></p>
-<p><span>(2)<span class="heti-spacing"> </span></span>亦可举反例：<span class="arithmatex">\(f(x) = x^3(\dfrac{1}{3}+x\sin(\dfrac{1}{x}))\)</span></p>
-<p><span>(3)(4)<span class="heti-spacing"> </span></span>利用导数定义和极限四则运算</p>
-<p><strong>D</strong></p>
-<hr/>
-<ol start="6">
-<li>多选题<span class="heti-skip"><span class="heti-spacing"> </span>(10<span class="heti-spacing"> </span></span>分<span><span class="heti-spacing"> </span>)</span>
-   下列陈述错误的是</li>
-</ol>
-<ul>
-<li><span>A.<span class="heti-spacing"> </span></span>区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(I\)</span><span class="heti-spacing"> </span></span>上的连续函数一定有界</li>
-<li><span>B.<span class="heti-spacing"> </span></span>函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)=\begin{cases}2e^{x}&amp;x &lt; 0\\2x + 1&amp;x\geq0\end{cases}\)</span><span class="heti-spacing"> </span></span>的原函数为<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)=\begin{cases}2e^{x}+C - 2&amp;x &lt; 0\\x^{2}+x + C&amp;x\geq0\end{cases}\)</span></span></li>
-<li><span>C.<span class="heti-spacing"> </span></span>若<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'(0)&lt;0\)</span></span>，则：<span class="arithmatex">\(\exists\delta&gt;0\)</span>，使得<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,\delta)\)</span><span class="heti-spacing"> </span></span>内单调递减。</li>
-<li><span>D.<span class="heti-spacing"> </span></span>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(U(x_{0})\)</span><span class="heti-spacing"> </span></span>内可导，且在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_{0}\)</span><span class="heti-spacing"> </span></span>处有极大值，则：一定存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\delta&gt;0\)</span></span>，使得<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((x_{0}-\delta,x_{0})\)</span><span class="heti-spacing"> </span></span>内单调递增，在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((x_{0},x_{0}+\delta)\)</span><span class="heti-spacing"> </span></span>内单调递减。</li>
-</ul>
-<p><strong>ABCD</strong></p>
-<p><span>B<span class="heti-spacing"> </span></span>不存在原函数（</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../078ae193bc84f67d2a6ea153e9ad5d1.jpg"><img alt="alt text" src="../078ae193bc84f67d2a6ea153e9ad5d1.jpg"/></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>原函数 存在性定理</p>
-<ul>
-<li><span>(1)<span class="heti-spacing"> </span></span>连续函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>必有原函数</li>
-<li><span>(2)<span class="heti-spacing"> </span></span>含有第一类间断点，无穷间断点的函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在包含该间断点的区间内必不存在原函数</li>
-</ul>
-<p>连续函数一定存在原函数，反之是不对的</p>
-<p>有第一类间断点的函数一定不存在原函数，但有第二类间断点的函数可能有原函数，如：<span class="arithmatex">\(F(x)=\begin{cases}x^{2}\sin\dfrac{1}{x}&amp;x\neq0\\0&amp;x = 0\end{cases}\)</span>，<span class="arithmatex">\(f(x)=\begin{cases}2x\sin\dfrac{1}{x}-\cos\dfrac{1}{x}&amp;x\neq0\\0&amp;x = 0\end{cases}\)</span>，显然有<span><span class="heti-spacing"> </span><span class="arithmatex">\(F'(x)=f(x)\)</span></span>，但<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x = 0\)</span><span class="heti-spacing"> </span></span>为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>的第二类间断点</p>
-<p>定积分 存在性充分条件</p>
-<ul>
-<li><span>(1)<span class="heti-spacing"> </span></span>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上连续，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int_{a}^{b}f(x)dx\)</span><span class="heti-spacing"> </span></span>存在</li>
-<li><span>(2)<span class="heti-spacing"> </span></span>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上单增，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int_{a}^{b}f(x)dx\)</span><span class="heti-spacing"> </span></span>存在</li>
-<li><span>(3)<span class="heti-spacing"> </span></span>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上有界，且只有有限个间断点，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int_{a}^{b}f(x)dx\)</span><span class="heti-spacing"> </span></span>存在</li>
-</ul>
-<p>变限积分的性质</p>
-<ul>
-<li>函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上可积，则函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)=\int_{a}^{x}f(t)dt\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上连续</li>
-<li>函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上连续，则函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)=\int_{a}^{x}f(t)dt\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上可导</li>
-</ul>
-<p>积分上限函数</p>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>连续或有有限个第一类间断点，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)=\int_{a}^{x}f(t)dt\)</span></span>，则：当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_{0}\)</span><span class="heti-spacing"> </span></span>为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>的第一类间断点时，<span><span class="arithmatex">\(F(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x = x_{0}\)</span><span class="heti-spacing"> </span></span>处连续；当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_{0}\)</span><span class="heti-spacing"> </span></span>为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>的连续点时，<span><span class="arithmatex">\(F(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x = x_{0}\)</span><span class="heti-spacing"> </span></span>处可导。</p>
+<p><strong>示例<span><span class="heti-spacing"> </span>2</span></strong> 设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span><span class="heti-spacing"> </span></span>三阶可导<span><span class="heti-spacing"> </span>, <span class="arithmatex">\(f(0) = f(1) = 0\)</span></span>，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(x) = x^3f(x)\)</span></span>，证明<span><span class="heti-spacing"> </span>: <span class="arithmatex">\(\exists \xi \in (0, 1)\)</span>, s.t. <span class="arithmatex">\(F'''(\xi) = 0\)</span></span></p>
+<div class="admonition proof">
+<p class="admonition-title">Proof</p>
+<p>由题意，<span class="arithmatex">\(F(0) = 0^3 f(0) = 0\)</span>, <span class="arithmatex">\(F(1) = 1^3 f(1) = 0\)</span>。</p>
+<p>对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span>$$<span class="heti-spacing"> </span></span>上应用罗尔定理，存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(a \in (0, 1)\)</span></span>，使得<span><span class="heti-spacing"> </span><span class="arithmatex">\(F'(a) = 0\)</span></span>。</p>
+<p>又<span><span class="heti-spacing"> </span><span class="arithmatex">\(F'(x) = 3x^2f(x) + x^3f'(x)\)</span></span>，所以<span><span class="heti-spacing"> </span><span class="arithmatex">\(F'(0) = 3(0)^2f(0) + 0^3f'(0) = 0\)</span></span>。</p>
+<p>我们有<span><span class="heti-spacing"> </span><span class="arithmatex">\(F'(0) = F'(a) = 0\)</span></span>。对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F'(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0, a]\)</span><span class="heti-spacing"> </span></span>上应用罗尔定理，存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\varepsilon \in (0, a)\)</span></span>，使得<span><span class="heti-spacing"> </span><span class="arithmatex">\(F''(\varepsilon) = 0\)</span></span>。</p>
+<p>又<span><span class="heti-spacing"> </span><span class="arithmatex">\(F''(x) = 6xf(x) + 6x^2f'(x) + x^3f''(x)\)</span></span>，所以<span><span class="heti-spacing"> </span><span class="arithmatex">\(F''(0) = 6(0)f(0) + 6(0)^2f'(0) + 0^3f''(0) = 0\)</span></span>。</p>
+<p>我们有<span><span class="heti-spacing"> </span><span class="arithmatex">\(F''(0) = F''(\varepsilon) = 0\)</span></span>。对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F''(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0, \varepsilon]\)</span><span class="heti-spacing"> </span></span>上应用罗尔定理，存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\xi \in (0, \varepsilon) \subset (0, 1)\)</span></span>，使得<span><span class="heti-spacing"> </span><span class="arithmatex">\(F'''(\xi) = 0\)</span></span>。
+证毕。</p>
 </div>
 <hr/>
-<ol start="7">
-<li>多选题<span class="heti-skip"><span class="heti-spacing"> </span>(10<span class="heti-spacing"> </span></span>分<span><span class="heti-spacing"> </span>)</span>
-   设<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\(x = 1\)</span>处可导，且<span class="arithmatex">\(f(1)=0\)</span>，<span class="arithmatex">\(f'(1)=2025\)</span>，
-   则：<span class="arithmatex">\(\lim\limits_{x\to0}\dfrac{f(\cos2x)}{\ln(1 - 2x^{2})}=\)</span>___。</li>
-</ol>
-<ul>
-<li>A. <span class="arithmatex">\(4050\)</span>；</li>
-<li>B. <span class="arithmatex">\(2025\)</span>；</li>
-<li>C. <span class="arithmatex">\(-2025\)</span>；</li>
-<li>D. <span class="arithmatex">\(-4050\)</span>；</li>
-</ul>
-<p><span class="arithmatex">\(\lim\limits_{x\to0}\dfrac{f(\cos2x)}{\ln(1 - 2x^{2})} = \lim\limits_{x\to0}\dfrac{f(\cos2x)}{\cos 2x-1}\dfrac{\cos 2x-1}{\ln(1-2x^2)}\)</span></p>
-<p><span class="arithmatex">\(\dfrac{\cos 2x-1}{\ln(1-2x^2) } \sim \dfrac{-2x^2}{-2x^2} = 1(x\to 0)\)</span></p>
-<p><strong>B</strong></p>
+<p><strong>示例<span><span class="heti-spacing"> </span>4</span></strong> 设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, b]\)</span><span class="heti-spacing"> </span></span>二阶可导<span class="heti-skip"><span class="heti-spacing"> </span>, <span class="arithmatex">\(f(a) = f(b) = 0\)</span>, <span class="arithmatex">\(f'(a)f'(b) &gt; 0\)</span>, <span class="arithmatex">\(\exists \xi \in (a, b)\)</span>,<span class="heti-spacing"> </span></span>使<span><span class="heti-spacing"> </span><span class="arithmatex">\(f''(\xi) = 0\)</span></span></p>
+<div class="admonition tips">
+<p class="admonition-title">证明</p>
+<p>由题意<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'(a)f'(b) &gt; 0\)</span></span>，不妨设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(a) &gt; 0\)</span><span class="heti-spacing"> </span></span>且<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'(b) &gt; 0\)</span></span>。</p>
+<p>因为<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'(a) = \lim\limits_{x \to a^+} \dfrac{f(x) - f(a)}{x-a} = \lim\limits_{x \to a^+} \dfrac{f(x)}{x-a} &gt; 0\)</span></span>，由极限的保号性，存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\delta_1 &gt; 0\)</span></span>，当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x \in (a, a+\delta_1)\)</span><span class="heti-spacing"> </span></span>时，有<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) &gt; 0\)</span></span>。</p>
+<p>因为<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'(b) = \lim\limits_{x \to b^-} \dfrac{f(x) - f(b)}{x-b} = \lim\limits_{x \to b^-} \dfrac{f(x)}{x-b} &gt; 0\)</span></span>，由极限的保号性，存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\delta_2 &gt; 0\)</span></span>，当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x \in (b-\delta_2, b)\)</span><span class="heti-spacing"> </span></span>时，由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(x-b &lt; 0\)</span></span>，必有<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) &lt; 0\)</span></span>。</p>
+<p>因此，函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((a, b)\)</span><span class="heti-spacing"> </span></span>内既有正值又有负值。根据介值定理（或零点定理<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>，必存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\eta \in (a, b)\)</span></span>，使得<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(\eta) = 0\)</span></span>。</p>
+<p>现在我们有<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(a) = f(\eta) = f(b) = 0\)</span></span>。
+对 <span class="arithmatex">\(f(x)\)</span> 在区间 <span class="arithmatex">\([a, \eta]\)</span> 和 <span class="arithmatex">\([\eta, b]\)</span> 上分别使用罗尔定理，可知：
+存在 <span class="arithmatex">\(\xi_1 \in (a, \eta)\)</span>，使得 <span class="arithmatex">\(f'(\xi_1) = 0\)</span>。
+存在 <span class="arithmatex">\(\xi_2 \in (\eta, b)\)</span>，使得 <span class="arithmatex">\(f'(\xi_2) = 0\)</span>。</p>
+<p>最后，对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(x)\)</span><span class="heti-spacing"> </span></span>在区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([\xi_1, \xi_2]\)</span><span class="heti-spacing"> </span></span>上使用罗尔定理，可知存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\xi \in (\xi_1, \xi_2) \subset (a, b)\)</span></span>，使得<span><span class="heti-spacing"> </span><span class="arithmatex">\(f''(\xi) = 0\)</span></span>。</p>
+<p>同理，当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(a)\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(b)\)</span><span class="heti-spacing"> </span></span>均为负时，结论也成立。
+证毕。</p>
+</div>
+<blockquote>
+<p>注：一个点处的导数正负无法判断函数的单调性，但至少可以判断出这个点的去心邻域的函数值与该点本身的函数值的大小关系。利用这个思想，我们可以证明导数介值定理</p>
+</blockquote>
+<p><strong>类题</strong> 请叙述并证明导数零点定理、导数介值定理<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>也叫达布定理<span><span class="heti-spacing"> </span>)</span></p>
+<div class="admonition proof">
+<p class="admonition-title">Proof</p>
+<p><strong>导数零点定理</strong><span>:<span class="heti-spacing"> </span></span>设函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上可导，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'_+(a) \cdot f'_- (b) &lt; 0\)</span></span>，则至少存在一点<span><span class="heti-spacing"> </span><span class="arithmatex">\(\xi \in (a,b)\)</span></span>，使<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'(\xi) = 0\)</span></span>。</p>
+<p><strong>证明</strong>:
+不妨设 <span class="arithmatex">\(f'_+(a) &lt; 0\)</span> 且 <span class="arithmatex">\(f'_- (b) &gt; 0\)</span>。
+因为 <span class="arithmatex">\(f(x)\)</span> 在闭区间 <span class="arithmatex">\([a,b]\)</span> 上连续，所以必能取得最小值，设最小值为 <span class="arithmatex">\(f(\xi)\)</span>。
+由 <span class="arithmatex">\(f'_+(a) = \lim\limits_{x\to a^+}\dfrac{f(x)-f(a)}{x-a} &lt; 0\)</span> 及极限的保号性，在 <span class="arithmatex">\(a\)</span> 的某个右邻域内，有 <span class="arithmatex">\(f(x) &lt; f(a)\)</span>。
+由 <span class="arithmatex">\(f'_- (b) &gt; 0\)</span> 及极限的保号性，在 <span class="arithmatex">\(b\)</span> 的某个左邻域内，有 <span class="arithmatex">\(f(x) &lt; f(b)\)</span>。
+以上两点说明，最小值点 <span class="arithmatex">\(\xi\)</span> 必不等于 <span class="arithmatex">\(a\)</span> 和 <span class="arithmatex">\(b\)</span>。因此 <span class="arithmatex">\(\xi \in (a,b)\)</span>。
+根据费马定理，在此极值点（最小值点）处，必有 <span class="arithmatex">\(f'(\xi) = 0\)</span>。
+证毕。</p>
 <hr/>
-<ol start="8">
-<li>多选题<span class="heti-skip"><span class="heti-spacing"> </span>(10<span class="heti-spacing"> </span></span>分<span><span class="heti-spacing"> </span>)</span>
-   极坐标系下的曲线<span class="arithmatex">\(C:r = 2\theta\)</span>在<span class="arithmatex">\(\theta=\pi\)</span>处的切线方程为</li>
-</ol>
-<ul>
-<li>A. <span class="arithmatex">\(y=\pi x + 2\pi-\pi^{2}\)</span>。</li>
-<li>B. <span class="arithmatex">\(y=\pi x + 2\pi\)</span>；</li>
-<li>C. <span class="arithmatex">\(r - 2\pi=2(\theta-\pi)\)</span>；</li>
-<li>D. <span class="arithmatex">\(y=\pi x + 2\pi^{2}\)</span>；</li>
-</ul>
-<p>切点<span><span class="heti-spacing"> </span><span class="arithmatex">\((-2\pi,0),k = \pi\)</span></span> </p>
-<p><strong>D</strong></p>
+<p><strong>导数介值定理<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>达布定理<span><span class="heti-spacing"> </span>)</span></strong><span>:<span class="heti-spacing"> </span></span>若函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上可导，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'_+(a) \neq f'_-(b)\)</span></span>，则对于介于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'_+(a)\)</span><span class="heti-spacing"> </span></span>与<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'_- (b)\)</span><span class="heti-spacing"> </span></span>之间的任一数值<span><span class="heti-spacing"> </span><span class="arithmatex">\(u\)</span></span>，必存在一点<span><span class="heti-spacing"> </span><span class="arithmatex">\(c \in (a,b)\)</span></span>，使<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'(c) = u\)</span></span>。</p>
+<p><strong>证明</strong>:
+不妨设 <span class="arithmatex">\(f'_+(a) &lt; u &lt; f'_-(b)\)</span>。作辅助函数 <span class="arithmatex">\(\psi(x) = f(x) - ux\)</span>,同上</p>
+</div>
+<blockquote>
+<p>注<span><span class="heti-spacing"> </span>1</span>：本题给出了一个非常重要的结论——“导函数天生满足零点定理和介值定理<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>无论导函数是否连续<span><span class="heti-spacing"> </span>)</span>”；</p>
+<p>注<span><span class="heti-spacing"> </span>2</span>：根据导数零点定理可以推出——若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(x)\)</span><span class="heti-spacing"> </span></span>无零点，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(x)\)</span><span class="heti-spacing"> </span></span>要么恒正、要么恒负，故<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>一定单调；</p>
+<p>注<span><span class="heti-spacing"> </span>3</span>：通过本例可以发现，如果欲证结论是<span><span class="heti-spacing"> </span><span class="arithmatex">\(f''(\xi) = 0\)</span></span>，那么除了最常用的罗尔定理以外，还有费马定理。有一些题目的条件太少，不足以找到<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>的两个零点<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>或函数值相等的点<span><span class="heti-spacing"> </span>)</span>，此时很可能只有使用费马定理才能搞定。这种题目往往很难，我们在后面的题目中会偶尔遇到，请大家留心！</p>
+</blockquote>
 <hr/>
-<ol start="9">
-<li>多选题<span class="heti-skip"><span class="heti-spacing"> </span>(10<span class="heti-spacing"> </span></span>分<span><span class="heti-spacing"> </span>)</span>
-   设<span class="arithmatex">\(y = f(x)\)</span>是由方程<span class="arithmatex">\(e^{xy}+x + y = 2\)</span>确定的隐函数，则<span class="arithmatex">\(\lim\limits_{n\to+\infty}n[f(\dfrac{1}{n})-1]=\)</span>___。</li>
-</ol>
-<ul>
-<li>A. <span class="arithmatex">\(-1\)</span>；</li>
-<li>B. <span class="arithmatex">\(1\)</span>；</li>
-<li>C. <span class="arithmatex">\(2\)</span>；</li>
-<li>D. <span class="arithmatex">\(-2\)</span>；</li>
-</ul>
-<p><span class="arithmatex">\(e^{xy}(y+xy')+1+y' = 0\Rightarrow y' = -2\)</span></p>
-<p><strong>D</strong></p>
+<p><strong>示例<span><span class="heti-spacing"> </span>5</span></strong> 设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a_0 + \dfrac{a_1}{2} + \dots + \dfrac{a_n}{n+1} = 0\)</span> (<span class="arithmatex">\(a_i\)</span><span class="heti-spacing"> </span></span>均为常数<span class="heti-skip"><span class="heti-spacing"> </span>).<span class="heti-spacing"> </span></span>证明方程<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a_0 + a_1x + \dots + a_nx^n = 0\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0, 1)\)</span><span class="heti-spacing"> </span></span>至少有一个解<span><span class="heti-spacing"> </span>.</span></p>
+<div class="admonition tips">
+<p class="admonition-title">证明</p>
+<p>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) = a_0 + a_1x + \dots + a_nx^n\)</span></span>。
+构造函数 <span class="arithmatex">\(F(x)  = a_0x + \dfrac{a_1}{2}x^2 + \dots + \dfrac{a_n}{n+1}x^{n+1}\)</span>。</p>
+<p>函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span><span class="heti-spacing"> </span></span>上连续，在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0, 1)\)</span><span class="heti-spacing"> </span></span>内可导。</p>
+<p><span class="arithmatex">\(F(0) = 0\)</span>。
+<span class="arithmatex">\(F(1) = a_0 + \dfrac{a_1}{2} + \dots + \dfrac{a_n}{n+1} = 0\)</span> (根据题意)。</p>
+<p>因为<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(0) = F(1)\)</span></span>，根据罗尔定理，存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\xi \in (0, 1)\)</span></span>，使得<span><span class="heti-spacing"> </span><span class="arithmatex">\(F'(\xi) = 0\)</span></span>。</p>
+<p>又因为<span><span class="heti-spacing"> </span><span class="arithmatex">\(F'(x) = f(x)\)</span></span>，所以<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(\xi) = a_0 + a_1\xi + \dots + a_n\xi^n = 0\)</span></span>。</p>
+<p>即方程在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0, 1)\)</span><span class="heti-spacing"> </span></span>内至少有一个解。证毕。</p>
+</div>
+<blockquote>
+<p>注：本题极具代表性。该题说明： 如果直接证明<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>有零点比较困难的话，可以考虑去证明<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>的原函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)\)</span><span class="heti-spacing"> </span></span>有两个零点，然后对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)\)</span><span class="heti-spacing"> </span></span>使用罗尔定理即可。利用本题的思想，可以解决下面这道类题——</p>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span><span class="heti-spacing"> </span></span>上连续<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>且<span><span class="heti-spacing"> </span>:</span>
+$$ \int_{0}^{1} f(x) \mathrm{d}x = \int_{0}^{1} xf(x) \mathrm{d}x = 0 $$
+求证：<span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\((0, 1)\)</span> 内至少有两个零点</p>
 <hr/>
-<ol start="10">
-<li>
-<p>多选题<span class="heti-skip"><span class="heti-spacing"> </span>(10<span class="heti-spacing"> </span></span>分<span><span class="heti-spacing"> </span>)</span>
-    下列命题中正确的是</p>
-<ul>
-<li><span>A.<span class="heti-spacing"> </span></span>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,1)\)</span><span class="heti-spacing"> </span></span>内有界，则：<span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,1)\)</span><span class="heti-spacing"> </span></span>内必有界；</li>
-<li><span>B.<span class="heti-spacing"> </span></span>方程<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\ln x-\dfrac{e}{x}+2025 = 0\)</span><span class="heti-spacing"> </span></span>有且仅有一个实根；</li>
-<li><span>C.<span class="heti-spacing"> </span></span>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,1)\)</span><span class="heti-spacing"> </span></span>内可微且有界，则：导函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,1)\)</span><span class="heti-spacing"> </span></span>内必有界；</li>
-<li><span>D.<span class="heti-spacing"> </span></span>方程<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\ln x-\dfrac{x}{e}+2025 = 0\)</span><span class="heti-spacing"> </span></span>恰有两个不同的正根；</li>
-</ul>
-</li>
-</ol>
-<p>A   <span class="arithmatex">\(|f(x)| = |f(x)-f(\dfrac{1}{2})+f(\dfrac{1}{2})|\le |f'(\xi)|+|f(\dfrac{1}{2})|\)</span>(Lagrange)</p>
-<p>B   <span class="arithmatex">\(x\ln x = -2025x+e\)</span></p>
-<p>C   <span class="arithmatex">\(f(x) = x^{1.5}\sin(\dfrac{1}{x})(f(0) = 0)\)</span></p>
-<p><strong>ABD</strong></p>
+<p><strong>学了分部积分法以后再来看吧！</strong></p>
+</blockquote>
 <hr/>
-<p>补充一个题</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../2b7498a9b41346d20ee474ac6ba0fbf.jpg"><img alt="alt text" src="../2b7498a9b41346d20ee474ac6ba0fbf.jpg"/></a></p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../750c4a3e9cc763670e216dfca31ded9.jpg"><img alt="alt text" src="../750c4a3e9cc763670e216dfca31ded9.jpg"/></a></p>
+<p><strong>示例<span><span class="heti-spacing"> </span>6</span></strong> 假设某<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\)</span><span class="heti-spacing"> </span></span>次多项式多项式<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(P_n(x)\)</span><span class="heti-spacing"> </span></span>的一切根均为实根，证明<span class="heti-skip"><span class="heti-spacing"> </span>: <span class="arithmatex">\(P'_n(x), P''_n(x), \dots, P_n^{(n-1)}(x)\)</span><span class="heti-spacing"> </span></span>也仅有实根</p>
+<div class="admonition proof">
+<p class="admonition-title">Proof</p>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(P_n(x)\)</span><span class="heti-spacing"> </span></span>的所有相异实根为<span><span class="heti-spacing"> </span><span class="arithmatex">\(x_1 &lt; x_2 &lt; \dots &lt; x_k\)</span></span>，其重数分别为<span><span class="heti-spacing"> </span><span class="arithmatex">\(r_1, r_2, \dots, r_k\)</span></span>，其中<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sum\limits_{i=1}^k r_i = n\)</span></span>。</p>
+<ol>
+<li>根据罗尔定理，在每对相邻的相异实根<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((x_i, x_{i+1})\)</span><span class="heti-spacing"> </span></span>之间（<span class="arithmatex">\(i=1, \dots, k-1\)</span><heti-adjacent class="heti-adjacent-half">）</heti-adjacent>，必存在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(P'_n(x)\)</span><span class="heti-spacing"> </span></span>的一个根。这样我们找到了<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(k-1\)</span><span class="heti-spacing"> </span></span>个实根。</li>
+<li>对于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(P_n(x)\)</span><span class="heti-spacing"> </span></span>的任一<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(r_i\)</span><span class="heti-spacing"> </span></span>重根<span><span class="heti-spacing"> </span><span class="arithmatex">\(x_i\)</span></span>，它必是<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(P'_n(x)\)</span><span class="heti-spacing"> </span></span>的<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(r_i - 1\)</span><span class="heti-spacing"> </span></span>重根。这样我们找到了<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\sum\limits_{i=1}^k (r_i - 1) = \sum\limits_{i=1}^k r_i - \sum\limits_{i=1}^k 1 = n - k\)</span><span class="heti-spacing"> </span></span>个实根。</li>
+</ol>
+<p>综上， <span><span class="arithmatex">\(P'_n(x)\)</span><span class="heti-spacing"> </span></span>至少有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((k-1) + (n-k) = n-1\)</span><span class="heti-spacing"> </span></span>个实根（计入重数<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>。</p>
+<p>又因为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(P'_n(x)\)</span><span class="heti-spacing"> </span></span>是一个<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n-1\)</span><span class="heti-spacing"> </span></span>次多项式，根据代数基本定理，它最多有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n-1\)</span><span class="heti-spacing"> </span></span>个根。</p>
+<p>因此，<span><span class="arithmatex">\(P'_n(x)\)</span><span class="heti-spacing"> </span></span>的所有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n-1\)</span><span class="heti-spacing"> </span></span>个根都是实根。</p>
+<p>对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(P'_n(x)\)</span><span class="heti-spacing"> </span></span>重复以上论证，可知<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(P''_n(x)\)</span><span class="heti-spacing"> </span></span>的所有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n-2\)</span><span class="heti-spacing"> </span></span>个根也都是实根。以此类推，直至<span><span class="heti-spacing"> </span><span class="arithmatex">\(P_n^{(n-1)}(x)\)</span></span>，其根也必为实根。
+证毕。</p>
+</div>
+<blockquote>
+<p>注：该题的结论和证明过程都非常有趣，后面我们在学习“导数的几何应用”时，判断函数的零点个数、极值点个数、拐点个数的时候会用到这个结论。</p>
+</blockquote>
+<hr/>
+<p>求<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) = (x - 1)(x – 2)²(x - 3)³(x - 4)⁴\)</span><span class="heti-spacing"> </span></span>的驻点、极值点、拐点个数</p>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p>6, 5, 6</p>
+</div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 18, 2025 05:49:01 UTC">October 18, 2025</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2025 15:59:10 UTC">November 18, 2025</span>
 </span>
 </aside>
 </article>
@@ -803,7 +792,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: 24微甲小测1" class="md-footer__link md-footer__link--prev" href="../calc_quiz1/">
+<a aria-label="Previous: 定理证明、构造函数、双中值问题(期中)" class="md-footer__link md-footer__link--prev" href="../diff_mean/">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
 </div>
@@ -812,17 +801,17 @@
                 Previous
               </span>
 <div class="md-ellipsis">
-                24微甲小测1
+                定理证明、构造函数、双中值问题(期中)
               </div>
 </div>
 </a>
-<a aria-label="Next: 24数分H小测2" class="md-footer__link md-footer__link--next" href="../anal_quiz2/">
+<a aria-label="Next: 辅助多项式" class="md-footer__link md-footer__link--next" href="../poly/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                24数分H小测2
+                辅助多项式
               </div>
 </div>
 <div class="md-footer__button md-icon">
