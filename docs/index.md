@@ -16,7 +16,7 @@
 |---|---|---|---|
 |1| 2025.10.24| 秋6 |[数列、函数极限 & 第一次小测复习](https://yuanhongyi.github.io/lecture/l01)|   
 |2| 2025.10.31| 秋7 |[连续函数与导数 & 期中复习](https://yuanhongyi.github.io/lecture/l02)|
-|*| 2025.11.07| 秋8 |暂停，微积分期中考试|
+|*| 2025.11.07| 秋8 |[暂停，微积分期中考试](https://yuanhongyi.github.io/lecture/l02_1)|
 |*| 2025.11.14| 冬1 |暂停，线代期中考试|
 |3| 2025.11.21| 冬2 |[微分中值定理 I Rolle、辅助多项式](https://yuanhongyi.github.io/lecture/l03)|
 |4| 2025.11.28| 冬3 |[微分中值定理 II 泰勒公式](https://yuanhongyi.github.io/lecture/l04)|   
