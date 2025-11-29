@@ -137,6 +137,11 @@ nav:
       - 辅助多项式: slides/poly.md
       - 泰勒公式: slides/taylor.md
       - K值法: slides/constK.md
+    - 不定积分:
+      - 积分表: slides/int/int_table.md
+      - 有理函数积分: slides/int/indef/rational.md
+      - 三角有理函数积分: slides/int/indef/tri_rational.md
+      - 换元法与分部积分法: slides/int/indef/substitution_integration.md
 
   - Quiz:
     - 24微甲小测1: quiz/calc_quiz1.md
