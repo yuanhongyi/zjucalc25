@@ -35,6 +35,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#3">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -438,6 +441,17 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    换元法与分部积分法
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     
@@ -448,6 +462,90 @@
     
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      
+        换元法、分部积分法
+      
+    </span>
+</a>
+<nav aria-label="换元法、分部积分法" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        根式换元
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        三角换元
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        分部积分法
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      
+        换元法 + 分部积分
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      
+        利用分部积分对分母进行降阶
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        利用分部积分实现“积分抵消”
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        对复杂因子求导，期待出现奇迹
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -673,19 +771,590 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      
+        换元法、分部积分法
+      
+    </span>
+</a>
+<nav aria-label="换元法、分部积分法" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        根式换元
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        三角换元
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        分部积分法
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      
+        换元法 + 分部积分
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      
+        利用分部积分对分母进行降阶
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        利用分部积分实现“积分抵消”
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        对复杂因子求导，期待出现奇迹
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>换元法与分部积分法</h1>
+<h1 id="3">不定积分<span><span class="heti-spacing"> </span>3</span><a class="headerlink" href="#3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<h2 id="_1">换元法、分部积分法<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<h3 id="_2">根式换元<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>见到<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sqrt{\frac{一次函数}{一次函数}}\)</span></span>、<span class="arithmatex">\(\sqrt{e^{ax}+b}\)</span>、<span><span class="arithmatex">\(\sqrt{\frac{e^{ax}+b}{e^{ax}-b}}\)</span><span class="heti-spacing"> </span></span>等形式，可直接将整个根号令成<span><span class="heti-spacing"> </span><span class="arithmatex">\(t\)</span></span>，以消去根号。但此方法不一定是最简方法，需具体问题具体分析。</p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \sqrt{\dfrac{x}{x + 1}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sqrt{\dfrac{x}{x + 1}}=t\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = \dfrac{t^2}{1-t^2} , \mathrm{d}x = \mathrm{d}\left(\dfrac{1}{1-t^2}\right)\)</span></span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int t \mathrm{d}\left(\dfrac{1}{1-t^2}\right) = \dfrac{t}{1-t^2} - \int \dfrac{1}{1-t^2} \mathrm{d}t \\
+&amp;= \dfrac{t}{1-t^2} - \dfrac{1}{2}\ln\left|\dfrac{1+t}{1-t}\right| + C \\
+&amp;= (x+1)\sqrt{\dfrac{x}{x+1}} - \dfrac{1}{2}\ln\left|\dfrac{\sqrt{x+1}+\sqrt{x}}{\sqrt{x+1}-\sqrt{x}}\right| + C \\
+&amp;= \sqrt{x(x+1)} - \ln(\sqrt{x}+\sqrt{x+1}) + C
+\end{aligned}
+\]</div>
+<blockquote>
+<p>注：换元后不要解出<span><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span></span>，应直接分部积分，否则会升高分母阶数，使积分次数变高。</p>
+</blockquote>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{x}\sqrt{\dfrac{x + 1}{x}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sqrt{\dfrac{x+1}{x}}=t\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(x=\dfrac{1}{t^2-1}\)</span></span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int (t^2-1) t \mathrm{d}\left(\dfrac{1}{t^2-1}\right) = \int (t^2-1) t \cdot \dfrac{-2t}{(t^2-1)^2} \mathrm{d}t \\
+&amp;= -2\int \dfrac{t^2}{t^2-1} \mathrm{d}t = -2\int \left(1+\dfrac{1}{t^2-1}\right) \mathrm{d}t \\
+&amp;= -2t - \ln\left|\dfrac{t-1}{t+1}\right| + C \\
+&amp;= -2\sqrt{\dfrac{x+1}{x}} - \ln\left|\dfrac{\sqrt{x+1}-\sqrt{x}}{\sqrt{x+1}+\sqrt{x}}\right| + C
+\end{aligned}
+\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong>
+请计算下列两个积分</p>
+<div class="arithmatex">\[(1)\int \sqrt{\dfrac{1 - x}{1 + x}}\mathrm{d}x\]</div>
+<div class="arithmatex">\[(2)\int(\sqrt{\dfrac{1 - x}{1 + x}}+\sqrt{\dfrac{1 + x}{1 - x}})\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p><span>(1)<span class="heti-spacing"> </span></span>分子有理化：</p>
+<div class="arithmatex">\[
+\text{原式} = \int \dfrac{1-x}{\sqrt{1-x^2}} \mathrm{d}x = \int \dfrac{1}{\sqrt{1-x^2}}\mathrm{d}x - \int \dfrac{x}{\sqrt{1-x^2}}\mathrm{d}x = \arcsin x + \sqrt{1-x^2} + C
+\]</div>
+<p><span>(2)<span class="heti-spacing"> </span></span>通分：</p>
+<div class="arithmatex">\[
+\text{原式} = \int \left(\dfrac{1-x}{\sqrt{1-x^2}} + \dfrac{1+x}{\sqrt{1-x^2}}\right) \mathrm{d}x = \int \dfrac{2}{\sqrt{1-x^2}} \mathrm{d}x = 2\arcsin x + C
+\]</div>
+<blockquote>
+<p>注：换元法可行，但思考有无简便方法（提示：分子有理化，然后裂开，拆成<span class="heti-skip"><span class="heti-spacing"> </span>2<span class="heti-spacing"> </span></span>个积分）</p>
+</blockquote>
+<p><strong>类题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{xe^{x}}{\sqrt{e^{x}-2}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sqrt{e^x-2}=t\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(e^x = t^2+2, \mathrm{d}x = \dfrac{2t}{t^2+2}\mathrm{d}t\)</span></span></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \dfrac{\ln(2+t^2)(t^2+2)}{t} \cdot \dfrac{2t}{t^2+2} \mathrm{d}t = 2\int \ln(2+t^2) \mathrm{d}t \\
+&amp;= 2t\ln(2+t^2) - 2\int t \cdot \dfrac{2t}{2+t^2} \mathrm{d}t \\
+&amp;= 2t\ln(2+t^2) - 4t + 4\sqrt{2}\arctan\dfrac{t}{\sqrt{2}} + C \\
+&amp;= 2\sqrt{e^x-2}\ln(e^x) - 4\sqrt{e^x-2} + 4\sqrt{2}\arctan\dfrac{\sqrt{e^x-2}}{\sqrt{2}} + C \\
+&amp;= 2x\sqrt{e^x-2} - 4\sqrt{e^x-2} + 4\sqrt{2}\arctan\dfrac{\sqrt{e^x-2}}{\sqrt{2}} + C
+\end{aligned}
+\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>4</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{\sqrt[3]{(x + 1)^{2}(x - 1)^{4}}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>变形为<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int \dfrac{1}{(x-1)^2 \sqrt[3]{\left(\dfrac{x+1}{x-1}\right)^2}} \mathrm{d}x\)</span></span>。
+令 <span class="arithmatex">\(\sqrt[3]{\dfrac{x+1}{x-1}} = t\)</span>，则 <span class="arithmatex">\(\dfrac{x+1}{x-1} = t^3\)</span>。求导得 <span class="arithmatex">\(\dfrac{-2}{(x-1)^2}\mathrm{d}x = 3t^2 \mathrm{d}t \Rightarrow \dfrac{\mathrm{d}x}{(x-1)^2} = -\dfrac{3}{2}t^2 \mathrm{d}t\)</span>。</p>
+<div class="arithmatex">\[
+\text{原式} = -\int \dfrac{1}{t^2} \cdot \dfrac{3}{2}t^2 \mathrm{d}t = -\dfrac{3}{2} \int \mathrm{d}t = -\dfrac{3}{2}t + C = -\dfrac{3}{2}\sqrt[3]{\dfrac{x+1}{x-1}} + C
+\]</div>
+<blockquote>
+<p>注：第一次做想不到正常</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>为消去多个根号，需具体问题具体分析换元方式。</p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{(1+\sqrt[3]{x})\sqrt{x}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = t^6\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(\mathrm{d}x = 6t^5 \mathrm{d}t\)</span></span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \dfrac{6t^5}{(1+t^2)t^3} \mathrm{d}t = 6\int \dfrac{t^2}{1+t^2} \mathrm{d}t = 6\int \left(1 - \dfrac{1}{1+t^2}\right) \mathrm{d}t \\
+&amp;= 6t - 6\arctan t + C = 6\sqrt[6]{x} - 6\arctan\sqrt[6]{x} + C
+\end{aligned}
+\]</div>
+<p><strong>类题</strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{1 + e^{\frac{x}{2}} + e^{\frac{x}{3}} + e^{\frac{x}{6}}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(t = e^{\frac{x}{6}}\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = 6\ln t\)</span></span>，<span class="arithmatex">\(\mathrm{d}x = \dfrac{6}{t} \mathrm{d}t\)</span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \dfrac{1}{1+t^3+t^2+t} \cdot \dfrac{6}{t} \mathrm{d}t = 6\int \dfrac{1}{t(1+t)(1+t^2)} \mathrm{d}t \\
+&amp;= \int \left(\dfrac{6}{t} - \dfrac{3}{1+t} - \dfrac{3t+3}{1+t^2}\right) \mathrm{d}t \\
+&amp;= 6\ln t - 3\ln(1+t) - \dfrac{3}{2}\ln(1+t^2) - 3\arctan t + C \\
+&amp;= x - 3\ln(1+e^{\frac{x}{6}}) - \dfrac{3}{2}\ln(1+e^{\frac{x}{3}}) - 3\arctan e^{\frac{x}{6}} + C
+\end{aligned}
+\]</div>
+<h3 id="_3">三角换元<a class="headerlink" href="#_3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>若根号里面没有一次项，只有平方项和常数项：</p>
+<ul>
+<li>形如“<span class="arithmatex">\(\sqrt{a^{2}-x^{2}}\)</span>”，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = a\sin t\)</span></span>。</li>
+<li>形如“<span class="arithmatex">\(\sqrt{a^{2}+x^{2}}\)</span>”，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = a\tan t\)</span></span>。</li>
+<li>形如“<span class="arithmatex">\(\sqrt{x^{2}-a^{2}}\)</span>”，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = a\sec t\)</span></span>。<ul>
+<li>注：有时不一定非要出现根号才用三角换元，如<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int \dfrac{1}{(x^{2}+1)^{2}}\mathrm{d}x\)</span></span>，可用三角换元<span class="heti-skip"><span class="heti-spacing"> </span>+<span class="heti-spacing"> </span></span>二倍角处理。</li>
+</ul>
+</li>
+</ul>
+<p>若根号里面含有一次项，先对根号里面的二次函数配方，消去一次项后转化为上述问题。</p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{x^{4}}\sqrt{4 - x^{2}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = 2\sin t\)</span></span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \dfrac{2\cos t}{16\sin^4 t} \cdot 2\cos t \mathrm{d}t = \dfrac{1}{4}\int \dfrac{\cos^2 t}{\sin^4 t} \mathrm{d}t = \dfrac{1}{4}\int \cot^2 t \csc^2 t \mathrm{d}t \\
+&amp;= -\dfrac{1}{4}\int \cot^2 t \mathrm{d}(\cot t) = -\dfrac{1}{12}\cot^3 t + C \\
+&amp;= -\dfrac{1}{12} \left(\dfrac{\sqrt{4-x^2}}{x}\right)^3 + C
+\end{aligned}
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>4</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{\sqrt{(x^{2}+1)^{3}}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = \tan t\)</span></span>。</p>
+<div class="arithmatex">\[
+\text{原式} = \int \dfrac{1}{\sec^3 t} \sec^2 t \mathrm{d}t = \int \cos t \mathrm{d}t = \sin t + C = \dfrac{x}{\sqrt{1+x^2}} + C
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>5</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{\sqrt{x(4 - x)}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>配方：<span class="arithmatex">\(\sqrt{x(4-x)} = \sqrt{4x-x^2} = \sqrt{4-(x-2)^2}\)</span>。
+令 <span class="arithmatex">\(x-2 = 2\sin t\)</span>。</p>
+<div class="arithmatex">\[
+\text{原式} = \int \dfrac{1}{\sqrt{4-(x-2)^2}}\mathrm{d}x = \int 1 \mathrm{d}t = t + C = \arcsin\dfrac{x-2}{2} + C
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>6</span></strong></p>
+<div class="arithmatex">\[\int x\sqrt{2x - x^{2}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>配方：<span class="arithmatex">\(2x-x^2 = 1-(x-1)^2\)</span>。令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x-1 = \sin t\)</span></span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int (\sin t + 1)\cos^2 t \mathrm{d}t = -\int \cos^2 t \mathrm{d}(\cos t) + \int \dfrac{1+\cos 2t}{2} \mathrm{d}t \\
+&amp;= -\dfrac{1}{3}\cos^3 t + \dfrac{1}{2}t + \dfrac{1}{4}\sin 2t + C \\
+&amp;= -\dfrac{1}{3}(1-(x-1)^2)^{\frac{3}{2}} + \dfrac{1}{2}\arcsin(x-1) + \dfrac{1}{2}(x-1)\sqrt{1-(x-1)^2} + C
+\end{aligned}
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>7</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{x^{2}\sqrt{x^{2}-1}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = \sec t\)</span></span>。</p>
+<div class="arithmatex">\[
+\text{原式} = \int \dfrac{\sec t \tan t}{\sec^2 t \tan t} \mathrm{d}t = \int \cos t \mathrm{d}t = \sin t + C = \dfrac{\sqrt{x^2-1}}{x} + C
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>注：令<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x = \sec t\)</span><span class="heti-spacing"> </span></span>可行，但本题可归为一种模型，即一切可化为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int \dfrac{1}{(x + d)\sqrt{ax^{2}+bx + c}}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int \dfrac{1}{(x + d)^{2}\sqrt{ax^{2}+bx + c}}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的不定积分，可用倒代换<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x + d=\dfrac{1}{t}\)</span><span class="heti-spacing"> </span></span>简化后积分。</p>
+</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{x\sqrt{2x^{2}+2x + 1}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = \dfrac{1}{t}\)</span></span>，<span class="arithmatex">\(\mathrm{d}x = -\dfrac{1}{t^2}\mathrm{d}t\)</span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= -\int \dfrac{1}{\frac{1}{t}\sqrt{\frac{2}{t^2}+\frac{2}{t}+1}} \dfrac{1}{t^2} \mathrm{d}t = -\int \dfrac{1}{\sqrt{t^2+2t+2}} \mathrm{d}t = -\int \dfrac{\mathrm{d}(t+1)}{\sqrt{(t+1)^2+1}} \\
+&amp;= -\ln|t+1+\sqrt{(t+1)^2+1}| + C \\
+&amp;= -\ln\left|\dfrac{1}{x}+1+\sqrt{\left(\dfrac{1}{x}+1\right)^2+1}\right| + C
+\end{aligned}
+\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{x^{2}\sqrt{2x^{2}+2x + 1}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = \dfrac{1}{t}\)</span></span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= -\int \dfrac{t+1-1}{\sqrt{(t+1)^2+1}} \mathrm{d}t = -\int \dfrac{t+1}{\sqrt{(t+1)^2+1}}\mathrm{d}t + \int \dfrac{1}{\sqrt{(t+1)^2+1}}\mathrm{d}t \\
+&amp;= -\sqrt{t^2+2t+2} + \ln|t+1+\sqrt{t^2+2t+2}| + C \\
+&amp;= -\dfrac{\sqrt{2x^2+2x+1}}{x} + \ln\left|\dfrac{1}{x}+1+\dfrac{\sqrt{2x^2+2x+1}}{x}\right| + C
+\end{aligned}
+\]</div>
+<h3 id="_4">分部积分法<a class="headerlink" href="#_4" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>见到不同种类函数相乘，一般用分部积分公式<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int u\mathrm{d}v = uv-\displaystyle\int v\mathrm{d}u\)</span></span>。</p>
+<p>分部积分使用原则：
+- 口诀：按<strong>反<span class="heti-skip"><span class="heti-spacing"> </span>|<span class="heti-spacing"> </span></span>对<span class="heti-skip"><span class="heti-spacing"> </span>|<span class="heti-spacing"> </span></span>幂<span class="heti-skip"><span class="heti-spacing"> </span>|<span class="heti-spacing"> </span></span>指<span class="heti-skip"><span class="heti-spacing"> </span>|<span class="heti-spacing"> </span></span>三</strong>顺序，谁排在后面，就把谁凑到微分符号<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\mathrm{d}\)</span><span class="heti-spacing"> </span></span>后面，然后分部积分。
+- 思想：“对/反”函数求导后不再是同类函数，所以要把其他函数凑到<span class="arithmatex">\(\mathrm{d}\)</span>后分部积分，使<span class="arithmatex">\(\mathrm{d}\)</span>对“对/反”函数求导；指数函数与幂函数相乘时，幂函数怕求导，指数函数不怕，所以把指数函数凑到<span class="arithmatex">\(d\)</span>后。总之，谁怕求导，就把其余部分凑到<span class="arithmatex">\(\mathrm{d}\)</span>后。</p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int x\arctan x\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \dfrac{1}{2}\int \arctan x \mathrm{d}(x^2+1) = \dfrac{1}{2}(x^2+1)\arctan x - \dfrac{1}{2}\int (x^2+1) \dfrac{1}{1+x^2} \mathrm{d}x \\
+&amp;= \dfrac{1}{2}(x^2+1)\arctan x - \dfrac{1}{2}x + C
+\end{aligned}
+\]</div>
+<blockquote>
+<p>注：分部积分时，善于在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\mathrm{d}\)</span><span class="heti-spacing"> </span></span>后增减常数使式子更简洁。</p>
+</blockquote>
+<p><strong>类题</strong></p>
+<div class="arithmatex">\[\int x\cdot\ln(1 + x^{2}) \arctan x\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \dfrac{1}{2}\int \arctan x \ln(x^2+1) \mathrm{d}(x^2+1) \\
+&amp;= \dfrac{1}{2}(x^2+1)\ln(x^2+1)\arctan x - \dfrac{1}{2}\int (x^2+1)\left[ \dfrac{2x}{x^2+1}\arctan x + \dfrac{\ln(x^2+1)}{1+x^2} \right] \mathrm{d}x \\
+&amp;= \dfrac{1}{2}(x^2+1)\ln(x^2+1)\arctan x - \int x \arctan x \mathrm{d}x - \dfrac{1}{2}\int \ln(x^2+1) \mathrm{d}x \\
+&amp;= \dfrac{1}{2}(x^2+1)\ln(x^2+1)\arctan x - \left( \dfrac{1}{2}(x^2+1)\arctan x - \dfrac{x}{2} \right) - \left( \dfrac{x}{2}\ln(x^2+1) - x + \arctan x \right) + C
+\end{aligned}
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int e^{x}\sin x\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \sin x \mathrm{d}(e^x) = e^x \sin x - \int e^x \cos x \mathrm{d}x \\
+&amp;= e^x \sin x - \left( \int \cos x \mathrm{d}(e^x) \right) = e^x \sin x - (e^x \cos x - \int e^x (-\sin x) \mathrm{d}x) \\
+&amp;= e^x \sin x - e^x \cos x - \int e^x \sin x \mathrm{d}x \\
+\Rightarrow 2\int e^x \sin x \mathrm{d}x &amp;= e^x(\sin x - \cos x) \\
+\therefore \int e^x \sin x \mathrm{d}x &amp;= \dfrac{e^x}{2}(\sin x - \cos x) + C
+\end{aligned}
+\]</div>
+<blockquote>
+<p>注：被积函数为指数函数和三角函数相乘时，需连续两次分部积分，出现“积分重现”后解决问题，且两次分部积分凑到<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(d\)</span><span class="heti-spacing"> </span></span>后的函数必须同类，否则原路返回。</p>
+</blockquote>
+<p><strong>类题</strong></p>
+<div class="arithmatex">\[\int x\cdot e^{x}\sin x\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\text{原式} = \dfrac{1}{2}\int x \mathrm{d}\left( e^x(\sin x - \cos x) \right) = \dfrac{x}{2}e^x(\sin x - \cos x) - \dfrac{1}{2}\int e^x(\sin x - \cos x) \mathrm{d}x
+$$
+后半部分即为标准指数三角积分，分别计算即可。
+$$
+= \dfrac{x}{2}e^x(\sin x - \cos x) - \dfrac{1}{2}e^x \sin x + C
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int\ln^{2}(x+\sqrt{1 + x^{2}})\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>直接分部积分即可，答案为：</p>
+<p><span class="arithmatex">\(= x \ln^2(x+\sqrt{1+x^2}) - 2\sqrt{1+x^2}\ln(x+\sqrt{1+x^2}) + 2x + C\)</span></p>
+<h3 id="_5">换元法<span class="heti-skip"><span class="heti-spacing"> </span>+<span class="heti-spacing"> </span></span>分部积分<a class="headerlink" href="#_5" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>换元后分部积分是常见出题风格，需熟练掌握。若预判需换元与分部积分，建议先换元，因其可使被积表达式更“清爽”利于后续操作。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int e^{2x}\arctan\sqrt{e^{x}-1}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sqrt{e^x-1}=t\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(e^x = t^2+1\)</span></span>，<span class="arithmatex">\(\mathrm{d}x = \dfrac{2t}{t^2+1}\mathrm{d}t\)</span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int (t^2+1)^2 \arctan t \cdot \dfrac{2t}{t^2+1} \mathrm{d}t \\
+&amp;= \int (t^2+1) \arctan t \cdot 2t \mathrm{d}t = \int \arctan t \mathrm{d}((t^2+1)^2) \\
+&amp;= (t^2+1)^2 \arctan t - \int (t^2+1)^2 \dfrac{1}{1+t^2} \mathrm{d}t \\
+&amp;= (t^2+1)^2 \arctan t - \int (t^2+1) \mathrm{d}t \\
+&amp;= e^{2x} \arctan\sqrt{e^x-1} - \dfrac{1}{3}(e^x-1)^{\frac{3}{2}} - \sqrt{e^x-1} + C
+\end{aligned}
+\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{x\cdot e^{\arctan x}}{(1 + x^{2})^{\frac{3}{2}}}\mathrm{d}x\]</div>
+<div class="arithmatex">\[\int \dfrac{e^{\arctan x}}{(1 + x^{2})^{\frac{3}{2}}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = \tan t\)</span></span>。</p>
+<p>(1) <span class="arithmatex">\(\displaystyle \int \dfrac{\tan t \cdot e^t}{\sec^3 t} \sec^2 t \mathrm{d}t = \int \sin t e^t \mathrm{d}t = \dfrac{e^t}{2}(\sin t - \cos t) + C\)</span>
+代回 <span class="arithmatex">\(t=\arctan x\)</span>。</p>
+<p>(2) <span class="arithmatex">\(\displaystyle \int \dfrac{e^t}{\sec^3 t} \sec^2 t \mathrm{d}t = \int \cos t e^t \mathrm{d}t = \dfrac{e^t}{2}(\sin t + \cos t) + C\)</span></p>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[
+\int \dfrac{\ln x}{(1 + x^{2})^{\frac{3}{2}}}\mathrm{d}x
+\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = \tan t\)</span></span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \dfrac{\ln \tan t}{\sec^3 t} \sec^2 t \mathrm{d}t = \int \cos t \ln \tan t \mathrm{d}t = \int \ln \tan t \mathrm{d}(\sin t) \\
+&amp;= \sin t \ln \tan t - \int \sin t \dfrac{\sec^2 t}{\tan t} \mathrm{d}t = \sin t \ln \tan t - \int \sec t \mathrm{d}t \\
+&amp;= \dfrac{x}{\sqrt{1+x^2}} \ln x - \ln|x+\sqrt{1+x^2}| + C
+\end{aligned}
+\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{\arctan\sqrt{x - 1}}{x\sqrt{x - 1}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p><span>(1)<span class="heti-spacing"> </span></span>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sqrt{x-1}=t\)</span></span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \dfrac{\arctan t}{(t^2+1)t} \cdot 2t \mathrm{d}t = 2\int \dfrac{\arctan t}{1+t^2} \mathrm{d}t = (\arctan t)^2 + C \\
+&amp;= (\arctan\sqrt{x-1})^2 + C
+\end{aligned}
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int\ln(1+\sqrt{\dfrac{1 + x}{x}})\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sqrt{\dfrac{1+x}{x}} = t\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = \dfrac{1}{t^2-1}\)</span></span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \ln(1+t) \mathrm{d}\left(\dfrac{1}{t^2-1}\right) = \dfrac{\ln(1+t)}{t^2-1} - \int \dfrac{1}{t^2-1} \dfrac{1}{1+t} \mathrm{d}t \\
+&amp;= \dfrac{\ln(1+t)}{t^2-1} - \int \dfrac{1}{(t-1)(t+1)^2} \mathrm{d}t \\
+&amp;= \dots \quad (\text{有理函数积分}) \\
+&amp;= x\ln\left(1+\sqrt{\dfrac{1+x}{x}}\right) + \dfrac{1}{2}\ln(\sqrt{x}+\sqrt{1+x}) + \dfrac{1}{2}x - \dfrac{1}{2}\sqrt{x^2+x} + C
+\end{aligned}
+\]</div>
+<blockquote>
+<p>注：换元后不解出<span><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span></span>，直接分部积分消去对数符号。若解出<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span><span class="heti-spacing"> </span></span>再代入，计算更繁琐。类似题目还有：</p>
+</blockquote>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int\arctan(1+\sqrt{x})\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sqrt{x}=t\)</span></span>。</p>
+<div class="arithmatex">\[
+\text{原式} = \int \arctan(1+t) \cdot 2t \mathrm{d}t = t^2\arctan(1+t) - t + \ln(t^2+2t+2) + C
+\]</div>
+<p>回代即可</p>
+<h3 id="_6">利用分部积分对分母进行降阶<a class="headerlink" href="#_6" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>分母次数高时，除倒代换外，可用分部积分降阶，核心是将分母凑到<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\mathrm{d}\)</span><span class="heti-spacing"> </span></span>后分部积分。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{xe^{x}}{(1 + x)^{2}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int xe^x \mathrm{d}\left(-\dfrac{1}{1+x}\right) = -\dfrac{xe^x}{1+x} + \int \dfrac{1}{1+x}(e^x+xe^x) \mathrm{d}x \\
+&amp;= -\dfrac{xe^x}{1+x} + \int e^x \mathrm{d}x = -\dfrac{xe^x}{1+x} + e^x + C = \dfrac{e^x}{1+x} + C
+\end{aligned}
+\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{x^{2}e^{x}}{(x + 2)^{2}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p><span class="arithmatex">\(\text{原式} = \displaystyle\int x^2 e^x \mathrm{d}\left(-\dfrac{1}{x+2}\right)= -\dfrac{x^2 e^x}{x+2} + \displaystyle\int \dfrac{e^x(2x+x^2)}{x+2} \mathrm{d}x\)</span></p>
+<p><span class="arithmatex">\(= -\dfrac{x^2 e^x}{x+2} + \displaystyle\int xe^x \mathrm{d}x = -\dfrac{x^2 e^x}{x+2} + (x-1)e^x + C\)</span></p>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{xe^{x}}{(1 + e^{x})^{2}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int x \cdot \dfrac{e^x}{(1+e^x)^2} \mathrm{d}x = \int x \mathrm{d}\left(-\dfrac{1}{1+e^x}\right) \\
+&amp;= -\dfrac{x}{1+e^x} + \int \dfrac{1}{1+e^x} \mathrm{d}x = -\dfrac{x}{1+e^x} + \ln\dfrac{e^x}{1+e^x} + C
+\end{aligned}
+\]</div>
+<p>以下例题需用“强制凑微分”技巧，核心仍是对分母降阶。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{x^{2}}{(x\sin x+\cos x)^{2}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>观察分母，<span class="arithmatex">\((x\sin x + \cos x)' = \sin x + x\cos x - \sin x = x\cos x\)</span>。
+$$
+\begin{aligned}
+\text{原式} &amp;= \int \dfrac{x}{\cos x} \cdot \dfrac{x\cos x}{(x\sin x + \cos x)^2} \mathrm{d}x \
+&amp;= \int \dfrac{x}{\cos x} \mathrm{d}\left(-\dfrac{1}{x\sin x+\cos x}\right) \
+&amp;= -\dfrac{x}{\cos x(x\sin x+\cos x)} + \int \dfrac{1}{x\sin x+\cos x} \cdot \dfrac{\cos x + x\sin x}{\cos^2 x} \mathrm{d}x \
+&amp;= -\dfrac{x}{\cos x(x\sin x+\cos x)} + \tan x + C
+\end{aligned}
+$$</p>
+<h3 id="_7">利用分部积分实现“积分抵消”<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>有些题目将积分拆成两个，对其中一个积分<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(I_{2}\)</span><span class="heti-spacing"> </span></span>用分部积分，使其与另一个积分<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(I_{1}\)</span><span class="heti-spacing"> </span></span>抵消。被积函数一般含指数函数<span><span class="heti-spacing"> </span><span class="arithmatex">\(e^{x}\)</span></span>。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{xe^{x}}{(1 + x)^{2}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \dfrac{[(x+1)-1]e^x}{(1+x)^2}\mathrm{d}x \\
+&amp;= \int \dfrac{e^x}{1+x}\mathrm{d}x - \int \dfrac{e^x}{(1+x)^2}\mathrm{d}x \\
+&amp;= \int \dfrac{e^x}{1+x}\mathrm{d}x + \int e^x \mathrm{d}\left(\dfrac{1}{1+x}\right) \quad \text{（凑微分）} \\
+&amp;= \int \dfrac{e^x}{1+x}\mathrm{d}x + \left[ \dfrac{e^x}{1+x} - \int \dfrac{1}{1+x} \mathrm{d}(e^x) \right] \quad \text{（分部积分）} \\
+&amp;= \boxed{\int \dfrac{e^x}{1+x}\mathrm{d}x} + \dfrac{e^x}{1+x} - \boxed{\int\dfrac{e^x}{1+x}\mathrm{d}x} \\
+&amp;= \dfrac{e^x}{1+x} + C
+\end{aligned}
+\]</div>
+<blockquote>
+<p><span class="arithmatex">\(\displaystyle\int e^x(f(x)+f'(x))\mathrm{d}x = e^xf(x)+C\)</span></p>
+</blockquote>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{(1+\sin x)e^{x}}{1+\cos x}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \left(\dfrac{1}{1+\cos x} + \dfrac{\sin x}{1+\cos x}\right)e^x \mathrm{d}x
+\end{aligned}
+\]</div>
+<p>注意到<span><span class="heti-spacing"> </span><span class="arithmatex">\(\left(\dfrac{\sin x}{1+\cos x}\right)' = \dfrac{1}{1+\cos x}\)</span></span></p>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int e^{x}\left(\dfrac{1 - x}{1 + x^{2}}\right)^{2}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>原式<span><span class="heti-spacing"> </span><span class="arithmatex">\(= \displaystyle\int e^x\left(\dfrac{1+x^2-2x}{(1+x^2)^2}\right)\mathrm{d}x\)</span></span></p>
+<p><strong>类题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{x^{2}e^{x}}{(x + 2)^{2}}\mathrm{d}x\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{e^{-\sin x}\cdot\sin 2x}{\sin^{4}\left(\dfrac{\pi}{4}-\dfrac{x}{2}\right)}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+I = \int \dfrac{e^{-\sin x} \cdot 2\sin x \cos x}{\frac{(1-\sin x)^2}{4}} \mathrm{d}x = 8 \int \dfrac{e^{-\sin x} \sin x}{(1-\sin x)^2} \cos x \mathrm{d}x
+\]</div>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sin x = t\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(\mathrm{d}t = \cos x \mathrm{d}x\)</span></span>。</p>
+<div class="arithmatex">\[
+I = 8 \int \dfrac{t e^{-t}}{(1-t)^2} \mathrm{d}t = 8 \int \dfrac{t e^{-t}}{(t-1)^2} \mathrm{d}t
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int e^{-\frac{x}{2}}\dfrac{\cos x-\sin x}{\sqrt{\sin x}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\text{原式} = \int e^{-\frac{x}{2}} \boxed{\dfrac{\cos x}{\sqrt{\sin x}}} \mathrm{d}x - \int e^{-\frac{x}{2}} \sqrt{\sin x} \mathrm{d}x
+\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int e^{\sin x}\dfrac{x\cos^{3}x-\sin x}{\cos^{2}x}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\text{原式} = \int x \mathrm{d}(e^{\sin x}) - \int e^{\sin x} \mathrm{d}\dfrac{1}{\cos x} = xe^{\sin x} - \dfrac{e^{\sin x}}{\cos x} + C
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int(\ln\ln x+\dfrac{1}{\ln x})\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\text{原式} = x\ln\ln x - \int x \dfrac{1}{\ln x} \dfrac{1}{x} \mathrm{d}x + \int \dfrac{1}{\ln x} \mathrm{d}x = x\ln\ln x + C
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>4</span></strong></p>
+<p>已知<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f''(x)\)</span><span class="heti-spacing"> </span></span>连续，<span class="arithmatex">\(f'(x)\neq0\)</span>，求</p>
+<div class="arithmatex">\[\int\left[\dfrac{f(x)}{f'(x)}-\dfrac{f^{2}(x)f''(x)}{(f'(x))^{3}}\right]\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\text{原式} = \int \dfrac{f}{f'} \mathrm{d}x - \int \dfrac{f^2}{f'^3} \mathrm{d}(f') = \dots = \dfrac{1}{2}\left(\dfrac{f(x)}{f'(x)}\right)^2 + C
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>5</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1-\ln x}{(x-\ln x)^{2}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\text{原式} = \int \dfrac{1}{x-\ln x} \mathrm{d}x + \int \dfrac{1-x}{(x-\ln x)^2} \mathrm{d}x = \dfrac{x}{x-\ln x} + C
+\]</div>
+<blockquote>
+<p>第一项分母次数降下来了，考虑分部积分尝试抵消第二项</p>
+</blockquote>
+<h3 id="_8">对复杂因子求导，期待出现奇迹<a class="headerlink" href="#_8" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>被积函数某部分出现复杂“整体”（复合函数或两函数乘积）时，对其求导看特点，便于后续凑微分等操作。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{\ln x}{\sqrt{1 + [x(\ln x - 1)]^{2}}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p>观察<span><span class="heti-spacing"> </span><span class="arithmatex">\([x(\ln x - 1)]' = \ln x - 1 + 1 = \ln x\)</span></span>。</p>
+<div class="arithmatex">\[
+\text{原式} = \int \dfrac{\mathrm{d}(x(\ln x - 1))}{\sqrt{1+[x(\ln x - 1)]^2}} = \ln(x(\ln x - 1) + \sqrt{1+[x(\ln x - 1)]^2}) + C
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{x + 1}{x(1 + xe^{x})}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p><span class="arithmatex">\((xe^x)' = e^x(1+x)\)</span>。</p>
+<div class="arithmatex">\[
+\text{原式} = \int \dfrac{e^x(x+1)}{xe^x(1+xe^x)} \mathrm{d}x = \int \dfrac{\mathrm{d}(xe^x)}{xe^x(1+xe^x)} = \ln\left|\dfrac{xe^x}{1+xe^x}\right| + C
+\]</div>
+<p><strong>类题</strong></p>
+<div class="arithmatex">\[\int \dfrac{1 + x\cos x}{x(1 + xe^{\sin x})}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<p><span class="arithmatex">\((xe^{\sin x})' = e^{\sin x}(1+x\cos x)\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>注<span><span class="heti-spacing"> </span>1</span>：通过例题<span class="heti-skip"><span class="heti-spacing"> </span>2<span class="heti-spacing"> </span></span>和类题可总结出题模板<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int \dfrac{1 + xf'(x)}{x(1 + xe^{f(x)})}\mathrm{d}x=\int \dfrac{[1 + xf'(x)]e^{f(x)}}{xe^{f(x)}(1 + xe^{f(x)})}\mathrm{d}x=\int \dfrac{[xe^{f(x)}]'}{xe^{f(x)}(1 + xe^{f(x)})}\mathrm{d}x=\ln|\dfrac{xe^{f(x)}}{1 + xe^{f(x)}}| + C\)</span></span></p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1-\ln x}{(x-\ln x)^{2}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \dfrac{1-\ln x}{x^2 \left(1-\frac{\ln x}{x}\right)^2}\mathrm{d}x \\
+&amp;= \int \dfrac{1}{\left(1-\frac{\ln x}{x}\right)^2} \cdot \dfrac{1-\ln x}{x^2}\mathrm{d}x \\
+&amp;= \int \dfrac{1}{\left(\frac{\ln x}{x}-1\right)^2} \mathrm{d}\left(\dfrac{\ln x}{x}\right)\\
+&amp;= \dfrac{x}{x-\ln x} + C
+\end{aligned}
+\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{e^{x}(x - 1)}{(x - e^{x})^{2}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\text{原式} = \int \dfrac{e^x(x-1)}{x^2(1-\frac{e^x}{x})^2} \mathrm{d}x = \dots = \dfrac{1}{1-\frac{e^x}{x}} + C = \dfrac{x}{x-e^x} + C
+\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{x+\sin x\cdot\cos x}{(\cos x - x\cdot\sin x)^{2}}\mathrm{d}x\]</div>
+<p><strong>解：</strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \dfrac{x+\sin x\cos x}{\cos^2 x (1-x\tan x)^2} \mathrm{d}x \\
+&amp;= \int \dfrac{x\sec^2 x + \tan x}{(1-x\tan x)^2} \mathrm{d}x
+\end{aligned}
+\]</div>
+<p>观察分子，发现恰好是<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\tan x\)</span><span class="heti-spacing"> </span></span>的导数：</p>
+<div class="arithmatex">\[
+(x\tan x)' = 1 \cdot \tan x + x \cdot \sec^2 x
+\]</div>
+<p>于是进行凑微分：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{原式} &amp;= \int \dfrac{\mathrm{d}(x\tan x)}{(1-x\tan x)^2} \\
+&amp;= -\dfrac{1}{x\tan x - 1} + C
+\end{aligned}
+\]</div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 29, 2025 07:38:48 UTC">November 29, 2025</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 12, 2025 06:36:34 UTC">December 12, 2025</span>
 </span>
 </aside>
 </article>
