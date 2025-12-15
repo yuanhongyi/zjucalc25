@@ -1,4 +1,4 @@
-# 数列极限梳理与拓展
+# 数列极限
 
 ## 基础回顾
 
@@ -8,7 +8,7 @@
 
 设 $\{a_{n}\}$ 是一个数列, 如果存在 $a\in\mathbb{R}$, 使得 $\forall\epsilon>0$, $\exists N\in\mathbb{N}_{+}$ 当 $n\ge N$ 时, 都有
 
-$$|a_{n}-a|<\epsilon,$$
+$$|a_{n}-a|<\varepsilon,$$
 
 就称数列 $\{a_{n}\}$ 是**收敛的**并且收敛于a, 记为 $\lim\limits_{n\rightarrow\infty}a_{n}=a$ 或者 $a_{n}\rightarrow a$。
 
@@ -24,9 +24,9 @@ $$|a_{n}-a|<\epsilon,$$
 
 !!! tip
 
-    上述定义的否定也要掌握。
+    上述定义的**否定**也要掌握。
 
-    数列极限的几何意义是什么？
+    请画图思考数列极限的几何意义
 
 
 
@@ -42,7 +42,7 @@ $$|a_{n}-a|<\epsilon,$$
 
 **推论 1.1.11**
 
-若数列 $\{a_{n}\}$ 满足: 当 $n\ge N$ 时, $a_{n}\ge0$ 且 $\{a_{n}\}$ 收敛于a, 则 $a\ge0$。
+若数列 $\{a_{n}\}$ 满足: 当 $n\ge N$ 时, $a_{n}\ge0$ 且 $\{a_{n}\}$ 收敛于$a$, 则 $a\ge0$。
 
 
 !!! tip
@@ -59,13 +59,13 @@ $$|a_{n}-a|<\epsilon,$$
 
 **定理 1.1.15 (夹逼定理)**
 
-设数列 $\{a_{n}\},\{b_{n}\},\{c_{n}\}$ 满足当 $n\ge N_{0}$ 时, 有 $b_{n}\le a_{n}\le c_{n},$ 并且 $\lim\limits_{n\rightarrow\infty}b_{n}=\lim\limits_{n\rightarrow\infty}c_{n}=a$, 则数列 $\{a_{n}\}$ 也是收敛的, 且极限为a。
+设数列 $\{a_{n}\},\{b_{n}\},\{c_{n}\}$ 满足当 $n\ge N_{0}$ 时, 有 $b_{n}\le a_{n}\le c_{n},$ 并且 $\lim\limits_{n\rightarrow\infty}b_{n}=\lim\limits_{n\rightarrow\infty}c_{n}=a$, 则数列 $\{a_{n}\}$ 也是收敛的, 且极限为$a$。
 
 **定理 1.3.5 (柯西准则)**
 
 数列 $\{a_{n}\}$ 收敛当且仅当 $\{a_{n}\}$ 是柯西数列。
 
-(柯西数列: $\forall\epsilon>0$, $\exists N$, 当 $m,n\ge N$ 时, $|a_{m}-a_{n}|<\epsilon$)
+(柯西数列: $\forall\epsilon>0$, $\exists N$, 当 $m,n\ge N$ 时, $|a_{m}-a_{n}|<\varepsilon$)
 
 
 !!! tip
@@ -78,7 +78,7 @@ $$|a_{n}-a|<\epsilon,$$
 ---
 
 
-## 课本例题、习题选讲
+## 例题讲解
 
 ### 幂平均极限
 
@@ -137,7 +137,7 @@ $$\frac{x}{x+1}\le \ln(1+x)\le x$$
 **答案**: $\sqrt{e}$
 
 
-### 习题选讲：欧拉常数
+### 欧拉常数
 
 
 
@@ -384,9 +384,9 @@ $=\lim\limits_{n\rightarrow\infty}(1-x_{n})$<br>
 
 ---
 
-### 杂题: 卷积型极限
+### 卷积型极限
 
-**若 $\lim\limits_{n\rightarrow\infty}a_{n}=a, \lim\limits_{n\rightarrow\infty}b_{n}=b,$ 求证 $\lim\limits_{n\rightarrow\infty}\frac{a_{1}b_{n}+a_{2}b_{n-1}+\cdot\cdot\cdot+a_{n}b_{1}}{n}=ab$**
+**若 $\lim\limits_{n\rightarrow\infty}a_{n}=a, \lim\limits_{n\rightarrow\infty}b_{n}=b,$ 求证 $\lim\limits_{n\rightarrow\infty}\dfrac{a_{1}b_{n}+a_{2}b_{n-1}+\cdot\cdot\cdot+a_{n}b_{1}}{n}=ab$**
 
 **证明 (松弛变量法)**:
 
@@ -408,9 +408,9 @@ $= \lim\limits_{n\rightarrow\infty} \left( \frac{\sum\limits_{k=1}^n a_k b}{n} +
 
 ---
 
-### 杂题: 加权平均极限
+### 加权平均极限
 
-**设 $\lim\limits_{n\rightarrow\infty}x_{n}=a$, 求证 $\lim\limits_{n\rightarrow\infty}\frac{x_{1}+2x_{2}+\cdot\cdot\cdot+nx_{n}}{n^{2}}=\frac{a}{2}$**
+**设 $\lim\limits_{n\rightarrow\infty}x_{n}=a$, 求证 $\lim\limits_{n\rightarrow\infty}\dfrac{x_{1}+2x_{2}+\cdot\cdot\cdot+nx_{n}}{n^{2}}=\dfrac{a}{2}$**
 
 **证明 (拆分数列法)**:
 
