@@ -500,6 +500,7 @@ $$\int \dfrac{x^{2}}{(x\sin x+\cos x)^{2}}\mathrm{d}x$$
 **解：**
 
 观察分母，$(x\sin x + \cos x)' = \sin x + x\cos x - \sin x = x\cos x$。
+
 $$
 \begin{aligned}
 \text{原式} &= \int \dfrac{x}{\cos x} \cdot \dfrac{x\cos x}{(x\sin x + \cos x)^2} \mathrm{d}x \\

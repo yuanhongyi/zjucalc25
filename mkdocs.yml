@@ -142,6 +142,16 @@ nav:
       - 有理函数积分: slides/int/indef/rational.md
       - 三角有理函数积分: slides/int/indef/tri_rational.md
       - 换元法与分部积分法: slides/int/indef/substitution_integration.md
+    - 定积分:
+      - 定积分基础: slides/int/def/1.md
+      - 定积分拓展: slides/int/def/2.md
+      - 区间再现公式: slides/int/def/3.md
+    - 积分不等式:
+      - 方法汇总: slides/int_ineq/all.md
+      - 构造变限积分: slides/int_ineq/1.md
+      - 利用中值定理: slides/int_ineq/2.md
+    - 反常积分:
+      - 反常积分: slides/int/improper/1.md
 
   - Quiz:
     - 24微甲小测1: quiz/calc_quiz1.md
