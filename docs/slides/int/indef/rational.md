@@ -138,7 +138,6 @@ I &= \int \left( \dfrac{1}{3}\cdot\dfrac{1}{x+1} + \dfrac{-\frac{1}{3}x+\frac{2}
 \end{aligned}
 $$
 
-> 上面两题常规裂项就可以
 
 ### 有理函数积分特殊解法
 
