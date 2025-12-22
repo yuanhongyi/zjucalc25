@@ -137,6 +137,8 @@ nav:
       - 辅助多项式: slides/poly.md
       - 泰勒公式: slides/taylor.md
       - K值法: slides/constK.md
+    - 泰勒公式与洛必达法则:
+      - 极限计算: slides/limit.md
     - 不定积分:
       - 积分表: slides/int/int_table.md
       - 有理函数积分: slides/int/indef/rational.md
