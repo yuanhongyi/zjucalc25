@@ -5,10 +5,10 @@
 <meta content="yuanhongyi2004" name="author"/>
 <link href="https://zjucalc25.github.io/slides/int/improper/1/" rel="canonical"/>
 <link href="../../../int_ineq/2/" rel="prev"/>
-<link href="../../../../quiz/calc_quiz1/" rel="next"/>
+<link href="../2/" rel="next"/>
 <link href="../../../../graph/ZJU-logo.svg" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
-<title>反常积分 - 浙江大学2025-2026学年秋冬学期微积分（甲）I辅学</title>
+<title>反常积分敛散性 - 浙江大学2025-2026学年秋冬学期微积分（甲）I辅学</title>
 <link href="../../../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M1%207.775V2.75C1%201.784%201.784%201%202.75%201h5.025c.464%200%20.91.184%201.238.513l6.25%206.25a1.75%201.75%200%200%201%200%202.474l-5.026%205.026a1.75%201.75%200%200%201-2.474%200l-6.25-6.25A1.75%201.75%200%200%201%201%207.775m1.5%200c0%20.066.026.13.073.177l6.25%206.25a.25.25%200%200%200%20.354%200l5.025-5.025a.25.25%200%200%200%200-.354l-6.25-6.25a.25.25%200%200%200-.177-.073H2.75a.25.25%200%200%200-.25.25ZM6%205a1%201%200%201%201%200%202%201%201%200%200%201%200-2%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2.5%201.75v11.5c0%20.138.112.25.25.25h3.17a.75.75%200%200%201%200%201.5H2.75A1.75%201.75%200%200%201%201%2013.25V1.75C1%20.784%201.784%200%202.75%200h8.5C12.216%200%2013%20.784%2013%201.75v7.736a.75.75%200%200%201-1.5%200V1.75a.25.25%200%200%200-.25-.25h-8.5a.25.25%200%200%200-.25.25m13.274%209.537zl-4.557%204.45a.75.75%200%200%201-1.055-.008l-1.943-1.95a.75.75%200%200%201%201.062-1.058l1.419%201.425%204.026-3.932a.75.75%200%201%201%201.048%201.074M4.75%204h4.5a.75.75%200%200%201%200%201.5h-4.5a.75.75%200%200%201%200-1.5M4%207.75A.75.75%200%200%201%204.75%207h2a.75.75%200%200%201%200%201.5h-2A.75.75%200%200%201%204%207.75%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%208a8%208%200%201%201%2016%200A8%208%200%200%201%200%208m8-6.5a6.5%206.5%200%201%200%200%2013%206.5%206.5%200%200%200%200-13M6.5%207.75A.75.75%200%200%201%207.25%207h1a.75.75%200%200%201%20.75.75v2.75h.25a.75.75%200%200%201%200%201.5h-2a.75.75%200%200%201%200-1.5h.25v-2h-.25a.75.75%200%200%201-.75-.75M8%206a1%201%200%201%201%200-2%201%201%200%200%201%200%202%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M3.499.75a.75.75%200%200%201%201.5%200v.996C5.9%202.903%206.793%203.65%207.662%204.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873%2010.794-.045%2012.622.26%2014.408.558%2016%201.94%2016%204.25c0%201.278-.954%202.575-2.44%202.734l.146.508.065.22c.203.701.412%201.455.476%202.226.142%201.707-.4%203.03-1.487%203.898C11.714%2014.671%2010.27%2015%208.75%2015h-6a.75.75%200%200%201%200-1.5h1.376a4.5%204.5%200%200%201-.563-1.191%203.84%203.84%200%200%201-.05-2.063%204.65%204.65%200%200%201-2.025-.293.75.75%200%200%201%20.525-1.406c1.357.507%202.376-.006%202.698-.318l.009-.01a.747.747%200%200%201%201.06%200%20.75.75%200%200%201-.012%201.074c-.912.92-.992%201.835-.768%202.586.221.74.745%201.337%201.196%201.621H8.75c1.343%200%202.398-.296%203.074-.836.635-.507%201.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.4%202.4%200%200%201-.507-.441%203.1%203.1%200%200%201-.633-1.248.75.75%200%200%201%201.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738%200%201.25-.615%201.25-1.25%200-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706%201.345-.46.92-.27%201.774.019%203.062l.042.19.01.05c.348.443.666.949.94%201.553a.75.75%200%201%201-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7%205.527c-.814-.68-1.75-1.462-2.692-2.619a3.7%203.7%200%200%200-1.023.88c-.406.495-.663%201.036-.722%201.508.116.122.306.21.591.239.388.038.797-.06%201.032-.19a.75.75%200%200%201%20.728%201.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75%205.677V5.5c0-.984.48-1.94%201.077-2.664.46-.559%201.05-1.055%201.673-1.353z%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M13.78%204.22a.75.75%200%200%201%200%201.06l-7.25%207.25a.75.75%200%200%201-1.06%200L2.22%209.28a.75.75%200%200%201%20.018-1.042.75.75%200%200%201%201.042-.018L6%2010.94l6.72-6.72a.75.75%200%200%201%201.06%200%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%208a8%208%200%201%201%2016%200A8%208%200%200%201%200%208m8-6.5a6.5%206.5%200%201%200%200%2013%206.5%206.5%200%200%200%200-13M6.92%206.085h.001a.749.749%200%201%201-1.342-.67c.169-.339.436-.701.849-.977C6.845%204.16%207.369%204%208%204a2.76%202.76%200%200%201%201.637.525c.503.377.863.965.863%201.725%200%20.448-.115.83-.329%201.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6%206%200%200%200-.26.16%201%201%200%200%200-.276.245.75.75%200%200%201-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1%201%200%200%200%20.277-.245C8.96%206.514%209%206.427%209%206.25a.61.61%200%200%200-.262-.525A1.27%201.27%200%200%200%208%205.5c-.369%200-.595.09-.74.187a1%201%200%200%200-.34.398M9%2011a1%201%200%201%201-2%200%201%201%200%200%201%202%200%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M6.457%201.047c.659-1.234%202.427-1.234%203.086%200l6.082%2011.378A1.75%201.75%200%200%201%2014.082%2015H1.918a1.75%201.75%200%200%201-1.543-2.575Zm1.763.707a.25.25%200%200%200-.44%200L1.698%2013.132a.25.25%200%200%200%20.22.368h12.164a.25.25%200%200%200%20.22-.368Zm.53%203.996v2.5a.75.75%200%200%201-1.5%200v-2.5a.75.75%200%200%201%201.5%200M9%2011a1%201%200%201%201-2%200%201%201%200%200%201%202%200%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2.344%202.343za8%208%200%200%201%2011.314%2011.314A8.002%208.002%200%200%201%20.234%2010.089a8%208%200%200%201%202.11-7.746m1.06%2010.253a6.5%206.5%200%201%200%209.108-9.275%206.5%206.5%200%200%200-9.108%209.275M6.03%204.97%208%206.94l1.97-1.97a.749.749%200%200%201%201.275.326.75.75%200%200%201-.215.734L9.06%208l1.97%201.97a.749.749%200%200%201-.326%201.275.75.75%200%200%201-.734-.215L8%209.06l-1.97%201.97a.749.749%200%200%201-1.275-.326.75.75%200%200%201%20.215-.734L6.94%208%204.97%206.03a.75.75%200%200%201%20.018-1.042.75.75%200%200%201%201.042-.018%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M9.504.43a1.516%201.516%200%200%201%202.437%201.713L10.415%205.5h2.123c1.57%200%202.346%201.909%201.22%203.004l-7.34%207.142a1.25%201.25%200%200%201-.871.354h-.302a1.25%201.25%200%200%201-1.157-1.723L5.633%2010.5H3.462c-1.57%200-2.346-1.909-1.22-3.004zm1.047%201.074L3.286%208.571A.25.25%200%200%200%203.462%209H6.75a.75.75%200%200%201%20.694%201.034l-1.713%204.188%206.982-6.793A.25.25%200%200%200%2012.538%207H9.25a.75.75%200%200%201-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005%200-.009.004%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M4.72.22a.75.75%200%200%201%201.06%200l1%20.999a3.5%203.5%200%200%201%202.441%200l.999-1a.748.748%200%200%201%201.265.332.75.75%200%200%201-.205.729l-.775.776c.616.63.995%201.493.995%202.444v.327q0%20.15-.025.292c.408.14.764.392%201.029.722l1.968-.787a.75.75%200%200%201%20.556%201.392L13%207.258V9h2.25a.75.75%200%200%201%200%201.5H13v.5q-.002.615-.141%201.186l2.17.868a.75.75%200%200%201-.557%201.392l-2.184-.873A5%205%200%200%201%208%2016a5%205%200%200%201-4.288-2.427l-2.183.873a.75.75%200%200%201-.558-1.392l2.17-.868A5%205%200%200%201%203%2011v-.5H.75a.75.75%200%200%201%200-1.5H3V7.258L.971%206.446a.75.75%200%200%201%20.558-1.392l1.967.787c.265-.33.62-.583%201.03-.722a1.7%201.7%200%200%201-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72%201.28a.75.75%200%200%201%200-1.06m.53%206.28a.75.75%200%200%200-.75.75V11a3.5%203.5%200%201%200%207%200V7.25a.75.75%200%200%200-.75-.75ZM6.173%205h3.654A.17.17%200%200%200%2010%204.827V4.5a2%202%200%201%200-4%200v.327c0%20.096.077.173.173.173%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M5%205.782V2.5h-.25a.75.75%200%200%201%200-1.5h6.5a.75.75%200%200%201%200%201.5H11v3.282l3.666%205.76C15.619%2013.04%2014.543%2015%2012.767%2015H3.233c-1.776%200-2.852-1.96-1.899-3.458Zm-2.4%206.565a.75.75%200%200%200%20.633%201.153h9.534a.75.75%200%200%200%20.633-1.153L12.225%2010.5h-8.45ZM9.5%202.5h-3V6c0%20.143-.04.283-.117.403L4.73%209h6.54L9.617%206.403A.75.75%200%200%201%209.5%206Z%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M1.75%202.5h10.5a.75.75%200%200%201%200%201.5H1.75a.75.75%200%200%201%200-1.5m4%205h8.5a.75.75%200%200%201%200%201.5h-8.5a.75.75%200%200%201%200-1.5m0%205h8.5a.75.75%200%200%201%200%201.5h-8.5a.75.75%200%200%201%200-1.5M2.5%207.75v6a.75.75%200%200%201-1.5%200v-6a.75.75%200%200%201%201.5%200%22/%3E%3C/svg%3E');}</style>
@@ -35,6 +35,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#_1">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -56,7 +59,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              反常积分
+              反常积分敛散性
             
           </span>
 </div>
@@ -638,11 +641,162 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    反常积分敛散性
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     
   
-    反常积分
+    反常积分敛散性
+  
+
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        一、基本定义与概念
+      
+    </span>
+</a>
+<nav aria-label="一、基本定义与概念" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        （一）无穷区间上的反常积分
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        （二）无界函数的反常积分
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      
+        （三）绝对收敛与条件收敛
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      
+        二、比较判别法及其极限形式
+      
+    </span>
+</a>
+<nav aria-label="二、比较判别法及其极限形式" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        （一）无穷区间上的反常积分的比较判别法
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        （二）无界函数的反常积分的比较判别法
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#p-p-">
+<span class="md-ellipsis">
+      
+        三、p-积分与广义 p-积分
+      
+    </span>
+</a>
+<nav aria-label="三、p-积分与广义 p-积分" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#p-">
+<span class="md-ellipsis">
+      
+        （一）p-积分
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#p-_1">
+<span class="md-ellipsis">
+      
+        （二）广义 p-积分
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      
+        四、反常积分敛散性判别的步骤
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      
+        五、经典例题
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2/">
+<span class="md-ellipsis">
+    
+  
+    反常积分计算
   
 
     
@@ -873,19 +1027,455 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        一、基本定义与概念
+      
+    </span>
+</a>
+<nav aria-label="一、基本定义与概念" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        （一）无穷区间上的反常积分
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        （二）无界函数的反常积分
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      
+        （三）绝对收敛与条件收敛
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      
+        二、比较判别法及其极限形式
+      
+    </span>
+</a>
+<nav aria-label="二、比较判别法及其极限形式" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        （一）无穷区间上的反常积分的比较判别法
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        （二）无界函数的反常积分的比较判别法
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#p-p-">
+<span class="md-ellipsis">
+      
+        三、p-积分与广义 p-积分
+      
+    </span>
+</a>
+<nav aria-label="三、p-积分与广义 p-积分" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#p-">
+<span class="md-ellipsis">
+      
+        （一）p-积分
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#p-_1">
+<span class="md-ellipsis">
+      
+        （二）广义 p-积分
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      
+        四、反常积分敛散性判别的步骤
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      
+        五、经典例题
+      
+    </span>
+</a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>反常积分</h1>
+<h1 id="_1">反常积分的敛散性<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<h2 id="_2">一、基本定义与概念<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<h3 id="_3">（一）无穷区间上的反常积分<a class="headerlink" href="#_3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>设函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, +\infty)\)</span><span class="heti-spacing"> </span></span>有定义，且在任何有限的区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, b]\)</span><span class="heti-spacing"> </span></span>上都可积。如果<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(b \to +\infty\)</span><span class="heti-spacing"> </span></span>时，<span><span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>极限存在，则称该极限值为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, +\infty)\)</span><span class="heti-spacing"> </span></span>上的反常积分的值，记做<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x\)</span></span>。</p>
+<div class="arithmatex">\[
+\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x = \lim\limits_{b \to +\infty} \displaystyle\int_{a}^{b} f(x)\mathrm{d}x
+\]</div>
+<p>此时也称上述反常积分<strong>收敛</strong>。若上述极限不存在，则称反常积分<strong>发散</strong>。</p>
+<p>同理，对于其他情况的反常积分，可做如下定义：</p>
+<div class="arithmatex">\[
+\displaystyle\int_{-\infty}^{b} f(x)\mathrm{d}x = \lim\limits_{a \to -\infty} \displaystyle\int_{a}^{b} f(x)\mathrm{d}x
+\]</div>
+<div class="arithmatex">\[
+\displaystyle\int_{-\infty}^{+\infty} f(x)\mathrm{d}x = \displaystyle\int_{-\infty}^{c} f(x)\mathrm{d}x + \displaystyle\int_{c}^{+\infty} f(x)\mathrm{d}x
+\]</div>
+<p>其中，<span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛的充要条件是<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{c} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{c}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>都收敛。</p>
+<blockquote>
+<p><strong>注：对于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((-\infty, +\infty)\)</span><span class="heti-spacing"> </span></span>的反常积分，不能盲目套用奇偶性的结论。</strong></p>
+<p>也就是说——</p>
+<ul>
+<li>即使<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>是奇函数，<span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>也不一定等于零；</li>
+<li>即使<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>是偶函数，<span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>也不一定等于<span><span class="heti-spacing"> </span><span class="arithmatex">\(2\displaystyle\int_{0}^{+\infty} f(x)\mathrm{d}x\)</span></span>。</li>
+</ul>
+<p><strong>上述结论要想成立，前提是<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛。</strong> 对于收敛的反常积分，是可以套用奇偶性的结论的。</p>
+</blockquote>
+<p><strong>为什么发散的反常积分不能用奇偶性呢？难道<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} x\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>不能利用奇偶性，直接等于<span class="heti-skip"><span class="heti-spacing"> </span>0<span class="heti-spacing"> </span></span>吗？</strong></p>
+<p>那是因为，对于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>而言，上限趋向于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(+\infty\)</span><span class="heti-spacing"> </span></span>的速度和下限趋向于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(-\infty\)</span><span class="heti-spacing"> </span></span>的速度不一定相同。</p>
+<p>从定义可知，<span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} f(x)\mathrm{d}x = \displaystyle\int_{-\infty}^{c} f(x)\mathrm{d}x + \displaystyle\int_{c}^{+\infty} f(x)\mathrm{d}x = \lim\limits_{a \to -\infty} \displaystyle\int_{a}^{c} f(x)\mathrm{d}x + \lim\limits_{b \to +\infty} \displaystyle\int_{c}^{b} f(x)\mathrm{d}x\)</span>。</p>
+<p>下限的<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(-\infty\)</span><span class="heti-spacing"> </span></span>是因为<span><span class="heti-spacing"> </span><span class="arithmatex">\(a \to -\infty\)</span></span>，上限的<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(+\infty\)</span><span class="heti-spacing"> </span></span>是因为<span><span class="heti-spacing"> </span><span class="arithmatex">\(b \to +\infty\)</span></span>，但<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(b\)</span><span class="heti-spacing"> </span></span>毕竟是两个不同的变量，所以它们趋向于无穷的速度不一定相同，所以即使<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)=x\)</span><span class="heti-spacing"> </span></span>是奇函数，<span><span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} x\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>对应的无穷大的正面积，与<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{0} x\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>对应的无穷大的负面积，也并不是同一个“无穷大”，所以<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} x\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>也不能“正负抵消”，所以<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} x\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的结果并不是<span><span class="heti-spacing"> </span>0</span>，而是发散，或者是不存在。</p>
+<p>从这个角度也能看出，为什么<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛的充要条件是<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{c} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{c}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>都收敛。</p>
+<p><strong>记住，若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{c} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{c}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>都发散，二者绝对不可能抵消，从而使得<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛！</strong></p>
+<p>但是这并不代表总结的“发散<span class="heti-skip"><span class="heti-spacing"> </span>+<span class="heti-spacing"> </span></span>发散<span class="heti-skip"><span class="heti-spacing"> </span>=<span class="heti-spacing"> </span></span>不确定”是错的。因为对于反常积分而言<heti-adjacent class="heti-adjacent-quarter">，</heti-adjacent>“发散<span class="heti-skip"><span class="heti-spacing"> </span>+<span class="heti-spacing"> </span></span>发散<span class="heti-skip"><span class="heti-spacing"> </span>=<span class="heti-spacing"> </span></span>不确定”指的是“拆被积函数”，而不是“拆积分区间”。</p>
+<blockquote>
+<p>比如，若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} g(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>都发散，那么<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} [f(x)+g(x)]\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的敛散性不确定，需要具体问题具体分析，但若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{c} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{c}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>里只要有一个发散，那么<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>一定发散！</p>
+</blockquote>
+<p>当然，如果收敛，则可以用奇偶性，比如——</p>
+<blockquote>
+<ul>
+<li><span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} \dfrac{1}{1+x^2}\mathrm{d}x = 2\displaystyle\int_{0}^{+\infty} \dfrac{1}{1+x^2}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>就是对的，因为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} \dfrac{1}{1+x^2}\mathrm{d}x = \arctan x \Big|_{-\infty}^{+\infty} = \pi\)</span><span class="heti-spacing"> </span></span>收敛；</li>
+<li><span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} \dfrac{x}{1+x^2}\mathrm{d}x = 0\)</span><span class="heti-spacing"> </span></span>就是错的，因为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \dfrac{x}{1+x^2}\mathrm{d}x = \dfrac{1}{2}\ln(1+x^2) \Big|_{0}^{+\infty} = +\infty\)</span><span class="heti-spacing"> </span></span>就已经发散了。</li>
+</ul>
+</blockquote>
+<p>认为反常积分可以直接套用奇偶性结论的人，可能背错了定义，他们以为上下限趋向速度相同，即<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} f(x)\mathrm{d}x = \lim\limits_{a \to +\infty} \displaystyle\int_{-a}^{+a} f(x)\mathrm{d}x\)</span></span>，但其实<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-\infty}^{+\infty} f(x)\mathrm{d}x = \lim\limits_{a \to -\infty} \displaystyle\int_{a}^{c} f(x)\mathrm{d}x + \lim\limits_{b \to +\infty} \displaystyle\int_{c}^{b} f(x)\mathrm{d}x\)</span></span>。</p>
+<h3 id="_4">（二）无界函数的反常积分<a class="headerlink" href="#_4" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, b)\)</span><span class="heti-spacing"> </span></span>连续，<span class="arithmatex">\(\lim\limits_{x \to b^-} f(x) = \infty\)</span>，取<span><span class="heti-spacing"> </span><span class="arithmatex">\(\epsilon &gt; 0\)</span></span>（<span><span class="arithmatex">\(\epsilon\)</span><span class="heti-spacing"> </span></span>是充分小的正数<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{b-\epsilon} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>是定积分。</p>
+<p>若极限<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{\epsilon \to 0^+} \displaystyle\int_{a}^{b-\epsilon} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>存在，则称该极限为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, b]\)</span><span class="heti-spacing"> </span></span>上的反常积分的值，并称为“瑕积分”，且<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=b\)</span><span class="heti-spacing"> </span></span>称为“瑕点”，并记<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x = \lim\limits_{\epsilon \to 0^+} \displaystyle\int_{a}^{b-\epsilon} f(x)\mathrm{d}x\)</span></span>。</p>
+<p>此时，称瑕积分<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛；当然，若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{\epsilon \to 0^+} \displaystyle\int_{a}^{b-\epsilon} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>不存在，则称<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>发散。</p>
+<p>同理，对于其他情况的瑕积分，可做如下定义：</p>
+<ul>
+<li>若<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to a^+} f(x) = \infty\)</span></span>，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=a\)</span><span class="heti-spacing"> </span></span>是瑕点，并定义<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x = \lim\limits_{\epsilon \to 0^+} \displaystyle\int_{a+\epsilon}^{b} f(x)\mathrm{d}x\)</span></span>。</li>
+<li>若<span><span class="heti-spacing"> </span><span class="arithmatex">\(c \in (a, b)\)</span></span>，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to c} f(x) = \infty\)</span></span>，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=c\)</span><span class="heti-spacing"> </span></span>是瑕点，并定义<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x = \displaystyle\int_{a}^{c} f(x)\mathrm{d}x + \displaystyle\int_{c}^{b} f(x)\mathrm{d}x\)</span></span>。</li>
+</ul>
+<p>对于瑕点<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(c\)</span><span class="heti-spacing"> </span></span>藏在区间内部的情况，<span><span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛的充要条件是<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{c} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{c}^{b} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>都收敛。</p>
+<blockquote>
+<p><strong>注：对于瑕点藏在内部的瑕积分，也不能盲目套用奇偶性的结论，理由与上面相同！</strong></p>
+</blockquote>
+<p>比如，即使<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) = \dfrac{1}{x}\)</span><span class="heti-spacing"> </span></span>是奇函数，积分<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{-1}^{1} \dfrac{1}{x}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>也并不是<span><span class="heti-spacing"> </span>0</span>，而是发散。
+因为 <span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x}\mathrm{d}x = \ln x \Big|_{0^+}^1 = 0 - (-\infty) = +\infty\)</span>，故 <span class="arithmatex">\(\displaystyle\int_{-1}^{1} \dfrac{1}{x}\mathrm{d}x = \displaystyle\int_{-1}^{0} \dfrac{1}{x}\mathrm{d}x + \displaystyle\int_{0}^{1} \dfrac{1}{x}\mathrm{d}x\)</span> 整体也发散。</p>
+<h3 id="_5">（三）绝对收敛与条件收敛<a class="headerlink" href="#_5" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<ul>
+<li>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} |f(x)|\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，则称<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x\)</span></span> <strong>绝对收敛</strong>；</li>
+<li>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} |f(x)|\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>发散，但<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，则称<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x\)</span></span> <strong>条件收敛</strong>。</li>
+</ul>
+<p>显然，绝对收敛是一个比收敛更强的概念。</p>
+<hr/>
+<h2 id="_6">二、比较判别法及其极限形式<a class="headerlink" href="#_6" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<h3 id="_7">（一）无穷区间上的反常积分的比较判别法<a class="headerlink" href="#_7" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<h4 id="1"><span>1.<span class="heti-spacing"> </span></span>比较判别法<a class="headerlink" href="#1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
+<p>设函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x), g(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, +\infty)\)</span><span class="heti-spacing"> </span></span>上连续，且<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(0 \le f(x) \le g(x)\)</span><span class="heti-spacing"> </span></span>恒成立，则——</p>
+<p><span>(1)<span class="heti-spacing"> </span></span>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} g(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>也收敛<heti-adjacent class="heti-adjacent-half">；</heti-adjacent>（大的收敛，小的也收敛）
+(2) 若 <span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x\)</span> 发散，则 <span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} g(x)\mathrm{d}x\)</span> 也发散。（小的发散，大的也发散）</p>
+<blockquote>
+<p><strong>示例</strong>：若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} f^2(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，证明<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{f(x)}{x}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>绝对收敛。
+<strong>解</strong>：由均值不等式，<span class="arithmatex">\(\left| \dfrac{f(x)}{x} \right| \le \dfrac{1}{2} \left[ f^2(x) + \dfrac{1}{x^2} \right]\)</span>，而<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} f^2(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^2}\mathrm{d}x = -\dfrac{1}{x}\Big|_1^{+\infty} = 1\)</span><span class="heti-spacing"> </span></span>都收敛，所以<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{f(x)}{x}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>绝对收敛。</p>
+</blockquote>
+<p>但该方法最大的劣势，是需要<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(0 \le f(x) \le g(x)\)</span><span class="heti-spacing"> </span></span>恒成立，这是一个非常苛刻的条件。
+就像单调有界准则一样，我们不必非得要求 <span class="arithmatex">\(\{a_n\}\)</span> 从第 1 项起就单调，只要从某一项开始，<span class="arithmatex">\(\{a_n\}\)</span> 是单调的，就够了，毕竟前面的有限项不会影响敛散性。</p>
+<p>反常积分的敛散性也同理。对于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>和<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} g(x)\mathrm{d}x\)</span></span>，即使在前面的有限长度的区间内，<span><span class="arithmatex">\(0 \le f(x) \le g(x)\)</span><span class="heti-spacing"> </span></span>并不成立也无所谓。<strong>只要当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span><span class="heti-spacing"> </span></span>充分大以后，有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(0 \le f(x) \le g(x)\)</span><span class="heti-spacing"> </span></span>成立，则也能使用比较判别法，并不影响我们对敛散性的判断。</strong>
+既然前面有限的区间不会改变敛散性，那么我们干脆考察 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(x \to +\infty\)</span> 时的状态，这就引出了下面的“比较判别法的极限形式”。</p>
+<h4 id="2"><span>2.<span class="heti-spacing"> </span></span>比较判别法的极限形式<a class="headerlink" href="#2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(g(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, +\infty)\)</span><span class="heti-spacing"> </span></span>连续、非负，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to +\infty} \dfrac{f(x)}{g(x)} = k\)</span></span>，则——</p>
+<p><span>(1)<span class="heti-spacing"> </span></span>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(k=0\)</span><span class="heti-spacing"> </span></span>时，若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} g(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>必收敛（大的收敛，小的必收敛<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；
+(2) 当 <span class="arithmatex">\(k=+\infty\)</span> 时，若 <span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} g(x)\mathrm{d}x\)</span> 发散，则 <span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x\)</span> 必发散（小的发散，大的必发散）；
+(3) 当 <span class="arithmatex">\(k\)</span> 为非零常数，则 <span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x\)</span> 和 <span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} g(x)\mathrm{d}x\)</span> 的敛散性相同——该结论说明，若 <span class="arithmatex">\(x \to +\infty\)</span> 时 <span class="arithmatex">\(f(x)\)</span> 和 <span class="arithmatex">\(g(x)\)</span> 是同阶无穷小，则 <span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x\)</span> 和 <span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} g(x)\mathrm{d}x\)</span> 同敛散。</p>
+<blockquote>
+<p><strong>注</strong>：比较判别法的极限形式是一个<strong>超级好用</strong>的结论，它说明对于<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{+\infty} f(x)\mathrm{d}x\)</span></span>（其中<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) \ge 0\)</span></span>）而言，其敛散性主要取决于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x \to +\infty\)</span><span class="heti-spacing"> </span></span>时，<span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>作为无穷小的“阶”，这让很多反常积分的敛散性一看便知，还没做就做完了！
+比如——我们知道 <span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^2}\mathrm{d}x\)</span> 收敛，所以可以立刻看出下列反常积分收敛：
+<span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \sin\dfrac{1}{x^2}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{2}^{+\infty} \tan\dfrac{1}{x^2}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{3}^{+\infty} \left[\dfrac{1}{x} - \ln\left(1+\dfrac{1}{x}\right)\right]\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{4}^{+\infty} \left(1-\cos\dfrac{3}{x}\right)\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{5}^{+\infty} \dfrac{x}{\sqrt{x^6} + \sqrt{x}}\mathrm{d}x\)</span>。</p>
+</blockquote>
+<h3 id="_8">（二）无界函数的反常积分的比较判别法<a class="headerlink" href="#_8" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>大家可以与“无穷区间的反常积分的比较判别法”对比着学习。</p>
+<h4 id="1_1"><span>1.<span class="heti-spacing"> </span></span>比较判别法<a class="headerlink" href="#1_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x), g(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, b)\)</span><span class="heti-spacing"> </span></span>连续，<span><span class="arithmatex">\(x=b\)</span><span class="heti-spacing"> </span></span>是它们的瑕点，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(0 \le f(x) \le g(x)\)</span></span>，则——</p>
+<p><span>(1)<span class="heti-spacing"> </span></span>如果<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{b} g(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>也收敛<heti-adjacent class="heti-adjacent-half">；</heti-adjacent>（大的收敛，小的也收敛）
+(2) 如果 <span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x\)</span> 发散，则 <span class="arithmatex">\(\displaystyle\int_{a}^{b} g(x)\mathrm{d}x\)</span> 也发散。（小的发散，大的也发散）</p>
+<h4 id="2_1"><span>2.<span class="heti-spacing"> </span></span>比较判别法的极限形式<a class="headerlink" href="#2_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x), g(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, b)\)</span><span class="heti-spacing"> </span></span>连续、非负，<span><span class="arithmatex">\(x=b\)</span><span class="heti-spacing"> </span></span>是它们的瑕点，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to b^-} \dfrac{f(x)}{g(x)} = k\)</span></span>，则——</p>
+<p><span>(1)<span class="heti-spacing"> </span></span>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(k=0\)</span><span class="heti-spacing"> </span></span>时，若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{b} g(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>必收敛（大的收敛，小的必收敛<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；
+(2) 当 <span class="arithmatex">\(k=+\infty\)</span> 时，若 <span class="arithmatex">\(\displaystyle\int_{a}^{b} g(x)\mathrm{d}x\)</span> 发散，则 <span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x\)</span> 必发散（小的发散，大的必发散）；
+(3) 当 <span class="arithmatex">\(k\)</span> 为非零常数，则 <span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x\)</span> 和 <span class="arithmatex">\(\displaystyle\int_{a}^{b} g(x)\mathrm{d}x\)</span> 的敛散性相同——该结论说明，若 <span class="arithmatex">\(x \to b^-\)</span> 时 <span class="arithmatex">\(f(x)\)</span> 和 <span class="arithmatex">\(g(x)\)</span> 是同阶无穷大，则 <span class="arithmatex">\(\displaystyle\int_{a}^{b} f(x)\mathrm{d}x\)</span> 和 <span class="arithmatex">\(\displaystyle\int_{a}^{b} g(x)\mathrm{d}x\)</span> 同敛散。</p>
+<blockquote>
+<p>比如，已知<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x}\mathrm{d}x = \ln x \Big|_{0^+}^1 = +\infty\)</span><span class="heti-spacing"> </span></span>发散，则由比较判别法的极限形式得，下列积分均发散：
+<span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x\ln(1+x)}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{0}^{2} \dfrac{1}{x - \ln(1+x)}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{0}^{3} \dfrac{1}{1-\cos x}\mathrm{d}x\)</span></p>
+</blockquote>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>注：可以看出，为了判断形如<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>或<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的敛散性，我们要找的对比尺度往往是<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>或<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x^p}\mathrm{d}x\)</span></span>。
+那么，什么是 <strong><span><span class="arithmatex">\(p\)</span>-<span class="heti-spacing"> </span></span>积分</strong>呢？</p>
+</div>
+<hr/>
+<h2 id="p-p-">三、<span>p-<span class="heti-spacing"> </span></span>积分与广义<span class="heti-skip"><span class="heti-spacing"> </span>p-<span class="heti-spacing"> </span></span>积分<a class="headerlink" href="#p-p-" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<h3 id="p-">（一）<span>p-<span class="heti-spacing"> </span></span>积分<a class="headerlink" href="#p-" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>形如<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x^p}\mathrm{d}x\)</span></span>、<span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{a}^{b} \dfrac{1}{(x-a)^p}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{a}^{b} \dfrac{1}{(x-b)^p}\mathrm{d}x\)</span>，都称为 <strong><span><span class="arithmatex">\(p\)</span>-<span class="heti-spacing"> </span></span>积分</strong>。</p>
+<p><strong><span>(1)<span class="heti-spacing"> </span></span>讨论<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x^p}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的敛散性</strong></p>
+<p>解：
+当 <span class="arithmatex">\(p&gt;1\)</span> 时，<span class="arithmatex">\(\displaystyle\int_{0}^{1} x^{-p}\mathrm{d}x = \dfrac{1}{1-p}x^{1-p} \Big|_{0^+}^1 = \infty\)</span>，发散；
+当 <span class="arithmatex">\(p&lt;1\)</span> 时，<span class="arithmatex">\(\displaystyle\int_{0}^{1} x^{-p}\mathrm{d}x = \dfrac{1}{1-p}x^{1-p} \Big|_{0^+}^1 = \dfrac{1}{1-p}\)</span>，收敛；
+当 <span class="arithmatex">\(p=1\)</span> 时，<span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x^p}\mathrm{d}x = \displaystyle\int_{0}^{1} \dfrac{1}{x}\mathrm{d}x = \ln x \Big|_{0^+}^1 = \infty\)</span>，发散。</p>
+<p>综上，<span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x^p}\mathrm{d}x \begin{cases} \text{发散}, &amp; p \ge 1 \\ \text{收敛}, &amp; 0 &lt; p &lt; 1 \end{cases}\)</span><heti-adjacent class="heti-adjacent-half">。</heti-adjacent>（对于<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x^p}\mathrm{d}x\)</span></span>，显然<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(p\)</span><span class="heti-spacing"> </span></span>越大越发散）</p>
+<p><strong><span>(2)<span class="heti-spacing"> </span></span>讨论<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的敛散性</strong></p>
+<p>解：
+当 <span class="arithmatex">\(p&gt;1\)</span> 时，<span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x = \displaystyle\int_{1}^{+\infty} x^{-p}\mathrm{d}x = \dfrac{1}{1-p}x^{1-p} \Big|_{1}^{+\infty} = \dfrac{1}{p-1}\)</span>；
+当 <span class="arithmatex">\(p&lt;1\)</span> 时，<span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x = \displaystyle\int_{1}^{+\infty} x^{-p}\mathrm{d}x = \dfrac{1}{1-p}x^{1-p} \Big|_{1}^{+\infty} = \infty\)</span>；
+当 <span class="arithmatex">\(p=1\)</span> 时，<span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x = \displaystyle\int_{1}^{+\infty} \dfrac{1}{x}\mathrm{d}x = \ln x \Big|_{1}^{+\infty} = \infty\)</span>。</p>
+<p>综上，<span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x \begin{cases} \text{发散}, &amp; p \le 1 \\ \text{收敛}, &amp; p &gt; 1 \end{cases}\)</span><heti-adjacent class="heti-adjacent-half">。</heti-adjacent>（对于<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x\)</span></span>，显然<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(p\)</span><span class="heti-spacing"> </span></span>越大越收敛）</p>
+<p><strong><span>(3)<span class="heti-spacing"> </span></span>讨论<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的敛散性</strong></p>
+<p>解：由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x = \displaystyle\int_{0}^{1} \dfrac{1}{x^p}\mathrm{d}x + \displaystyle\int_{1}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x = I_1 + I_2\)</span></span>。
+<span class="arithmatex">\(I_1\)</span> 收敛需要 <span class="arithmatex">\(0 &lt; p &lt; 1\)</span>，<span class="arithmatex">\(I_2\)</span> 收敛需要 <span class="arithmatex">\(p &gt; 1\)</span>，二者无交集，所以无论 <span class="arithmatex">\(p\)</span> 取何值，<span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x\)</span> 都发散。</p>
+<p><strong><span>(4)<span class="heti-spacing"> </span></span>讨论<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{b} \dfrac{1}{(x-a)^p}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的敛散性</strong></p>
+<p>解：本题和第<span class="heti-skip"><span class="heti-spacing"> </span>(1)<span class="heti-spacing"> </span></span>题的<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x^p}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>没有本质上的区别，它们只是瑕点的位置不同而已。
+<span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x^p}\mathrm{d}x\)</span> 的瑕点是 <span class="arithmatex">\(x=0\)</span>，<span class="arithmatex">\(\displaystyle\int_{a}^{b} \dfrac{1}{(x-a)^p}\mathrm{d}x\)</span> 的瑕点是 <span class="arithmatex">\(x=a\)</span>，但在敛散性的层面上，结论一致。
+<span class="arithmatex">\(0 &lt; p &lt; 1\)</span> 时，积分收敛；<span class="arithmatex">\(p \ge 1\)</span> 时，积分发散。</p>
+<p><strong><span>(5)<span class="heti-spacing"> </span></span>讨论<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{a}^{b} \dfrac{1}{(x-b)^p}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的敛散性</strong></p>
+<p>解：分析同上。<span><span class="arithmatex">\(0 &lt; p &lt; 1\)</span><span class="heti-spacing"> </span></span>时，积分收敛；<span><span class="arithmatex">\(p \ge 1\)</span><span class="heti-spacing"> </span></span>时，积分发散。</p>
+<h3 id="p-_1">（二）广义<span class="heti-skip"><span class="heti-spacing"> </span>p-<span class="heti-spacing"> </span></span>积分<a class="headerlink" href="#p-_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>形如<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{e}^{+\infty} \dfrac{1}{x(\ln x)^p}\mathrm{d}x\)</span></span>、<span class="arithmatex">\(\displaystyle\int_{e}^{+\infty} \dfrac{1}{x(\ln x)^p}\mathrm{d}x\)</span>、<span><span class="arithmatex">\(\displaystyle\int_{e^{100}}^{+\infty} \dfrac{1}{x \cdot \ln x \cdot (\ln\ln x)^p}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的积分，都叫<strong>广义<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(p\)</span>-<span class="heti-spacing"> </span></span>积分</strong>。
+相信大家都能看出来，广义 <span class="arithmatex">\(p\)</span>-积分，其实经过凑微分，就可以转化为常规的 <span class="arithmatex">\(p\)</span>-积分。
+所以二者的结论其实也是对应的。</p>
+<ul>
+<li>对于<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{e}^{+\infty} \dfrac{1}{x(\ln x)^p}\mathrm{d}x\)</span></span>，当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(0 &lt; p &lt; 1\)</span><span class="heti-spacing"> </span></span>时发散，当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(p \ge 1\)</span><span class="heti-spacing"> </span></span>时收敛。</li>
+</ul>
+<hr/>
+<h2 id="_9">四、反常积分敛散性判别的步骤<a class="headerlink" href="#_9" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<ol>
+<li>找到该积分的所有瑕点（本讲义将无穷远视为“广义瑕点”，统称为瑕点<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li>判断该积分在每个瑕点处的敛散性。若每个瑕点处都收敛，则整体也收敛；但凡存在一个发散的瑕点，则整个反常积分就发散。</li>
+</ol>
+<p>至于每个瑕点处的敛散性如何判断，具体方法如下——</p>
+<p><span>(1)<span class="heti-spacing"> </span></span>看该积分是否本身就是 <strong><span><span class="arithmatex">\(p\)</span>-<span class="heti-spacing"> </span></span>积分</strong> 或者 <strong>广义<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(p\)</span>-<span class="heti-spacing"> </span></span>积分</strong>，如果是，直接套结论；若不是，进入<span><span class="heti-spacing"> </span>(2)</span>。
+(2) 找到被积函数在瑕点处的等价量
+    1) 若被积函数能直接等价为幂函数，则直接利用 <span class="arithmatex">\(p\)</span>-积分的结论判断出敛散性（如：<span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{\sin^2 x}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{x^2}{1+x^4}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{\sqrt{1-x^2}}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{\sqrt{1-x^3}}\mathrm{d}x\)</span>）
+    2) 若被积函数无法等价为幂函数，则可能是因为存在对数函数或指数函数。对数函数速度太慢、阶太低，而指数函数太快、阶太高，所以可以先猜测敛散性，然后用比较判别法的极限形式严格证明（如 <span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{\ln x}{x^2}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{\ln x}{\sqrt{x}}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{0}^{1} \ln x \mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{0}^{1} (\ln x)^{100}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{0}^{1} [\ln(1-x)]^{100}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} e^{-x^2}\mathrm{d}x\)</span>）；
+    3) 若被积函数在瑕点处出现 <span class="arithmatex">\(\sin\infty\)</span> 或 <span class="arithmatex">\(\cos\infty\)</span> 的情况，<strong>导致被积函数不断变号，则应先判断该积分是否绝对收敛，此时需要对被积函数加绝对值</strong>，然后利用<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(|\sin \bullet| \le 1\)</span><span class="heti-spacing"> </span></span>或<span><span class="heti-spacing"> </span><span class="arithmatex">\(|\cos \bullet| \le 1\)</span></span>，把被积函数中的三角函数放缩掉，此时会出现两种结果：
+        ① 放缩掉三角函数以后的新积分收敛，则原积分绝对收敛（如 <span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \dfrac{\sin x}{e^x}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \dfrac{\sin x}{1+x^2}\mathrm{d}x\)</span>）；
+        ② 放缩掉三角函数以后的新积分发散，则暂无法判断原积分的敛散性，此时可以用分部积分，将原积分转化为另一个新的积分，从而转化研究对象。（如 <span class="arithmatex">\(\displaystyle\int_{2}^{+\infty} \dfrac{\cos x}{\ln x}\mathrm{d}x\)</span>、<span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \cos x^2\mathrm{d}x\)</span>）
+        其中，第②种情况，基本不会考。</p>
+<ol>
+<li>若该积分在所有瑕点处均收敛，则整个积分收敛；只要有一个瑕点处发散，则整个积分发散。</li>
+</ol>
+<hr/>
+<h2 id="_10">五、经典例题<a class="headerlink" href="#_10" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong> <span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{\sqrt[3]{1+x^4}}\mathrm{d}x\)</span></p>
+<p><strong>解</strong>：瑕点只有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=+\infty\)</span><span class="heti-spacing"> </span></span>这一个点（再次强调，这里的瑕点包括了广义瑕点<span><span class="heti-spacing"> </span><span class="arithmatex">\(\infty\)</span></span><heti-adjacent class="heti-adjacent-half">）</heti-adjacent>。</p>
+<p><span><span class="arithmatex">\(x \to +\infty\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{1}{\sqrt[3]{1+x^4}} \sim \dfrac{1}{\sqrt[3]{x^4}} = \dfrac{1}{x^{\frac{4}{3}}}\)</span>，由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(p = \dfrac{4}{3} &gt; 1\)</span></span>，故<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{\sqrt[3]{1+x^4}}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong> <span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x\sqrt{1+x^2}}\mathrm{d}x\)</span></p>
+<p><strong>解</strong>：瑕点只有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=+\infty\)</span><span class="heti-spacing"> </span></span>这一个点（广义瑕点<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>。</p>
+<p><span><span class="arithmatex">\(x \to +\infty\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{1}{x\sqrt{1+x^2}} \sim \dfrac{1}{x\sqrt{x^2}} = \dfrac{1}{x^2}\)</span>，由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(p=2 &gt; 1\)</span></span>，故<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x\sqrt{1+x^2}}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong> <span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \dfrac{x^m}{1+x^n}\mathrm{d}x \quad (m, n &gt; 0)\)</span></p>
+<p><strong>解</strong>：瑕点只有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=+\infty\)</span><span class="heti-spacing"> </span></span>这一个点（广义瑕点<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>。</p>
+<p><span><span class="arithmatex">\(x \to +\infty\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{x^m}{1+x^n} \sim \dfrac{x^m}{x^n} = \dfrac{1}{x^{n-m}}\)</span>，故当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n-m &gt; 1\)</span><span class="heti-spacing"> </span></span>时，收敛；当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n-m \le 1\)</span><span class="heti-spacing"> </span></span>时，发散。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>4</span></strong> <span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{\mathrm{d}x}{\sqrt{(1-x^2)(1-k^2x^2)}} \quad (k^2 &lt; 1)\)</span></p>
+<p><strong>解</strong>：瑕点只有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=1\)</span><span class="heti-spacing"> </span></span>这一个点。</p>
+<p><span><span class="arithmatex">\(x \to 1\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{1}{\sqrt{(1-x^2)(1-k^2x^2)}} = \dfrac{1}{\sqrt{(1-x)(1+x)(1-k^2x^2)}} \sim \dfrac{1}{\sqrt{2(1-k^2)}} \cdot \dfrac{1}{\sqrt{1-x}}\)</span>。
+由于 <span class="arithmatex">\(p = \dfrac{1}{2} &lt; 1\)</span>，故 <span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{\mathrm{d}x}{\sqrt{(1-x^2)(1-k^2x^2)}}\)</span> 收敛。</p>
+<blockquote>
+<p><strong>注</strong>：由于敛散性只需要判断“阶”，所以被积函数中的“非零因子”不会影响敛散性，也不必在乎这些非零因子的极限到底是几，我们只需要关注零因子的阶即可。
+所以本题解题过程还可简化为 <span class="arithmatex">\(f(x) = O\left(\dfrac{1}{(1-x)^{\frac{1}{2}}}\right)\)</span>，其中大写的 <span class="arithmatex">\(O\)</span> 表示同阶，小写的 <span class="arithmatex">\(o\)</span> 才是高阶。</p>
+</blockquote>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>5</span></strong> <span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{x^4}{\sqrt{1-x^4}}\mathrm{d}x\)</span></p>
+<p><strong>解</strong>：瑕点只有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=1\)</span><span class="heti-spacing"> </span></span>这一个点。</p>
+<p><span><span class="arithmatex">\(x \to 1\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{x^4}{\sqrt{1-x^4}} = \dfrac{x^4}{\sqrt{(1-x)(1+x)(1+x^2)}} = O\left(\dfrac{1}{\sqrt{1-x}}\right)\)</span>，由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(p=\dfrac{1}{2} &lt; 1\)</span></span>，故积分收敛。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>6</span></strong> <span class="arithmatex">\(\displaystyle\int_{1}^{2} \dfrac{1}{(\ln x)^3}\mathrm{d}x\)</span></p>
+<p><strong>解</strong>：瑕点只有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=1\)</span><span class="heti-spacing"> </span></span>这一个点</p>
+<p><span><span class="arithmatex">\(x \to 1\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{1}{(\ln x)^3} \sim \dfrac{1}{(x-1)^3}\)</span>，由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(p=3 &gt; 1\)</span></span>，故发散。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>7</span></strong> <span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{\arcsin x}{1-x^3}\mathrm{d}x\)</span></p>
+<p><strong>解</strong>：瑕点只有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=1\)</span><span class="heti-spacing"> </span></span>这一个</p>
+<p><span><span class="arithmatex">\(x \to 1\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{\arcsin x}{1-x^3} = \dfrac{\arcsin x}{(1-x)(1+x+x^2)} = O\left(\dfrac{1}{1-x}\right)\)</span>，故发散。
+<em><span>(<span class="heti-spacing"> </span></span>注：这里<span><span class="heti-spacing"> </span><span class="arithmatex">\(p=1\)</span></span>，对于有限区间瑕积分， <span><span class="arithmatex">\(p \ge 1\)</span><span class="heti-spacing"> </span></span>发散<span><span class="heti-spacing"> </span>)</span></em></p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>8</span></strong> <span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \dfrac{x \cdot \arctan x}{1+x^3}\mathrm{d}x\)</span></p>
+<p><strong>解</strong>：瑕点只有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=+\infty\)</span><span class="heti-spacing"> </span></span>这一个（广义瑕点<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>。</p>
+<p><span><span class="arithmatex">\(x \to +\infty\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{x \arctan x}{1+x^3} \sim \dfrac{x}{x^3} \cdot \dfrac{\pi}{2} = \dfrac{\pi}{2x^2}\)</span>，由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(p=2 &gt; 1\)</span></span>，故积分收敛。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>9</span></strong> <span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{\left(\sin\frac{1}{x}\right)^a}{\left[\ln\left(1+\frac{1}{x}\right)\right]^{2b}}\mathrm{d}x \quad (\text{其中} a, b &gt; 0)\)</span></p>
+<p><strong>解</strong>：瑕点只有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=+\infty\)</span><span class="heti-spacing"> </span></span>这一个（广义瑕点<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>。</p>
+<p><span><span class="arithmatex">\(x \to +\infty\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{\left(\sin\frac{1}{x}\right)^a}{\left[\ln\left(1+\frac{1}{x}\right)\right]^{2b}} \sim \dfrac{\frac{1}{x^a}}{\frac{1}{x^{2b}}} = \dfrac{x^{2b}}{x^a} = \dfrac{1}{x^{a-2b}}\)</span>，故<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a-2b &gt; 1\)</span><span class="heti-spacing"> </span></span>时收敛，<span><span class="arithmatex">\(a-2b \le 1\)</span><span class="heti-spacing"> </span></span>发散。</p>
+<hr/>
+<p><strong>※例题<span><span class="heti-spacing"> </span>10</span></strong> 设<span><span class="heti-spacing"> </span><span class="arithmatex">\(a&gt;0\)</span>, <span class="arithmatex">\(f(x) = \begin{cases} \dfrac{\arctan x}{x^{\frac{a+1}{2}}}, &amp; 0 &lt; x &lt; 1 \\ \dfrac{\ln(1+\sin\frac{1}{x^a})}{x^b \ln \cos \frac{1}{x}}, &amp; 1 \le x &lt; +\infty \end{cases}\)</span></span>。若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，求<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a, b\)</span><span class="heti-spacing"> </span></span>满足的条件</p>
+<p><strong>解</strong>：瑕点为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=0\)</span><span class="heti-spacing"> </span></span>和<span><span class="heti-spacing"> </span><span class="arithmatex">\(x=+\infty\)</span></span>。</p>
+<p><span><span class="arithmatex">\(x \to 0^+\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{\arctan x}{x^{\frac{a+1}{2}}} \sim \dfrac{x}{x^{\frac{a+1}{2}}} = \dfrac{1}{x^{\frac{a-1}{2}}}\)</span>，为了收敛，需要<span><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{a-1}{2} &lt; 1\)</span></span>，即<span><span class="heti-spacing"> </span><span class="arithmatex">\(a &lt; 3\)</span></span>；
+<span class="arithmatex">\(x \to +\infty\)</span> 时，<span class="arithmatex">\(f(x) = \dfrac{\ln(1+\sin\frac{1}{x^a})}{x^b \ln \cos \frac{1}{x}} \sim \dfrac{\frac{1}{x^a}}{x^b \left(\cos\frac{1}{x} - 1\right)} \sim \dfrac{\frac{1}{x^a}}{x^b \left(-\frac{1}{2x^2}\right)} \sim \dfrac{-2}{x^{a+b-2}}\)</span>，为了收敛，需要 <span class="arithmatex">\(a+b-2 &gt; 1\)</span>，即 <span class="arithmatex">\(a+b &gt; 3\)</span>。</p>
+<p>综上，<span><span class="arithmatex">\(a &lt; 3\)</span><span class="heti-spacing"> </span></span>且<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a+b &gt; 3\)</span><span class="heti-spacing"> </span></span>时，积分收敛。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>11</span></strong> <span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} e^{-x}\mathrm{d}x\)</span>；<span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} e^{-x^2}\mathrm{d}x\)</span></p>
+<p><strong>解</strong>：由于指数函数趋向于<span class="heti-skip"><span class="heti-spacing"> </span>0<span class="heti-spacing"> </span></span>的速度很快，所以这两个积分显然都是收敛的，下面给出严格证明。</p>
+<p>(1)<span class="arithmatex">\(\lim\limits_{x \to +\infty} \dfrac{f(x)}{g(x)} = \lim\limits_{x \to +\infty} \dfrac{e^{-x}}{\frac{1}{x^2}} = \lim\limits_{x \to +\infty} \dfrac{x^2}{e^x} = 0\)</span>，且<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^2}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，则由比较判别法的极限形式可知，<span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} e^{-x}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>也收敛。</p>
+<p><span>(2)<span class="heti-spacing"> </span></span>对于<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} e^{-x^2}\mathrm{d}x\)</span></span>，方法同上。其实，由于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x \to +\infty\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(e^{-x^2} \ll e^{-x}\)</span>，所以<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} e^{-x^2}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>更收敛了。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>12</span></strong> <span class="arithmatex">\(\displaystyle\int_{0}^{1} \ln x \mathrm{d}x\)</span>；<span class="arithmatex">\(\displaystyle\int_{0}^{1} (\ln x)^{2020}\mathrm{d}x\)</span></p>
+<p><strong>解</strong>：<span><span class="arithmatex">\(x \to 0^+\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(\ln x \to -\infty\)</span>，但由于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\ln x\)</span><span class="heti-spacing"> </span></span>的“速度”很慢，所以大胆猜测这两个积分收敛，证明如下：</p>
+<p><span>(1)<span class="heti-spacing"> </span></span>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) = \ln x\)</span></span>，为证出<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，我们要找到幂函数<span><span class="heti-spacing"> </span><span class="arithmatex">\(g(x)\)</span></span>，使得<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} g(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>本身收敛，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to 0} \dfrac{f(x)}{g(x)} = 0\)</span></span>，所以取<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(g(x) = \dfrac{1}{\sqrt{x}}\)</span><span class="heti-spacing"> </span></span>即可。</p>
+<p><span class="arithmatex">\(\lim\limits_{x \to 0^+} \dfrac{f(x)}{g(x)} = \lim\limits_{x \to 0^+} \dfrac{\ln x}{\frac{1}{\sqrt{x}}} = \lim\limits_{x \to 0^+} \sqrt{x} \ln x = 0\)</span>，且<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{\sqrt{x}}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，则由比较判别法的极限形式可知，<span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \ln x \mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛。</p>
+<p><span>(2)<span class="heti-spacing"> </span></span>对于<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} (\ln x)^{2020}\mathrm{d}x\)</span></span>，方法同上。<span class="arithmatex">\(\lim\limits_{x \to 0^+} \dfrac{(\ln x)^{2020}}{\frac{1}{\sqrt{x}}} = \lim\limits_{x \to 0^+} \sqrt{x} (\ln x)^{2020} = 0\)</span>，故<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} (\ln x)^{2024}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>13</span></strong> <span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{\ln x}{1-x}\mathrm{d}x\)</span>；<span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{\sqrt{x} \cdot \ln x}\mathrm{d}x\)</span></p>
+<p><strong>解</strong>：
+(1) 只有 <span class="arithmatex">\(x=0\)</span> 才是瑕点，<span class="arithmatex">\(x \to 0^+\)</span> 时，<span class="arithmatex">\(f(x) = \dfrac{\ln x}{x-1} \sim -\ln x\)</span>，由上一题可知，该积分收敛。</p>
+<p><span>(2) <span class="arithmatex">\(x=0\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=1\)</span><span class="heti-spacing"> </span></span>都是瑕点。
+<span class="arithmatex">\(x \to 0^+\)</span> 时，<span class="arithmatex">\(\ln x \to -\infty\)</span>，故 <span class="arithmatex">\(\dfrac{1}{|\sqrt{x} \cdot \ln x|} \ll \dfrac{1}{\sqrt{x}}\)</span>，而 <span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{\sqrt{x}}\mathrm{d}x\)</span> 收敛，故 </p>
+<p><span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{\sqrt{x} \cdot \ln x}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span>0<span class="heti-spacing"> </span></span>处收敛。</p>
+<p><span><span class="arithmatex">\(x \to 1\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(\dfrac{1}{\sqrt{x} \cdot \ln x} \sim \dfrac{1}{x-1}\)</span>，<span class="arithmatex">\(p=1\)</span>，故 </p>
+<p><span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{\sqrt{x} \cdot \ln x}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=1\)</span><span class="heti-spacing"> </span></span>处发散。</p>
+<p>综上，积分<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{\sqrt{x} \cdot \ln x}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>发散。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>14</span></strong> 若积分<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} x^a (1-x)^b \ln x \mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，则<span><span class="heti-spacing"> </span>( )</span>
+A. <span class="arithmatex">\(a &lt; -1\)</span> 且 <span class="arithmatex">\(a+b &gt; -3\)</span>
+B. <span class="arithmatex">\(b &lt; -2\)</span> 且 <span class="arithmatex">\(a+b &gt; -3\)</span>
+C. <span class="arithmatex">\(a &gt; -1\)</span> 且 <span class="arithmatex">\(b &lt; -2\)</span>
+D. <span class="arithmatex">\(a &gt; -1\)</span> 且 <span class="arithmatex">\(b &gt; -2\)</span>
+<em><span>(<span class="heti-spacing"> </span></span>注：选项<span class="heti-skip"><span class="heti-spacing"> </span>D<span class="heti-spacing"> </span></span>原文根据解析推导修正为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a &gt; -1\)</span><span class="heti-spacing"> </span></span>且<span><span class="heti-spacing"> </span><span class="arithmatex">\(b &gt; -2\)</span>)</span></em></p>
+<p><strong>解</strong>：瑕点为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=0\)</span><span class="heti-spacing"> </span></span>和<span><span class="heti-spacing"> </span><span class="arithmatex">\(x=1\)</span></span>。</p>
+<p><span>(1) <span class="arithmatex">\(x \to 0^+\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = x^a (1-x)^b \ln x \sim \dfrac{\ln x}{x^{-a}}\)</span>，又<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{\ln x}{x^p}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(0 \le p &lt; 1\)</span><span class="heti-spacing"> </span></span>时收敛，<span><span class="arithmatex">\(p \ge 1\)</span><span class="heti-spacing"> </span></span>时发散，</p>
+<p>故要想本题的<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=0\)</span><span class="heti-spacing"> </span></span>处收敛，则需要<span><span class="heti-spacing"> </span><span class="arithmatex">\(0 \le -a &lt; 1\)</span></span>，即<span><span class="heti-spacing"> </span><span class="arithmatex">\(-1 &lt; a \le 0\)</span></span>；</p>
+<p><span>(2) <span class="arithmatex">\(x \to 1^-\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = x^a (1-x)^b \ln x \sim \dfrac{-1}{(1-x)^{-(b+1)}}\)</span>，要想收敛，需要<span><span class="heti-spacing"> </span><span class="arithmatex">\(0 &lt; -(b+1) &lt; 1\)</span></span>，故<span><span class="heti-spacing"> </span><span class="arithmatex">\(-2 &lt; b &lt; -1\)</span></span>。</p>
+<p>故<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(-1 &lt; a \le 0\)</span><span class="heti-spacing"> </span></span>且<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(-2 &lt; b &lt; -1\)</span><span class="heti-spacing"> </span></span>时，<span><span class="arithmatex">\(\displaystyle\int_{0}^{1} x^a (1-x)^b \ln x \mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛。</p>
+<p><span><span class="arithmatex">\(a&gt;0\)</span><span class="heti-spacing"> </span></span>以及<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(b&gt;-1\)</span><span class="heti-spacing"> </span></span>时积分不再是反常积分，也可以看作收敛，故答案为<span><span class="heti-spacing"> </span><span class="arithmatex">\(\boxed{D}\)</span></span></p>
+<hr/>
+<p><strong>※例题<span><span class="heti-spacing"> </span>15</span></strong> 判断<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{\ln x}{x^2}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的敛散性，并证明：对于任意的<span><span class="heti-spacing"> </span><span class="arithmatex">\(\alpha &gt; 0\)</span></span>，当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(b &gt; 1\)</span><span class="heti-spacing"> </span></span>时，<span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{\ln^\alpha x}{x^b}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>均收敛。</p>
+<blockquote>
+<p><strong>分析</strong>：<span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^2}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，而<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x \to +\infty\)</span><span class="heti-spacing"> </span></span>时，虽然<span><span class="heti-spacing"> </span><span class="arithmatex">\(\ln x \to +\infty\)</span></span>，但<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\ln x\)</span><span class="heti-spacing"> </span></span>速度太慢，所以我们有理由相信即使被积函数乘了<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\ln x\)</span><span class="heti-spacing"> </span></span>以后，仍然是收敛的。那么该怎么证明呢？当然是利用比较判别法的极限形式。
+假设 <span class="arithmatex">\(f(x) = \dfrac{\ln x}{x^2}\)</span>，<span class="arithmatex">\(g(x) = \dfrac{1}{x^p}\)</span>，我们为了证明 <span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} f(x)\mathrm{d}x\)</span> 收敛，当然需要 <span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} g(x)\mathrm{d}x\)</span> 也收敛，所以 <span class="arithmatex">\(p &gt; 1\)</span> 是必须的。
+并且，我们希望“通过 <span class="arithmatex">\(g\)</span> 收敛证明出 <span class="arithmatex">\(f\)</span> 收敛”，所以我们希望 <span class="arithmatex">\(\lim\limits_{x \to +\infty} \dfrac{f(x)}{g(x)} = 0\)</span>，即 <span class="arithmatex">\(\lim\limits_{x \to +\infty} \dfrac{\ln x}{\frac{x^2}{x^p}} = 0\)</span>。
+也即 <span class="arithmatex">\(\lim\limits_{x \to +\infty} \dfrac{\ln x}{x^{2-p}} = 0\)</span>，这需要 <span class="arithmatex">\(2-p &gt; 0\)</span>，故 <span class="arithmatex">\(p &lt; 2\)</span>。
+这样，我们就保证了 <span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} g(x)\mathrm{d}x\)</span> 收敛，并且可以通过 <span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} g(x)\mathrm{d}x\)</span> 收敛证明出 <span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} f(x)\mathrm{d}x\)</span> 收敛。
+综上，只需取 <span class="arithmatex">\(p=1.5\)</span>，即取 <span class="arithmatex">\(g(x) = \dfrac{1}{x^{1.5}}\)</span> 即可。</p>
+</blockquote>
+<p><strong>解</strong>：<span>(1)<span class="heti-spacing"> </span></span>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) = \dfrac{\ln x}{x^2}\)</span></span>，取<span><span class="heti-spacing"> </span><span class="arithmatex">\(g(x) = \dfrac{1}{x^{1.5}}\)</span></span>，显然<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} g(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to +\infty} \dfrac{f(x)}{g(x)} = \lim\limits_{x \to +\infty} \dfrac{\ln x}{\sqrt{x}} = 0\)</span></span>。</p>
+<p>由比较判别法的极限形式可知，原积分<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛。</p>
+<p><span>(2)<span class="heti-spacing"> </span></span>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(b &gt; 1\)</span><span class="heti-spacing"> </span></span>时，<span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^b}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，所以我们有理由猜测<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{\ln^\alpha x}{x^b}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>也收敛。</p>
+<p>仿照第<span class="heti-skip"><span class="heti-spacing"> </span>(1)<span class="heti-spacing"> </span></span>问的证明，我们令<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) = \displaystyle\int_{1}^{+\infty} \dfrac{\ln^\alpha x}{x^b}\mathrm{d}x\)</span></span>，<span class="arithmatex">\(g(x) = \dfrac{1}{x^p}\)</span>。</p>
+<p>为了让<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} g(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，需要<span><span class="heti-spacing"> </span><span class="arithmatex">\(p &gt; 1\)</span></span>；为了让<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to +\infty} \dfrac{f(x)}{g(x)} = \lim\limits_{x \to +\infty} \dfrac{\frac{\ln^\alpha x}{x^b}}{\frac{1}{x^p}} = \lim\limits_{x \to +\infty} \dfrac{\ln^\alpha x}{x^{b-p}} = 0\)</span></span>，</p>
+<p>显然只需要<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(b-p &gt; 0\)</span><span class="heti-spacing"> </span></span>即可，即<span><span class="heti-spacing"> </span><span class="arithmatex">\(p &lt; b\)</span></span>。综上，只需<span><span class="heti-spacing"> </span><span class="arithmatex">\(1 &lt; p &lt; b\)</span></span>。</p>
+<p>比如，取<span><span class="heti-spacing"> </span><span class="arithmatex">\(g(x) = \dfrac{1}{x^{\frac{b+1}{2}}}\)</span></span>，<span class="arithmatex">\(p = \dfrac{b+1}{2} &gt; 1\)</span>，故<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} g(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛。</p>
+<p>且<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to +\infty} \dfrac{f(x)}{g(x)} = \lim\limits_{x \to +\infty} \dfrac{\frac{\ln^\alpha x}{x^b}}{\frac{1}{x^{\frac{b+1}{2}}}} = \lim\limits_{x \to +\infty} \dfrac{\ln^\alpha x}{x^{\frac{b-1}{2}}} = 0\)</span></span>，由比较判别法的极限形式，<span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{\ln^\alpha x}{x^b}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛。</p>
+<hr/>
+<p><strong>※例题<span><span class="heti-spacing"> </span>16</span></strong> 判断<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{2}^{+\infty} \dfrac{1}{x^p (\ln x)^q}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的敛散性<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>其中<span><span class="heti-spacing"> </span><span class="arithmatex">\(p, q &gt; 0\)</span>)</span></p>
+<p><strong>解</strong>：当<span><span class="heti-spacing"> </span><span class="arithmatex">\(p=1\)</span></span>，则是“广义<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(p\)</span>-<span class="heti-spacing"> </span></span>积分”，敛散性取决于<span><span class="heti-spacing"> </span><span class="arithmatex">\(q\)</span></span> —— <span><span class="arithmatex">\(q &gt; 1\)</span><span class="heti-spacing"> </span></span>收敛，<span><span class="arithmatex">\(q \le 1\)</span><span class="heti-spacing"> </span></span>发散；</p>
+<p>当<span><span class="heti-spacing"> </span><span class="arithmatex">\(p &gt; 1\)</span></span>，<span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \dfrac{1}{x^p}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>已经收敛，那么<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{2}^{+\infty} \dfrac{1}{x^p (\ln x)^q}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>就更收敛了；</p>
+<p>当<span><span class="heti-spacing"> </span><span class="arithmatex">\(0 &lt; p &lt; 1\)</span></span>，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{2}^{+\infty} \dfrac{1}{x^p (\ln x)^q}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>发散。此时虽然分母乘了一个无穷大<span><span class="heti-spacing"> </span><span class="arithmatex">\((\ln x)^q\)</span></span>，但仍猜测发散。</p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) = \dfrac{1}{x^p (\ln x)^q}\)</span></span>，<span class="arithmatex">\(g(x) = \dfrac{1}{x^k}\)</span>，要让<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{2}^{+\infty} g(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>发散，需要<span><span class="heti-spacing"> </span><span class="arithmatex">\(k \le 1\)</span></span>；</p>
+<p>要让<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to +\infty} \dfrac{f(x)}{g(x)} = \lim\limits_{x \to +\infty} \dfrac{\frac{1}{x^p (\ln x)^q}}{\frac{1}{x^k}} = \lim\limits_{x \to +\infty} \dfrac{x^{k-p}}{(\ln x)^q} = +\infty\)</span></span>，只需<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(k &gt; p\)</span><span class="heti-spacing"> </span></span>即可。</p>
+<p>故只需控制<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(k\)</span><span class="heti-spacing"> </span></span>的范围为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(p &lt; k \le 1\)</span><span class="heti-spacing"> </span></span>即可。</p>
+<p>比如，取<span><span class="heti-spacing"> </span><span class="arithmatex">\(k = \dfrac{p+1}{2}\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(g(x) = \dfrac{1}{x^{\frac{p+1}{2}}}\)</span></span>，则由<span><span class="heti-spacing"> </span><span class="arithmatex">\(k = \dfrac{p+1}{2} &lt; 1\)</span></span>，得<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{2}^{+\infty} g(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>发散。</p>
+<p>而<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to +\infty} \dfrac{f(x)}{g(x)} = \lim\limits_{x \to +\infty} \dfrac{\frac{1}{x^p (\ln x)^q}}{\frac{1}{x^{\frac{p+1}{2}}}} = \lim\limits_{x \to +\infty} \dfrac{x^{\frac{1-p}{2}}}{(\ln x)^q} = +\infty\)</span></span>，则由比较判别法的极限形式，积分发散。</p>
+<p>综上，有如下结论——</p>
+<p><strong>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(p=1\)</span><span class="heti-spacing"> </span></span>且<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(q&gt;1\)</span><span class="heti-spacing"> </span></span>时收敛；当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(p=1\)</span><span class="heti-spacing"> </span></span>且<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(q \le 1\)</span><span class="heti-spacing"> </span></span>时发散；当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(p &gt; 1\)</span><span class="heti-spacing"> </span></span>时，收敛；当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(p &lt; 1\)</span><span class="heti-spacing"> </span></span>发散。</strong></p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>17</span></strong> 判断<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{\ln x}{x^a}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的敛散性<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>其中<span><span class="heti-spacing"> </span><span class="arithmatex">\(a &gt; 0\)</span>)</span></p>
+<p><strong>解</strong>：显然，<span><span class="arithmatex">\(x=0\)</span><span class="heti-spacing"> </span></span>是唯一瑕点。</p>
+<p>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a \ge 1\)</span><span class="heti-spacing"> </span></span>时，<span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x^a}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>发散，故<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{\ln x}{x^a}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>更发散了（<span><span class="arithmatex">\(\ln x\)</span><span class="heti-spacing"> </span></span>相当于把被积函数放大了<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</p>
+<p>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(0 &lt; a &lt; 1\)</span><span class="heti-spacing"> </span></span>时，<span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{1}{x^a}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛，所以我们猜测<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} \dfrac{\ln x}{x^a}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>也收敛。</p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) = \dfrac{\ln x}{x^a}\)</span></span>，取<span><span class="heti-spacing"> </span><span class="arithmatex">\(g(x) = \dfrac{1}{x^{\frac{1+a}{2}}}\)</span></span>，由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(0 &lt; \dfrac{1+a}{2} &lt; 1\)</span></span>，故<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{1} g(x)\mathrm{d}x = \displaystyle\int_{0}^{1} \dfrac{1}{x^{\frac{1+a}{2}}}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛。</p>
+<p>又<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x \to 0^+} \dfrac{f(x)}{g(x)} = \lim\limits_{x \to 0^+} \dfrac{\frac{\ln x}{x^a}}{\frac{1}{x^{\frac{1+a}{2}}}} = \lim\limits_{x \to 0^+} x^{\frac{1-a}{2}} \ln x = 0\)</span></span>，故由比较判别法的极限形式得，<span><span class="arithmatex">\(\displaystyle\int_{0}^{1} f(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>也收敛。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>18</span></strong> <span class="arithmatex">\(\displaystyle\int_{0}^{\frac{\pi}{2}} \dfrac{1}{\sqrt{\cos x \cdot \sin x}}\mathrm{d}x\)</span></p>
+<p><strong>解</strong>：显然，<span><span class="arithmatex">\(x=0\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=\dfrac{\pi}{2}\)</span><span class="heti-spacing"> </span></span>都是瑕点。</p>
+<p><span>(1) <span class="arithmatex">\(x \to 0\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{1}{\sqrt{\cos x \cdot \sin x}} \sim \dfrac{1}{\sqrt{x}} \sim \dfrac{1}{x^{\frac{1}{2}}}\)</span>，<span class="arithmatex">\(p=1/2\)</span>，此处收敛。</p>
+<p><span>(2) <span class="arithmatex">\(x \to \dfrac{\pi}{2}\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{1}{\sqrt{\cos x \cdot \sin x}} = \dfrac{1}{\sqrt{\sin(\frac{\pi}{2}-x) \cdot \sin x}} \sim \dfrac{1}{\sqrt{\frac{\pi}{2}-x}} \cdot 1\)</span>，<span class="arithmatex">\(p=\dfrac{1}{2}\)</span>，故在此处收敛。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>19</span></strong> <span><span class="arithmatex">\(\displaystyle\int_{0}^{\frac{\pi}{2}} \dfrac{1}{\sin^a x \cdot \cos^b x}\mathrm{d}x\)</span> (<span class="heti-spacing"> </span></span>其中<span><span class="heti-spacing"> </span><span class="arithmatex">\(a, b &gt; 0\)</span>)</span></p>
+<p><strong>解</strong>：本题其实是上一题的一般形式，<span><span class="arithmatex">\(x=0\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=\dfrac{\pi}{2}\)</span><span class="heti-spacing"> </span></span>都是瑕点。</p>
+<p><span><span class="arithmatex">\(x \to 0\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{1}{\sin^a x \cdot \cos^b x} \sim \dfrac{1}{x^a}\)</span>；</p>
+<p><span><span class="arithmatex">\(x \to \dfrac{\pi}{2}\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{1}{\sin^a x \cdot \cos^b x} = \dfrac{1}{\sin^a x \cdot \sin^b(\frac{\pi}{2}-x)} \sim \dfrac{1}{(\frac{\pi}{2}-x)^b}\)</span>。</p>
+<p>要想收敛，必须保证<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a &lt; 1\)</span><span class="heti-spacing"> </span></span>且<span><span class="heti-spacing"> </span><span class="arithmatex">\(b &lt; 1\)</span></span>，其余情况都发散。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>20</span></strong> <span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \left[ \ln\left(1+\dfrac{1}{x}\right) - \dfrac{1}{1+x} \right]\mathrm{d}x\)</span></p>
+<p><strong>解</strong>：<span><span class="arithmatex">\(x=0\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=+\infty\)</span><span class="heti-spacing"> </span></span>都是瑕点。</p>
+<p><span>(1) <span class="arithmatex">\(x \to 0^+\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \ln\left(1+\dfrac{1}{x}\right) - \dfrac{1}{1+x} \sim \ln\left(1+\dfrac{1}{x}\right) = \ln\dfrac{x+1}{x} = \ln(x+1) - \ln x \sim (-\ln x)\)</span></p>
+<p>即<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x \to 0^+\)</span><span class="heti-spacing"> </span></span>时，被积函数与<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((-\ln x)\)</span><span class="heti-spacing"> </span></span>是等价无穷大，故该积分在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=0\)</span><span class="heti-spacing"> </span></span>处收敛；</p>
+<p><span>(2) <span class="arithmatex">\(x \to +\infty\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \ln\left(1+\dfrac{1}{x}\right) - \dfrac{1}{x(1+\frac{1}{x})} = \left[\dfrac{1}{x} - \dfrac{1}{2}\left(\dfrac{1}{x}\right)^2\right] - \dfrac{1}{x}\left(1-\dfrac{1}{x}\right) + o\left(\dfrac{1}{x^2}\right) \sim \dfrac{1}{2}\dfrac{1}{x^2}\)</span>。</p>
+<p><span class="arithmatex">\(p=2 &gt; 1\)</span>，故收敛。</p>
+<p>综上，积分<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \left[ \ln\left(1+\dfrac{1}{x}\right) - \dfrac{1}{1+x} \right]\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>21</span></strong> 设<span><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \left[ \dfrac{2x^2+bx+a}{x(2x+a)} - 1 \right]\mathrm{d}x = 1\)</span></span>，求<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a, b\)</span><span class="heti-spacing"> </span></span>的值</p>
+<p><strong>解</strong>：先通分，<span class="arithmatex">\(\displaystyle\int_{1}^{+\infty} \left[ \dfrac{2x^2+bx+a}{x(2x+a)} - 1 \right]\mathrm{d}x = \displaystyle\int_{1}^{+\infty} \left[ \dfrac{2x^2+bx+a - 2x^2 - ax}{x(2x+a)} \right]\mathrm{d}x = \displaystyle\int_{1}^{+\infty} \dfrac{(b-a)x+a}{x(2x+a)}\mathrm{d}x\)</span>。</p>
+<p>要想收敛，必须有<span><span class="heti-spacing"> </span><span class="arithmatex">\(a=b\)</span></span>（否则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x \to +\infty\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{(b-a)x+a}{x(2x+a)} = O\left(\dfrac{1}{x}\right)\)</span>，积分显然发散<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>。</p>
+<p>此时，<span class="arithmatex">\(I = \displaystyle\int_{1}^{+\infty} \dfrac{a}{x(2x+a)}\mathrm{d}x = \displaystyle\int_{1}^{+\infty} \left( \dfrac{1}{2x} - \dfrac{1}{2x+a} \right)\mathrm{d}(2x) = \ln\dfrac{2x}{2x+a} \Big|_1^{+\infty} = 0 - \ln\dfrac{2}{2+a} = 1\)</span>。</p>
+<p>故<span><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{2}{2+a} = \dfrac{1}{e}\)</span></span>，解得<span><span class="heti-spacing"> </span><span class="arithmatex">\(a = 2(e-1)\)</span></span>，故<span><span class="heti-spacing"> </span><span class="arithmatex">\(a=b=2(e-1)\)</span></span>。</p>
+<hr/>
+<p><strong>例题<span><span class="heti-spacing"> </span>22</span></strong> <span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \dfrac{\sin x}{\sqrt{x^3}}\mathrm{d}x\)</span></p>
+<p><strong>解</strong>：<span><span class="arithmatex">\(x=0\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x=+\infty\)</span><span class="heti-spacing"> </span></span>都是瑕点。</p>
+<p><span><span class="arithmatex">\(x \to 0\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f(x) = \dfrac{\sin x}{\sqrt{x^3}} \sim \dfrac{x}{x^{\frac{3}{2}}} = \dfrac{1}{x^{\frac{1}{2}}}\)</span>，<span class="arithmatex">\(p = \dfrac{1}{2} &lt; 1\)</span>，故积分在此处收敛；</p>
+<p><span><span class="arithmatex">\(x \to +\infty\)</span><span class="heti-spacing"> </span></span>时，被积函数有正有负，所以加绝对值，考察绝对收敛性。</p>
+<p><span class="arithmatex">\(\left| \dfrac{\sin x}{\sqrt{x^3}} \right| \le \dfrac{1}{x^{\frac{3}{2}}}\)</span>，<span class="arithmatex">\(p = \dfrac{3}{2} &gt; 1\)</span>，故该积分在此处绝对收敛。</p>
+<p>综上，<span><span class="arithmatex">\(\displaystyle\int_{0}^{+\infty} \dfrac{\sin x}{\sqrt{x^3}}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>收敛。</p>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 18, 2025 08:42:53 UTC">December 18, 2025</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 23, 2025 07:57:02 UTC">December 23, 2025</span>
 </span>
 </aside>
 </article>
@@ -913,13 +1503,13 @@
               </div>
 </div>
 </a>
-<a aria-label="Next: 24微甲小测1" class="md-footer__link md-footer__link--next" href="../../../../quiz/calc_quiz1/">
+<a aria-label="Next: 反常积分计算" class="md-footer__link md-footer__link--next" href="../2/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                24微甲小测1
+                反常积分计算
               </div>
 </div>
 <div class="md-footer__button md-icon">
