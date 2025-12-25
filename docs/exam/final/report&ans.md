@@ -397,6 +397,7 @@ $$ \int_0^1 f(x) \mathrm{d}x < \frac{k_1 k_2}{2(k_2 - k_1)} $$
     同理可证 **$f(x) > \dfrac{f(x_0)}{x_0-1}(x-1)$**。
 
     综上，在 $[0,1]$ 上积分：
+
     $$
     \begin{aligned}
     \int_0^1 f(x) \mathrm{d}x &= \int_0^{x_0} f(x) \mathrm{d}x + \int_{x_0}^1 f(x) \mathrm{d}x \\
@@ -410,10 +411,13 @@ $$ \int_0^1 f(x) \mathrm{d}x < \frac{k_1 k_2}{2(k_2 - k_1)} $$
     (2)
 
     记 $k_1 = f'(0)$，$k_2 = f'(1)$。
+
     对 $f(x)$ 在 $x=0$ 处应用**泰勒公式**（拉格朗日余项）：
+
     $$
     f(x) = f(0) + f'(0)x + \frac{1}{2}f''(\xi_1)x^2 \quad (0 < \xi_1 < x)
     $$
+    
     因 $f(0)=0$，$f''(\xi_1) < 0$，故$f(x) < k_1 x$。
 
     同理，$f(x) < k_2(x-1)$。
