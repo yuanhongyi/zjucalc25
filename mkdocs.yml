@@ -170,7 +170,7 @@ nav:
     - 期末:
       - 期末考情分析: exam/final/final_exam_analysis.md
       - 25期末模拟: exam/final/25final_sim.md
-      - 模拟题分析与解答: exam/final/report&ans.md
+      # - 模拟题分析与解答: exam/final/report&ans.md
       - 24期末部分分析: exam/final/24final.md
   - PDF: 
     - index: pdf/index.md
